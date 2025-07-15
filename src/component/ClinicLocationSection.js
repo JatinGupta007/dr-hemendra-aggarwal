@@ -6,7 +6,7 @@ import { FaPhoneAlt, FaWhatsapp, FaCalendarCheck } from "react-icons/fa";
 export default function ClinicLocations() {
   return (
     <section className="py-16 px-20 rounded-2xl text-white">
-      <div className="bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/90 rounded-2xl p-16">
+      <div className="bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/80 rounded-2xl p-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
           Visit Our Orthopedic Clinics in Jaipur
         </h2>

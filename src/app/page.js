@@ -1,6 +1,8 @@
+import { Appointment } from "@/component/Appointment";
 import ClinicLocations from "@/component/ClinicLocationSection";
 import DoctorSection from "@/component/DoctorSection";
 import FaqAccordion from "@/component/FaqAccordion";
+import Footer from "@/component/Footer";
 import Header from "@/component/Header";
 import HeroSection from "@/component/HeroSection";
 import SpotlightSection from "@/component/SpotlightSection";
@@ -21,6 +23,8 @@ export default function Home() {
       <DoctorSection />
       <Testimonial />
       <FaqAccordion />
+      <Appointment />
+      <Footer />
     </main>
   );
 }

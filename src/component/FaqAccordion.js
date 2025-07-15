@@ -6,27 +6,27 @@ const faqs = [
   {
     question: "What is the cost of knee replacement surgery in Jaipur?",
     answer:
-      "ProHealth provides a wide range of medical and healthcare services including diagnostics, consultations, treatments, and surgeries.",
+      "The cost of knee replacement surgery varies depending on the type of implant, procedure, and hospital. At a reputable orthopaedic clinic, an experienced orthopaedic doctor will assess your condition and recommend the most suitable and cost-effective treatment plan for long-term relief.",
   },
   {
     question: "Do I need surgery for ligament tear or can it heal naturally?",
     answer:
-      "You can schedule an appointment via our website or by calling our front desk during business hours.",
+      "Some ligament tears may heal with rest and physiotherapy, while others—especially complete tears-may require surgery. Consulting a skilled orthopedic in Jaipur helps determine the right approach based on your condition, activity level, and recovery goals.",
   },
   {
     question: "Is arthroscopy better than open surgery?",
     answer:
-      "Yes, we accept most major insurance providers. Please contact us with your policy details to confirm.",
+      "Yes, arthroscopy is often a better option due to its minimally invasive nature, quicker recovery, and reduced risk of complications. A trained surgeon at a leading orthopaedic clinic can recommend arthroscopy for various joint issues, including ligament tears and cartilage damage.",
   },
   {
     question: "What recovery can I expect after joint replacement?",
     answer:
-      "Please bring your ID, insurance card, past medical records (if any), and a list of current medications.",
+      "After joint replacement, patients typically begin recovery within a few days, with improvements in mobility and pain relief over the following weeks. An expert orthopaedic doctor provides a tailored rehabilitation plan to ensure safe, effective healing and faster return to normal activities.",
   },
   {
     question: "Which orthopedic doctor is best in Jaipur for sports injuries?",
     answer:
-      "Please bring your ID, insurance card, past medical records (if any), and a list of current medications.",
+      "The best orthopedic in Jaipur for sports injuries is one with expertise in arthroscopy, sports medicine, and minimally invasive surgery. A knowledgeable orthopaedic doctor ensures accurate diagnosis and a customized treatment plan to restore strength and function efficiently.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function FaqAccordion() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
-      <h4 className="text-center text-blue-600 uppercase text-xl font-semibold mb-2">
+      <h4 className="text-center text-blue-600 uppercase text-2xl font-semibold mb-2">
         What People
       </h4>
       <h2 className="text-center text-3xl md:text-6xl font-bold mb-16">

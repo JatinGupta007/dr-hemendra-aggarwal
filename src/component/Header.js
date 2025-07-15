@@ -24,7 +24,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/90 px-6 md:px-20 py-6 sticky top-0 z-50">
+    <header className="bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/90 px-6 md:px-20 py-6">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
@@ -41,16 +41,20 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        {isOpen ? (
+        
           <input
-            className="border-2 rounded-2xl w-1/2 px-3 py-2 outline-0"
+            className={`text-[white] -left-60 rounded-2xl w-1/2 px-3 py-2 outline-none absolute translate-x-full transition-all duration-500 origin-right ease-in-out bg-black shadow-md z-2 ${
+              isOpen
+                ? "opacity-100 scale-100 translate-x-0"
+                : "opacity-0 scale-75 pointer-events-none"
+            }`}
             placeholder="Search"
             type="search"
           />
-        ) : (
+        
           <nav className="hidden md:flex items-center space-x-10 text-xl">
-            <Link href="#">Home</Link>
-            <Link href="#">About</Link>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
             <Link href="#">Expertise</Link>
             <Link href="#">Blog</Link>
             <div className="relative group">
@@ -59,7 +63,7 @@ export default function Navbar() {
                 <span className="text-xs">▼</span>
               </button>
               {/* Dropdown (optional) */}
-              <div className="absolute top-full hidden group-hover:block bg-white shadow rounded p-2 text-sm">
+              <div className="absolute top-full hidden group-hover:block bg-white shadow rounded p-2 text-sm z-1">
                 <Link href="#" className="block px-2 py-1 hover:bg-gray-100">
                   FAQ
                 </Link>
@@ -70,7 +74,7 @@ export default function Navbar() {
             </div>
             <Link href="#">Contact</Link>
           </nav>
-        )}
+        
 
         <div className="flex items-center gap-7 pt-2">
           {isOpen ? (

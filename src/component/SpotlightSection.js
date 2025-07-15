@@ -1,0 +1,69 @@
+import React from "react";
+import Image from "next/image";
+import { FaBookMedical } from "react-icons/fa6";
+
+export default function SpotlightSection() {
+  return (
+    <section className="flex flex-col md:flex-row items-center gap-16 px-6 py-12 md:px-20 bg-gray-50">
+      {/* Left - Image */}
+      <div className="flex-shrink-0 rounded-full overflow-hidden w-[300px] h-[300px] md:w-[460px] md:h-[440px]">
+        <Image
+          src="/Images/spotlight_img.png"
+          alt="Doctor with patient"
+          width={400}
+          height={400}
+          className="object-cover w-full h-full"
+        />
+      </div>
+
+      {/* Right - Text Content */}
+      <div className="max-w-xl">
+        <h3 className="text-[#197d85] font-semibold text-sm mb-1">
+          🦿 Spotlight Section - Knee Replacement Surgery
+        </h3>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Looking for the Best Knee Replacement Surgeon in Jaipur?
+        </h2>
+        <hr className="border-t-2 border-[#197d85] w-20 mb-4" />
+        <p className="text-gray-600 mb-4 leading-relaxed">
+          Dr. Hemendra Agarwal is among the top-rated knee replacement surgeons
+          in Jaipur, offering both total and partial replacements using
+          minimally invasive techniques. Patients experience reduced pain,
+          shorter hospital stays, and faster recovery. If you&apos;re concerned
+          about mobility or knee arthritis, this procedure could change your
+          life.
+        </p>
+        <ul className="text-gray-700 space-y-2 mb-6">
+          <li className="flex gap-3 items-center">
+            <input
+              type="checkbox"
+              defaultChecked
+              className="accent-[#197d85] w-5 h-5"
+            />
+            Cost-effective treatment with insurance support
+          </li>
+          <li className="flex gap-3 items-center">
+            <input
+              type="checkbox"
+              defaultChecked
+              className="accent-[#197d85] w-5 h-5"
+            />
+            Advanced implants & robotic navigation (if available)
+          </li>
+          <li className="flex gap-3 items-center">
+            <input
+              type="checkbox"
+              defaultChecked
+              className="accent-[#197d85] w-5 h-5"
+            />
+            Transparent consultation & rehab guidance
+          </li>
+        </ul>
+
+        <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+          <FaBookMedical /> Learn More About Knee Replacement
+        </button>
+      </div>
+    </section>
+  );
+}

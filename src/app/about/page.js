@@ -1,20 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import Navbar from "@/component/Header";
-import React from "react";
-import Image from "next/image";
 
 import { FiUsers } from "react-icons/fi";
-import { FaHandshake } from "react-icons/fa";
-import { HiOutlineMicrophone } from "react-icons/hi";
-import { MdMedicalServices } from "react-icons/md";
-
 import {
+  FaHandshake,
   FaCalendarCheck,
   FaMapMarkerAlt,
   FaHospitalAlt,
   FaUserMd,
   FaPhone,
+  FaPhoneAlt,
+  FaWhatsapp,
 } from "react-icons/fa";
+import { HiOutlineMicrophone } from "react-icons/hi";
+import { MdMedicalServices } from "react-icons/md";
+
+import Footer from "@/component/Footer";
 
 const chooses = [
   {
@@ -398,6 +399,99 @@ export default function Page() {
           </button>
         </div>
       </section>
+
+      <section className="max-w-7xl mx-auto px-20 pb-24 pt-6 text-center">
+        <p className="text-blue-600 font-medium text-sm md:text-2xl mb-2">
+          Patient Testimonials
+        </p>
+        <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-12">
+          What Patients Say About Dr. Agarwal
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+          {/* Card 1 */}
+          <div className="flex flex-col items-center bg-white rounded-xl p-6 shadow-md shadow-[#197d85]">
+            <img
+              src="/Images/doctor_1.png"
+              alt="Patient 1"
+              className="w-32 h-32 object-cover rounded-full mb-4"
+            />
+
+            <p className="text-blue-500 text-lg mb-2">
+              Knee Replacement Patient
+            </p>
+            <p className="text-slate-500 text-sm">
+              “Best orthopedic doctor in Jaipur. I had a knee replacement and
+              walked in 3 days!”
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className="flex flex-col items-center bg-white rounded-xl p-6 shadow-md shadow-[#197d85]">
+            <img
+              src="/Images/doctor_2.png"
+              alt="Patient 2"
+              className="w-32 h-32 object-cover rounded-full mb-4"
+            />
+
+            <p className="text-blue-500 text-lg mb-2">Consultation Feedback</p>
+            <p className="text-slate-500 text-sm">
+              “He explained everything in detail - very professional and kind.”
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="flex flex-col items-center bg-white rounded-xl p-6 shadow-md shadow-[#197d85]">
+            <img
+              src="/Images/doctor_3.png"
+              alt="Patient 3"
+              className="w-32 h-32 object-cover rounded-full mb-4"
+            />
+
+            <p className="text-blue-500 text-sm mb-2">Family Experience</p>
+            <p className="text-slate-500 text-lg">
+              “I trusted him with my father’s hip surgery - perfect results.”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[url('/Images/department_bg.svg')] mt-20 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between m-20">
+        <div className="relative w-250">
+          <img
+            src="/Images/dr_hemendra-removebg.png"
+            alt="Dr. Hemendra Agarwal"
+            width={600}
+            height={400}
+            className="object-top -mt-46"
+          />
+        </div>
+        {/* Left Content */}
+        <div className="max-w-xl">
+          <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-10">
+            Need expert orthopedic care in Jaipur? Dr. Hemendra Agarwal is here
+            for you.
+          </h2>
+          <div className="flex items-center gap-8">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <FaCalendarCheck size={20} />
+              Book Appointment
+            </button>
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <FaPhoneAlt size={20} />
+              <p>Call Now</p>
+            </button>
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <FaWhatsapp size={20} />
+              <p>WhatsApp</p>
+            </button>
+          </div>
+        </div>
+
+        {/* Right Image */}
+      </section>
+
+      <Footer />
     </main>
   );
 }

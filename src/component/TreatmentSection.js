@@ -48,7 +48,7 @@ export default function TreatmentSection() {
   ];
 
   return (
-    <section className="py-16 px-4 md:px-20 bg-white text-center">
+    <section className="py-3 lg:py-16 px-6 md:px-20 bg-white md :text-center">
       <h2 className="text-4xl font-bold text-gray-800 mb-2">
         Orthopedic Treatments We Offer
       </h2>

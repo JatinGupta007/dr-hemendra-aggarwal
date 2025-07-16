@@ -3,8 +3,8 @@ import { FaCheck } from "react-icons/fa";
 
 export default function TrustUsSection() {
   return (
-    <section className="py-12 px-4 md:px-20 mt-40">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
+    <section className="py-12 px-6 md:px-20 mt-64 md:mt-30 lg:mt-40">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center lg:gap-16">
         {/* Left Image */}
         <div className="relative rounded-3xl">
           <Image
@@ -34,10 +34,10 @@ export default function TrustUsSection() {
 
         {/* Right Content */}
         <div>
-          <p className="text-sm font-semibold text-gray-700 mb-2">
+          <p className="text-lg font-semibold text-[#197d85] mb-2">
             Why Patients Trust Dr. Hemendra Agarwal
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-800 leading-tight mb-4">
             Top Orthopedic Surgeon <br /> in Jaipur with Trusted Patient
             Outcomes
           </h2>

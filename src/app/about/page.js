@@ -1,7 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import Navbar from "@/component/Header";
+import Footer from "@/component/Footer";
 
 import { FiUsers } from "react-icons/fi";
+import { HiOutlineMicrophone } from "react-icons/hi";
+import { MdMedicalServices } from "react-icons/md";
 import {
   FaHandshake,
   FaCalendarCheck,
@@ -12,10 +15,7 @@ import {
   FaPhoneAlt,
   FaWhatsapp,
 } from "react-icons/fa";
-import { HiOutlineMicrophone } from "react-icons/hi";
-import { MdMedicalServices } from "react-icons/md";
 
-import Footer from "@/component/Footer";
 
 const chooses = [
   {
@@ -70,8 +70,10 @@ const Reasons = [
 export default function Page() {
   return (
     <main>
+      {/*Header*/}
       <Navbar />
-      <section className="flex items-center gap-10 px-6 md:px-20 py-10 bg-gradient-to-l from-[#197d85]/90 to-[#97a345]/90">
+      {/*Hero section */}
+      <section className="flex flex-col lg:flex-row items-center gap-10 px-6 md:px-20 py-10 bg-gradient-to-l from-[#197d85]/90 to-[#97a345]/90">
         <div className="">
           <img
             src="/Images/about_img.png"
@@ -81,7 +83,7 @@ export default function Page() {
             className="rounded-2xl"
           />
         </div>
-        <div className="space-y-6 w-2xl">
+        <div className="space-y-6 w-full lg:w-2xl">
           <h1 className="text-4xl md:text-[46px] font-bold mb-6">
             Hemendra Agarwal Experienced Orthopedic Surgeon in Jaipur
           </h1>
@@ -100,7 +102,7 @@ export default function Page() {
             Trusted by Thousands, Guided by Experience - Meet Dr. Hemendra
             Agarwal
           </h2>
-          <p className="text-lg w-xl mb-8">
+          <p className="text-lg lg:w-xl mb-8">
             With over 15 years of clinical and surgical excellence, Dr. Hemendra
             Agarwal is a top-rated orthopedic surgeon in Jaipur, specializing in
             joint replacement, arthroscopy, ligament reconstruction, and sports
@@ -108,20 +110,19 @@ export default function Page() {
           </p>
         </div>
       </section>
-
-      {/* Our Values Section */}
+      {/*Education & Experience  Section */}
       <section className="w-full px-6 md:px-20 pt-30">
-        <div className="flex flex-col md:flex-row w-full gap-12">
+        <div className="flex flex-col lg:flex-row w-full gap-12">
           {/* Navigation Arrows */}
           <div>
-            <h2 className="text-3xl md:text-5xl -mt-12 font-bold text-[#197d85]">
+            <h2 className="text-3xl md:text-5xl -mt-12 mb-16 font-bold text-[#197d85]">
               Educational Background & Clinical Experience
             </h2>
           </div>
           {/* Cards Container with background */}
           <div className="relative flex-1 flex justify-center">
             <div
-              className="absolute -top-12 -left-8 w-[860px] h-full bg-gradient-to-b from-[#97a345]/50 to-[#197d85]/50 rounded-3xl z-0"
+              className="absolute -top-12 lg:-left-8 md:left-5 w-screen md:w-full lg:w-[860px] h-full bg-gradient-to-b from-[#97a345]/50 to-[#197d85]/50 rounded-3xl z-0"
               style={{ filter: "blur(1px)" }}
             ></div>
             <div className="relative z-10 flex flex-col md:flex-row gap-8 w-full justify-center">
@@ -201,7 +202,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      {/* Education & Certifications Section */}
+      {/* Service Offered Section */}
       <section className="w-full px-6 md:px-20 py-10 mt-10">
         <h2 className="text-3xl md:text-4xl font-bold text-[#197d85] text-center mb-10">
           Specialized Orthopedic Services Offered
@@ -259,11 +260,11 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-      <section className="max-w-7xl mx-auto px-20 py-12 flex flex-col justify-between lg:flex-row items-center gap-12">
+      {/*Affiliation section */}
+      <section className="max-w-7xl mx-auto px-6 md:px-20 py-12 flex flex-col justify-between lg:flex-row items-center gap-12">
         {/* Left Grid of Cards */}
-        <div className="grid grid-cols-3 gap-6 w-full max-w-2xl">
-          <div className="bg-gradient-to-b from-[#197d85]/50 to-[#97a345]/50 text-center p-6 h-[300px] w-[200px] rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-2xl order-2 lg:order-1">
+          <div className="bg-gradient-to-b from-[#197d85]/50 to-[#97a345]/50 text-center p-6 lg:h-[300px] lg:w-[200px] rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all">
             <FiUsers className="text-[#197d85] text-7xl" />
             <p className="mt-4 text-white font-medium text-lg">
               Member - Indian Orthopaedic Association (IOA)
@@ -275,9 +276,9 @@ export default function Page() {
               Registered Medical Practitioner - Rajasthan Medical Council
             </p>
           </div>
-          <div className="max-w-md"></div>
-          <div className="max-w-md"></div>
-          <div className="bg-gradient-to-b from-[#197d85]/50 to-[#97a345]/50 h-[300px] text-center p-6 rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all">
+          <div className="max-w-md hidden lg:block"></div>
+          <div className="max-w-md hidden lg:block"></div>
+          <div className="bg-gradient-to-b from-[#197d85]/50 to-[#97a345]/50 lg:h-[300px] text-center p-6 rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all">
             <HiOutlineMicrophone className="text-[#197d85] text-7xl" />
             <p className="mt-4 text-white font-medium text-lg">
               Regular Speaker at Orthopedic Conferences
@@ -292,7 +293,7 @@ export default function Page() {
         </div>
 
         {/* Right Heading */}
-        <div className="text-right">
+        <div className="order-1 lg:order-2 lg:text-right">
           <p className="text-[#2d7cc3] font-semibold tracking-wide text-lg">
             Trusted Member of Reputed Medical Organizations
           </p>
@@ -301,12 +302,12 @@ export default function Page() {
           </h2>
         </div>
       </section>
-
-      <section className="mx-auto px-20 py-10">
-        <p className="text-center text-[#197d85] font-semibold text-xl">
+      {/*Patient Approach section */}
+      <section className="mx-auto px-6 md:px-20 py-10">
+        <p className="md:text-center text-[#197d85] font-semibold md:text-xl">
           Why Patients Choose Dr. Hemendra Agarwal
         </p>
-        <h2 className="text-center text-5xl font-bold text-slate-800 mb-12">
+        <h2 className="md:text-center text-4xl md:text-5xl font-bold text-slate-800 mb-12">
           Patient-Centered Approach
         </h2>
 
@@ -331,7 +332,7 @@ export default function Page() {
           </div>
 
           {/* Other Blogs */}
-          <div className="md:w-2/5 flex flex-col space-y-6">
+          <div className="md:w-3/5 flex flex-col space-y-6">
             {chooses.slice(1).map((post, index) => (
               <div
                 key={index}
@@ -340,7 +341,7 @@ export default function Page() {
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-24 h-32 object-cover"
+                  className="w-24 h-35 object-cover"
                 />
                 <div className="p-3">
                   <h4 className="text-xl font-semibold text-slate-800 mb-1">
@@ -353,15 +354,15 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-      <section className="max-w-7xl mx-auto px-20 py-16">
-        <p className="text-center text-[#197d85] font-semibold text-xl mb-4">
+      {/*Clinic Location section */}
+      <section className="max-w-7xl mx-auto px-7 md:px-20 py-16">
+        <p className="text-center text-[#197d85] font-semibold md:text-xl md:mb-4">
           Where You Can Consult Dr. Agarwal
         </p>
         <h2 className="text-center text-4xl font-bold text-slate-800 mb-12">
           Trusted Locations for Your Orthopedic Care
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 relative">
           {/* Vertical line */}
           <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full border border-[#197d85]" />
 
@@ -369,7 +370,7 @@ export default function Page() {
             <div
               key={step.id}
               className={`flex flex-col items-center text-center md:items-${
-                step.position === "left" ? "center mt-50" : "start"
+                step.position === "left" ? "center md:mt-50" : "start"
               } md:text-${step.position} space-y-3 px-6 
               `}
             >
@@ -399,8 +400,8 @@ export default function Page() {
           </button>
         </div>
       </section>
-
-      <section className="max-w-7xl mx-auto px-20 pb-24 pt-6 text-center">
+      {/*Patient Testimonial section */}
+      <section className="max-w-7xl mx-auto px-7 md:px-20 pb-24 pt-6 text-center">
         <p className="text-blue-600 font-medium text-sm md:text-2xl mb-2">
           Patient Testimonials
         </p>
@@ -408,7 +409,7 @@ export default function Page() {
           What Patients Say About Dr. Agarwal
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
           {/* Card 1 */}
           <div className="flex flex-col items-center bg-white rounded-xl p-6 shadow-md shadow-[#197d85]">
             <img
@@ -455,9 +456,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-      <section className="bg-[url('/Images/department_bg.svg')] mt-20 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between m-20">
-        <div className="relative w-250">
+      {/*Book Appointment section */}
+      <section className="bg-[url('/Images/department_bg.svg')] mt-20 rounded-2xl p-8 flex flex-col lg:flex-row items-center justify-between m-6 md:m-20">
+        <div className="relative lg:w-250">
           <img
             src="/Images/dr_hemendra-removebg.png"
             alt="Dr. Hemendra Agarwal"
@@ -467,12 +468,12 @@ export default function Page() {
           />
         </div>
         {/* Left Content */}
-        <div className="max-w-xl">
-          <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-10">
+        <div className="lg:max-w-xl w-full">
+          <h2 className="text-2xl md:text-4xl font-semibold leading-tight mb-10">
             Need expert orthopedic care in Jaipur? Dr. Hemendra Agarwal is here
             for you.
           </h2>
-          <div className="flex items-center gap-8">
+          <div className="flex flex-col md:flex-row flex-wrap items-center gap-8">
             <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               <FaCalendarCheck size={20} />
               Book Appointment
@@ -490,7 +491,7 @@ export default function Page() {
 
         {/* Right Image */}
       </section>
-
+      {/*Footer*/}
       <Footer />
     </main>
   );

@@ -32,22 +32,22 @@ export default function ReviewsSection() {
   const [current, setCurrent] = useState(1);
 
   return (
-    <div className="max-w-7xl mx-auto px-20 py-6">
-      <h2 className="text-center text-6xl font-bold text-slate-800">
+    <div className="md:max-w-7xl mx-auto px-6 md:px-20 py-6">
+      <h2 className="text-center text-4xl md:text-6xl font-bold text-slate-800">
         Some Reviews
       </h2>
-      <p className="text-center font-bold text-[#307bc4] text-3xl mt-1">
+      <p className="text-center font-bold text-[#307bc4] text-xl md:text-3xl mt-1 mb-6">
         OF OUR CLIENTS
       </p>
 
-      <div className="flex flex-col justify-between items-center md:flex-row gap-8 mt-16 pb-10 relative">
+      <div className="flex flex-col justify-between items-center lg:flex-row gap-8 mt-5 lg:mt-16 pb-10 relative">
         {/* Left Column */}
-        <div className="w-full md:w-5/12 flex flex-col gap-12 pt-3 relative z-10">
+        <div className="w-full lg:w-5/12 flex justify-center lg:flex-col gap-8 lg:gap-12 pt-3 relative z-10">
           {reviews.map((user, index) => (
             <div
               key={index}
-              className={`flex items-center gap-4 rounded-3xl p-5 w-4/5 cursor-pointer transition-all duration-300 ${
-                index === 1 && "self-end"
+              className={`flex items-center gap-4 rounded-3xl lg:p-5 lg:w-4/5 cursor-pointer transition-all duration-300 ${
+                index === 1 && "lg:self-end"
               } ${
                 index === current
                   ? "bg-white shadow-[0_0_25px_#197d85]"
@@ -60,7 +60,7 @@ export default function ReviewsSection() {
                 alt={user.name}
                 className="w-20 h-20 rounded-full object-cover"
               />
-              <div>
+              <div className="hidden lg:block">
                 <h3 className="font-bold text-slate-800 uppercase text-2xl">
                   {user.name}
                 </h3>
@@ -71,7 +71,7 @@ export default function ReviewsSection() {
         </div>
 
         {/* Center Vertical Line */}
-        <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-[#307bc4] translate-x-[-50%] z-0">
+        <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-[#307bc4] translate-x-[-50%] z-0">
           {/* Dots */}
           {reviews.map((_, index) => (
             <div
@@ -87,7 +87,7 @@ export default function ReviewsSection() {
         </div>
 
         {/* Right Column */}
-        <div className="w-full md:w-5/12 flex items-start">
+        <div className="w-full lg:w-5/12 flex items-start">
           {reviews[current].review && (
             <div className="bg-white p-6 shadow-lg rounded-lg">
               <FaQuoteLeft className="text-2xl text-[#307bc4] mb-4" />

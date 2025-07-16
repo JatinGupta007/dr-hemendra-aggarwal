@@ -10,8 +10,8 @@ import {
 
 export default function Footer() {
   return (
-    <footer className=" text-[] py-10 px-20 border-t border-[]">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm md:text-base place-items-center">
+    <footer className="py-10 px-6 md:px-20 border-t">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm md:text-base md:place-items-center">
         {/* Left Column - Logo + Description */}
         <div>
           <img src="/Images/footer-logo.png" alt="Logo" className="w-52 mb-4" />

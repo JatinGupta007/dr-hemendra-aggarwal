@@ -4,7 +4,7 @@ import { FaBookMedical } from "react-icons/fa6";
 
 export default function SpotlightSection() {
   return (
-    <section className="flex flex-col md:flex-row items-center gap-16 px-6 py-12 md:px-20 bg-gray-50">
+    <section className="flex flex-col lg:flex-row items-center gap-5 lg:gap-16 px-6 py-12 md:px-20 bg-gray-50">
       {/* Left - Image */}
       <div className="flex-shrink-0 rounded-full overflow-hidden w-[300px] h-[300px] md:w-[460px] md:h-[440px]">
         <Image
@@ -18,7 +18,7 @@ export default function SpotlightSection() {
 
       {/* Right - Text Content */}
       <div className="max-w-xl">
-        <h3 className="text-[#197d85] font-semibold text-sm mb-1">
+        <h3 className="text-[#197d85] font-semibold text-lg mb-1">
           🦿 Spotlight Section - Knee Replacement Surgery
         </h3>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">

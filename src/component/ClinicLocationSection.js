@@ -5,9 +5,9 @@ import { FaPhoneAlt, FaWhatsapp, FaCalendarCheck } from "react-icons/fa";
 
 export default function ClinicLocations() {
   return (
-    <section className="py-16 px-20 rounded-2xl text-white">
-      <div className="bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/80 rounded-2xl p-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+    <section className="md:py-16 p-7 md:px-20 rounded-2xl text-white">
+      <div className="bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/80 rounded-2xl p-5 md:p-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-5 md:mb-16">
           Visit Our Orthopedic Clinics in Jaipur
         </h2>
 
@@ -52,7 +52,7 @@ export default function ClinicLocations() {
             </ul>
           </div>
         </div>
-        <div className="flex items-center mt-15 justify-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center mt-15 justify-center gap-4 lg:gap-12">
           <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
             <FaPhoneAlt size={20} />
             <p>Call For Appointment</p>

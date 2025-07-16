@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function DoctorSection() {
   return (
-    <section className="bg-[url('/Images/department_bg.svg')] mt-30 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-8 m-20">
+    <section className="bg-[url('/Images/department_bg.svg')] mt-30 rounded-2xl p-8 flex flex-col lg:flex-row items-center justify-between gap-8 m-6 md:m-20">
       {/* Left Content */}
-      <div className="max-w-xl">
-        <p className="font-semibold text-lg">About the Doctor</p>
+      <div className="max-w-xl order-2 lg:order-1">
+        <p className="font-semibold  text-lg">About the Doctor</p>
         <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
           Dr. Hemendra Agarwal
         </h2>
@@ -28,7 +28,7 @@ export default function DoctorSection() {
       </div>
 
       {/* Right Image */}
-      <div className="relative w-400">
+      <div className="relative order-1 lg:order-2 lg:w-400">
         <Image
           src="/Images/hemendra.png"
           alt="Dr. Hemendra Agarwal"
@@ -36,7 +36,7 @@ export default function DoctorSection() {
           height={400}
           className="object-top -mt-46"
         />
-        <button className="bg-gradient-to-r from-[#71a7e5] to-[#4e5ad7] text-xl ml-36  text-white font-semibold px-7 py-3 rounded-4xl flex items-center gap-2 shadow-md hover:opacity-80 transition">
+        <button className="bg-gradient-to-r from-[#71a7e5] to-[#4e5ad7] text-xl lg:ml-36  text-white font-semibold px-7 py-3 rounded-4xl flex items-center gap-2 shadow-md hover:opacity-80 transition">
           Full Doctor Bio →
         </button>
       </div>

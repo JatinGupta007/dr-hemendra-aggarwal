@@ -2,6 +2,7 @@
 import React from "react";
 import { FaPhoneAlt, FaCalendarCheck } from "react-icons/fa";
 import { GrLocationPin } from "react-icons/gr";
+import Link from "next/link";
 
 export const Appointment = () => {
   return (
@@ -18,14 +19,18 @@ export const Appointment = () => {
         </p>
 
         <div className="flex flex-col md:flex-row flex-wrap items-center gap-8">
-          <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-            <FaCalendarCheck size={20} />
-            Book Appointment
-          </button>
-          <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-            <FaPhoneAlt size={20} />
-            <p>Call Now</p>
-          </button>
+          <Link href="/contact">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <FaCalendarCheck size={20} />
+              Book Appointment
+            </button>
+          </Link>
+          <a href="tel:+919210696405" target="_blank">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85] hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <FaPhoneAlt size={20} />
+              Call Now
+            </button>
+          </a>
           <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
             <GrLocationPin size={20} />
             <p>Visit Vaishali Nagar Clinic</p>

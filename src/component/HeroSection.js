@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { TiTickOutline } from "react-icons/ti";
 import { FaPhoneAlt, FaWhatsapp, FaCalendarCheck } from "react-icons/fa";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -22,7 +23,7 @@ export default function HeroSection() {
 
             <div className="items-center space-x-4 space-y-3 pt-5">
               <p className="text-lg md:text-xl flex items-center gap-3">
-                <TiTickOutline size={30} color="#97a345" /> 
+                <TiTickOutline size={30} color="#97a345" />
                 Over 3000 Successful Surgeries
               </p>
               <p className="text-lg md:text-xl flex items-center gap-3">
@@ -48,20 +49,26 @@ export default function HeroSection() {
           </div>
         </div>
       </section>
-      <div className="absolute mx-10 lg:w-full lg:left-1/5 bg-white rounded-2xl shadow-xl shadow-[#197d85] px-10 lg:px-12 py-8 lg:py-16  max-w-[670px] -mt-16 flex flex-col md:flex-row justify-between items-center gap-8 z-12">
+      <div className="absolute mx-10 lg:w-full left-5 md:left-5 lg:left-1/5 xl:left-2/9  bg-white rounded-2xl shadow-xl shadow-[#197d85] px-10 lg:px-12 py-8 lg:py-16  max-w-[670px] -mt-16 flex flex-col md:flex-row justify-between items-center gap-8 z-12">
         <div className="flex items-center flex-col md:flex-row gap-8">
-          <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-            <FaCalendarCheck size={20} />
-            Book Appointment
-          </button>
-          <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-            <FaPhoneAlt size={20} />
-            <p>Call Now</p>
-          </button>
-          <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-            <FaWhatsapp size={20} />
-            <p>WhatsApp</p>
-          </button>
+          <Link href="/contact">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <FaCalendarCheck size={20} />
+              Book Appointment
+            </button>
+          </Link>
+          <a href="tel:+919210696405" target="_blank">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85] hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <FaPhoneAlt size={20} />
+              Call Now
+            </button>
+          </a>
+          <a href="https://wa.me/919210696405" target="_blank">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <FaWhatsapp size={20} />
+              <p>WhatsApp</p>
+            </button>
+          </a>
         </div>
       </div>
     </main>

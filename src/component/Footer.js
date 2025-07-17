@@ -1,17 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
 // app/components/Footer.jsx
 "use client";
+import Link from "next/link";
 import {
   FaWhatsapp,
   FaInstagram,
   FaLinkedinIn,
   FaFacebookF,
+  FaYoutube
 } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="py-10 px-6 md:px-20 border-t">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm md:text-base md:place-items-center">
+    <footer className="py-10 px-6 md:px-16 border-t">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm md:text-base md:place-items-center">
         {/* Left Column - Logo + Description */}
         <div>
           <img src="/Images/footer-logo.png" alt="Logo" className="w-52 mb-4" />
@@ -24,7 +26,15 @@ export default function Footer() {
             all.
           </p>
           <div className="flex gap-4 mt-8 text-xl">
-            <FaWhatsapp />
+            <a
+              href="https://www.youtube.com/@DrHemendraOrthopedic"
+              target="_blank"
+            >
+              <FaYoutube />
+            </a>
+            <a href="https://wa.me/919210696405" target="_blank">
+              <FaWhatsapp />
+            </a>
             <FaInstagram />
             <FaLinkedinIn />
             <FaFacebookF />
@@ -33,14 +43,14 @@ export default function Footer() {
 
         {/* Center Column - Pages */}
         <div>
-          <h3 className="font-semibold text-lg mb-6 ">Pages</h3>
-          <ul className="space-y-2">
-            <li>Home</li>
-            <li>About</li>
-            <li>Expertise</li>
-            <li>Contact us</li>
-            <li>Blog</li>
-            <li>Clinics</li>
+          <h3 className="font-semibold text-lg mb-6">Pages</h3>
+          <ul className="flex flex-col space-y-3">
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/expertise">Expertise</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/clinic">Clinic</Link>
+            <Link href="/contact">Contact Us</Link>
           </ul>
         </div>
 
@@ -48,18 +58,24 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-lg mb-2">Get In Touch</h3>
           <p className="mb-3">
-            <strong>Vaishali Nagar Clinic</strong> <br />
-            B-7, Sawai Ram Singh Rd, Panch Batti, Ashok Nagar, Jaipur, Rajasthan
-            302001
+            <strong>Pratap Nagar Clinic</strong> <br />
+            183/82, Rana Sanga Marg, Sector 18, Pratap Nagar, Jaipur, Rajasthan
+            302033
             <br />
-            <strong>Timing:</strong> 10 AM to 3 PM (BY APPOINTMENT)
+            <strong>Timing:</strong> Monday to Saturday | 4:00 PM - 6:00 PM
+          </p>
+          <p className="mb-3">
+            <strong>Mahapura Clinic</strong> <br />
+            Villa 19, balaji mandir, MANGLAM ARPAN, near mohanpura, Hajiwala,
+            Mohanpura, Rajasthan 302029
+            <br />
+            <strong>Timing:</strong> Monday to Saturday | 4:00 PM - 6:00 PM
           </p>
           <p>
             <strong>SMS Hospital Jaipur</strong> <br />
-            1st floor, 28 Shiv Shakti Nagar, Pandit TN Mishra Marg, near Indo
-            Bharat School Pundit, Nirman Nagar, Jaipur, Rajasthan 302019
+            Jawahar Lal Nehru Marg, Ashok Nagar, Jaipur, Rajasthan 302001
             <br />
-            <strong>Timing:</strong> 4 PM to 6 PM (BY APPOINTMENT)
+            <strong>Timing:</strong> Monday to Saturday | 10:00 AM - 3:00 PM
           </p>
         </div>
       </div>

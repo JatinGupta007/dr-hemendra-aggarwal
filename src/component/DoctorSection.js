@@ -18,8 +18,8 @@ export default function DoctorSection() {
         </p>
         <ul className="space-y-2 text-gray-800 text-base mb-6">
           <li>🎓 MBBS, MS (Orthopedics)</li>
-          <li>🏥 Consultant – SMS Hospital Jaipur</li>
-          <li>💼 Director – Vaishali Nagar Clinic</li>
+          <li>🏥 Consultant - SMS Hospital Jaipur</li>
+          <li>💼 Director - Vaishali Nagar Clinic</li>
           <li>
             🧠 Special Interests: Joint Replacements, Arthroscopy, Sports
             Injuries

@@ -85,23 +85,29 @@ export default function Navbar() {
                       <Link href="/">Home</Link>
                       <Link href="/about">About</Link>
                       <Link href="/expertise">Expertise</Link>
-                      <Link href="#">Blog</Link>
-                      <Link href="#">Clinics</Link>
-                      <Link href="#">Contact</Link>
+                      <Link href="/blog">Blog</Link>
+                      <Link href="/clinics">Clinics</Link>
+                      <Link href="/contact">Contact</Link>
                     </nav>
-                    <div className="flex flex-col space-y-5">
-                      <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-                        <FaCalendarCheck size={20} />
-                        Book Appointment
-                      </button>
-                      <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-                        <FaPhoneAlt size={20} />
-                        <p>Call Now</p>
-                      </button>
-                      <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-                        <FaWhatsapp size={20} />
-                        <p>WhatsApp</p>
-                      </button>
+                    <div className="flex flex-col space-y-4">
+                      <Link href="/contact">
+                        <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+                          <FaCalendarCheck size={20} />
+                          Book Appointment
+                        </button>
+                      </Link>
+                      <a href="tel:+919210696405" target="_blank">
+                        <button className="w-50 flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85] hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+                          <FaPhoneAlt size={20} />
+                          Call Now
+                        </button>
+                      </a>
+                      <a href="https://wa.me/919210696405" target="_blank">
+                        <button className="w-50 flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+                          <FaWhatsapp size={20} />
+                          <p>WhatsApp</p>
+                        </button>
+                      </a>
                     </div>
                   </section>
                 </SheetDescription>

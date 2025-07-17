@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
 
 export default function TrustUsSection() {
@@ -68,9 +69,11 @@ export default function TrustUsSection() {
             ))}
           </ul>
 
-          <button className="bg-gradient-to-r from-[#C8D75E] to-[#97a345] text-black px-6 py-3 rounded-full font-medium hover:opacity-80 transition-transform hover:scale-105">
-            Learn More About Dr. Agarwal
-          </button>
+          <Link href="/about">
+            <button className="bg-gradient-to-r from-[#C8D75E] to-[#97a345] text-black px-6 py-3 rounded-full font-medium hover:opacity-80 transition-transform hover:scale-105">
+              Learn More About Dr. Agarwal
+            </button>
+          </Link>
         </div>
       </div>
     </section>

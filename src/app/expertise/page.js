@@ -2,6 +2,7 @@
 import Navbar from "@/component/Header";
 import FaqAccordion from "@/component/FaqAccordion";
 import Footer from "@/component/Footer";
+import Link from "next/link";
 
 import { FaMedal, FaHospital } from "react-icons/fa6";
 import { MdHealthAndSafety } from "react-icons/md";
@@ -182,8 +183,6 @@ const faqs = [
   },
 ];
 
-
-
 export default function ExpertisePage() {
   return (
     <main>
@@ -208,11 +207,19 @@ export default function ExpertisePage() {
             Rajasthan choose Dr. Agarwal for his compassionate care, modern
             techniques, and accurate diagnosis.
           </p>
-          <div className="flex items-center bg-white  backdrop-blur mt-7 px-7 py-4 w-fit text-gray-800 rounded-2xl tracking-tight leading-tight shadow-lg">
-            <FaHospital size={50} color="#307bc4" />
-            <span className="ml-4 text-gray-500 text-lg">
-              Clinics in Vaishali Nagar & SMS Hospital Jaipur
-            </span>
+          <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
+            <div className="flex items-center bg-white  backdrop-blur mt-7 px-7 py-4 w-fit text-gray-800 rounded-2xl tracking-tight leading-tight shadow-lg">
+              <FaHospital size={50} color="#307bc4" />
+              <span className="ml-4 text-gray-500 text-lg">
+                Clinics in Mahapura & SMS Hospital Jaipur
+              </span>
+            </div>
+            <div className="flex items-center bg-white  backdrop-blur mt-7 px-7 py-4 w-fit text-gray-800 rounded-2xl tracking-tight leading-tight shadow-lg">
+              <FaHospital size={50} color="#307bc4" />
+              <span className="ml-4 text-gray-500 text-lg">
+                Pratap Nagar Clinic - Jaipur
+              </span>
+            </div>
           </div>
         </div>
         <div className="relative w-full order-1 lg:order-2">
@@ -352,9 +359,11 @@ export default function ExpertisePage() {
           <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
             Get Directions & Timing →
           </button>
-          <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-            Call Now →
-          </button>
+          <a href="tel:+919210696405" target="_blank">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              Call Now →
+            </button>
+          </a>
         </div>
       </section>
       {/*Q&A page */}
@@ -380,18 +389,24 @@ export default function ExpertisePage() {
             care, modern treatments, and long-term relief.
           </h2>
           <div className="flex items-center flex-wrap gap-8">
-            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-              <FaCalendarCheck size={20} />
-              Book Appointment
-            </button>
-            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-              <FaPhoneAlt size={20} />
-              <p>Call Now</p>
-            </button>
-            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-              <FaWhatsapp size={20} />
-              <p>WhatsApp</p>
-            </button>
+            <Link href="/contact">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+                <FaCalendarCheck size={20} />
+                Book Appointment
+              </button>
+            </Link>
+            <a href="tel:+919210696405" target="_blank">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85] hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+                <FaPhoneAlt size={20} />
+                Call Now
+              </button>
+            </a>
+            <a href="https://wa.me/919210696405" target="_blank">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+                <FaWhatsapp size={20} />
+                <p>WhatsApp</p>
+              </button>
+            </a>
           </div>
         </div>
 

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
+import Link from "next/link";
 
 import { FiUsers } from "react-icons/fi";
 import { HiOutlineMicrophone } from "react-icons/hi";
@@ -76,7 +77,7 @@ export default function Page() {
       <section className="flex flex-col lg:flex-row items-center gap-10 px-6 md:px-20 py-10 bg-gradient-to-l from-[#197d85]/90 to-[#97a345]/90">
         <div className="">
           <img
-            src="/Images/about_img.png"
+            src="/Images/dr_hemendra-removebg.png"
             alt="Doctor"
             width={860}
             height={700}
@@ -395,9 +396,11 @@ export default function Page() {
           <button className="flex items-center gap-2 bg-blue-50 text-blue-600 hover:bg-blue-100 px-5 py-2 rounded-full border border-blue-200 transition">
             <FaMapMarkerAlt /> View Clinic Locations
           </button>
-          <button className="flex items-center gap-2 bg-blue-600 text-white hover:bg-blue-700 px-5 py-2 rounded-full transition">
-            <FaPhone /> Book Appointment
-          </button>
+          <Link href="/contact">
+            <button className="flex items-center gap-2 bg-blue-600 text-white hover:bg-blue-700 px-5 py-2 rounded-full transition">
+              <FaPhone /> Book Appointment
+            </button>
+          </Link>
         </div>
       </section>
       {/*Patient Testimonial section */}
@@ -474,18 +477,24 @@ export default function Page() {
             for you.
           </h2>
           <div className="flex flex-col md:flex-row flex-wrap items-center gap-8">
-            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-              <FaCalendarCheck size={20} />
-              Book Appointment
-            </button>
-            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-              <FaPhoneAlt size={20} />
-              <p>Call Now</p>
-            </button>
-            <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-              <FaWhatsapp size={20} />
-              <p>WhatsApp</p>
-            </button>
+            <Link href="/contact">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+                <FaCalendarCheck size={20} />
+                Book Appointment
+              </button>
+            </Link>
+            <a href="tel:+919210696405" target="_blank">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85] hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+                <FaPhoneAlt size={20} />
+                Call Now
+              </button>
+            </a>
+            <a href="https://wa.me/919210696405" target="_blank">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+                <FaWhatsapp size={20} />
+                <p>WhatsApp</p>
+              </button>
+            </a>
           </div>
         </div>
 

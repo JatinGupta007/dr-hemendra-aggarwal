@@ -157,7 +157,7 @@ const highlights = [
   },
   {
     icon: <FaStethoscope size={55} color="#307bc4" />,
-    text: "rusted for ethical, accurate diagnosis",
+    text: "Rusted for ethical, accurate diagnosis",
   },
   {
     icon: <GiBrain size={55} color="#307bc4" />,
@@ -249,7 +249,7 @@ export default function ExpertisePage() {
         </h2>
         <p className="text-xl md:text-2xl text-center mb-10 font-semibold text-slate-800">
           We offer a wide range of treatments tailored to your orthopedic
-          condition – from conservative management to surgical excellence.
+          condition - from conservative management to surgical excellence.
         </p>
 
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -302,13 +302,13 @@ export default function ExpertisePage() {
             Why Choose Us?
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 justify-items-center -mb-50">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 justify-items-center -mb-50">
             {highlights.map((item, index) => (
               <div
                 key={index}
-                className="bg-white text-[#197d85] text-center w-full max-w-sm p-6 rounded-2xl shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:bg-[#197d85] hover:text-white"
+                className="bg-white text-[#197d85] text-center w-full md:h-72 max-w-sm p-6 rounded-3xl shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:bg-[#197d85] hover:text-white"
               >
-                <div className="mb-8 flex items-center justify-center">
+                <div className="mb-10 flex items-center justify-center">
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-semibold mb-1">{item.text}</h3>
@@ -359,7 +359,7 @@ export default function ExpertisePage() {
           <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
             Get Directions & Timing →
           </button>
-          <a href="tel:+919210696405" target="_blank">
+          <a href="tel:+919210696045" target="_blank">
             <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               Call Now →
             </button>
@@ -369,14 +369,14 @@ export default function ExpertisePage() {
       {/*Q&A page */}
       <FaqAccordion faqs={faqs} />
       {/*Book appointment section */}
-      <section className="bg-[url('/Images/department_bg.svg')] mt-28 rounded-2xl p-8 flex flex-col lg:flex-row items-center justify-between m-7 md:m-20">
+      <section className="bg-[url('/Images/department_bg.svg')] mt-28 rounded-2xl px-8 flex flex-col lg:flex-row items-center justify-between m-7 md:m-20">
         <div className="relative lg:w-250">
           <img
             src="/Images/dr_hemendra-removebg.png"
             alt="Dr. Hemendra Agarwal"
             width={600}
             height={400}
-            className="object-top -mt-46"
+            className="object-top -mt-40"
           />
         </div>
         {/* Left Content */}
@@ -388,20 +388,20 @@ export default function ExpertisePage() {
             Let Dr. Hemendra Agarwal help you get back on your feet with expert
             care, modern treatments, and long-term relief.
           </h2>
-          <div className="flex items-center flex-wrap gap-8">
+          <div className="flex items-center flex-wrap gap-5">
             <Link href="/contact">
               <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaCalendarCheck size={20} />
                 Book Appointment
               </button>
             </Link>
-            <a href="tel:+919210696405" target="_blank">
+            <a href="tel:+919210696045" target="_blank">
               <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85] hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaPhoneAlt size={20} />
                 Call Now
               </button>
             </a>
-            <a href="https://wa.me/919210696405" target="_blank">
+            <a href="https://wa.me/919210696045" target="_blank">
               <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaWhatsapp size={20} />
                 <p>WhatsApp</p>

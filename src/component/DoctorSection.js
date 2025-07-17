@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 
 export default function DoctorSection() {
   return (
@@ -36,9 +36,11 @@ export default function DoctorSection() {
           height={400}
           className="object-top -mt-46"
         />
-        <button className="bg-gradient-to-r from-[#71a7e5] to-[#4e5ad7] text-xl lg:ml-36  text-white font-semibold px-7 py-3 rounded-4xl flex items-center gap-2 shadow-md hover:opacity-80 transition">
-          Full Doctor Bio →
-        </button>
+        <Link href="/about">
+          <button className="bg-gradient-to-r from-[#71a7e5] to-[#4e5ad7] text-xl mx-auto  text-white font-semibold px-7 py-3 rounded-4xl flex items-center gap-2 shadow-md hover:opacity-80 transition">
+            Full Doctor Bio →
+          </button>
+        </Link>
       </div>
     </section>
   );

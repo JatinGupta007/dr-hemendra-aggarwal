@@ -5,7 +5,8 @@ import Link from "next/link";
 
 import { FiUsers } from "react-icons/fi";
 import { HiOutlineMicrophone } from "react-icons/hi";
-import { MdMedicalServices } from "react-icons/md";
+import { MdMedicalServices, MdVerified } from "react-icons/md";
+
 import {
   FaHandshake,
   FaCalendarCheck,
@@ -74,7 +75,7 @@ export default function Page() {
       {/*Header*/}
       <Navbar />
       {/*Hero section */}
-      <section className="flex flex-col lg:flex-row items-center gap-10 px-6 md:px-20 py-10 bg-gradient-to-l from-[#197d85]/90 to-[#97a345]/90">
+      <section className="flex flex-col lg:flex-row items-center gap-10 px-6 md:px-20 pt-16 bg-gradient-to-l from-[#197d85]/90 to-[#97a345]/90">
         <div className="">
           <img
             src="/Images/dr_hemendra-removebg.png"
@@ -85,25 +86,26 @@ export default function Page() {
           />
         </div>
         <div className="space-y-6 w-full lg:w-2xl">
-          <h1 className="text-4xl md:text-[46px] font-bold mb-6">
+          <h1 className="text-4xl md:text-[46px] font-bold mb-8">
             Hemendra Agarwal Experienced Orthopedic Surgeon in Jaipur
           </h1>
-          <div className="flex flex-wrap items-center gap-4 mb-4">
+          <div className="flex flex-wrap items-center gap-4 mb-6">
             <span className="bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/90 px-3 py-1 rounded-full text-sm font-semibold flex items-center transition duration-200 hover:scale-105 hover:shadow-lg">
               Google Reviews <span className="ml-2">⭐⭐⭐⭐⭐</span>
             </span>
-            <span className="bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/90 px-3 py-1 rounded-full text-sm font-semibold transition duration-200 hover:scale-105 hover:shadow-lg">
-              Practo Verified
+            <span className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/90 px-3 py-1 rounded-full text-sm font-semibold transition duration-200 hover:scale-105 hover:shadow-lg">
+              Practo Verified <MdVerified color="yellow" size={20} />
             </span>
-            <span className="bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/90 px-3 py-1 rounded-full text-sm font-semibold transition duration-200 hover:scale-105 hover:shadow-lg">
-              SMS Hospital Consultant
+            <span className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/90 px-3 py-1 rounded-full text-sm font-semibold transition duration-200 hover:scale-105 hover:shadow-lg">
+              SMS Hospital Consultant{" "}
+              <MdMedicalServices color="yellow" size={20} />
             </span>
           </div>
-          <h2 className="text-2xl font-semibold text-[#375e8a] mb-4">
+          <h2 className="text-2xl font-semibold text-[#375e8a] mb-6">
             Trusted by Thousands, Guided by Experience - Meet Dr. Hemendra
             Agarwal
           </h2>
-          <p className="text-lg lg:w-xl mb-8">
+          <p className="text-lg lg:w-xl pb-2">
             With over 15 years of clinical and surgical excellence, Dr. Hemendra
             Agarwal is a top-rated orthopedic surgeon in Jaipur, specializing in
             joint replacement, arthroscopy, ligament reconstruction, and sports
@@ -112,7 +114,7 @@ export default function Page() {
         </div>
       </section>
       {/*Education & Experience  Section */}
-      <section className="w-full px-6 md:px-20 pt-30">
+      <section className="w-full px-6 md:px-20 pt-50">
         <div className="flex flex-col lg:flex-row w-full gap-12">
           {/* Navigation Arrows */}
           <div>
@@ -123,7 +125,7 @@ export default function Page() {
           {/* Cards Container with background */}
           <div className="relative flex-1 flex justify-center">
             <div
-              className="absolute -top-12 lg:-left-8 md:left-5 w-screen md:w-full lg:w-[860px] h-full bg-gradient-to-b from-[#97a345]/50 to-[#197d85]/50 rounded-3xl z-0"
+              className="absolute -top-28 lg:-left-8 md:left-5 w-screen md:w-full lg:w-[860px] h-full bg-gradient-to-b from-[#97a345]/50 to-[#197d85]/50 rounded-3xl z-0"
               style={{ filter: "blur(1px)" }}
             ></div>
             <div className="relative z-10 flex flex-col md:flex-row gap-8 w-full justify-center">
@@ -460,7 +462,7 @@ export default function Page() {
         </div>
       </section>
       {/*Book Appointment section */}
-      <section className="bg-[url('/Images/department_bg.svg')] mt-20 rounded-2xl p-8 flex flex-col lg:flex-row items-center justify-between m-6 md:m-20">
+      <section className="bg-[url('/Images/department_bg.svg')] mt-20 rounded-2xl px-8 flex flex-col lg:flex-row items-center justify-between m-6 md:m-20">
         <div className="relative lg:w-250">
           <img
             src="/Images/dr_hemendra-removebg.png"
@@ -476,20 +478,20 @@ export default function Page() {
             Need expert orthopedic care in Jaipur? Dr. Hemendra Agarwal is here
             for you.
           </h2>
-          <div className="flex flex-col md:flex-row flex-wrap items-center gap-8">
+          <div className="flex flex-col md:flex-row flex-wrap items-center gap-5">
             <Link href="/contact">
               <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaCalendarCheck size={20} />
                 Book Appointment
               </button>
             </Link>
-            <a href="tel:+919210696405" target="_blank">
+            <a href="tel:+919210696045" target="_blank">
               <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85] hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaPhoneAlt size={20} />
                 Call Now
               </button>
             </a>
-            <a href="https://wa.me/919210696405" target="_blank">
+            <a href="https://wa.me/919210696045" target="_blank">
               <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaWhatsapp size={20} />
                 <p>WhatsApp</p>

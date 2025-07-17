@@ -25,7 +25,7 @@ export const Appointment = () => {
               Book Appointment
             </button>
           </Link>
-          <a href="tel:+919210696405" target="_blank">
+          <a href="tel:+919210696045" target="_blank">
             <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85] hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               <FaPhoneAlt size={20} />
               Call Now
@@ -33,7 +33,7 @@ export const Appointment = () => {
           </a>
           <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
             <GrLocationPin size={20} />
-            <p>Visit Vaishali Nagar Clinic</p>
+            <p>Visit Pratap Nagar Clinic</p>
           </button>
         </div>
       </div>

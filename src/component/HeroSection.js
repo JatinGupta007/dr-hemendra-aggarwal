@@ -57,13 +57,13 @@ export default function HeroSection() {
               Book Appointment
             </button>
           </Link>
-          <a href="tel:+919210696405" target="_blank">
+          <a href="tel:+919210696045" target="_blank">
             <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85] hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               <FaPhoneAlt size={20} />
               Call Now
             </button>
           </a>
-          <a href="https://wa.me/919210696405" target="_blank">
+          <a href="https://wa.me/919210696045" target="_blank">
             <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               <FaWhatsapp size={20} />
               <p>WhatsApp</p>

@@ -114,11 +114,11 @@ export default function Page() {
         </div>
       </section>
       {/*Education & Experience  Section */}
-      <section className="w-full px-6 md:px-20 pt-50">
+      <section className="w-full px-6 md:px-20 pt-30 lg:pt-50">
         <div className="flex flex-col lg:flex-row w-full gap-12">
           {/* Navigation Arrows */}
           <div>
-            <h2 className="text-3xl md:text-5xl -mt-12 mb-16 font-bold text-[#197d85]">
+            <h2 className="text-3xl md:text-5xl -mt-12 mb-24 lg:mb-16 font-bold text-[#197d85]">
               Educational Background & Clinical Experience
             </h2>
           </div>

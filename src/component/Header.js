@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useState } from "react";
@@ -27,7 +28,7 @@ export default function Navbar() {
     <header className="bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/90 px-6 lg:px-20 py-6">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center w-16 md:w-full">
-          <Image
+          <img
             src="/Images/just-logo.png"
             width={80}
             height={28}

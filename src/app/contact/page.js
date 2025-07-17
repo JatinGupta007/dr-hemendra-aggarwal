@@ -55,7 +55,7 @@ export default function EnhancedContactPage() {
         </div>
 
         {/* Hero Section */}
-        <section className="relative z-10 min-h-screen flex items-center justify-center px-4">
+        <section className="relative z-10 min-h-screen flex items-center justify-center px-6 md:px-20">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div
@@ -161,7 +161,7 @@ export default function EnhancedContactPage() {
         </section>
 
         {/* Contact Info Section */}
-        <section className="relative z-10 py-20 px-4">
+        <section className="relative z-10 py-20 px-6 md:px-20">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-5xl font-bold text-center text-gray-800 mb-16">
               Get in{" "}
@@ -216,7 +216,7 @@ export default function EnhancedContactPage() {
         </section>
 
         {/* Map Section */}
-        <section className="relative z-10 py-20 px-4">
+        <section className="relative z-10 py-20 px-6 md:px-20">
           <div className="max-w-6xl mx-auto">
             <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 overflow-hidden">
               <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">
@@ -233,7 +233,6 @@ export default function EnhancedContactPage() {
                   referrerPolicy="no-referrer-when-downgrade"
                   className="filter contrast-110 saturate-110"
                 />
-
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/10 pointer-events-none"></div>
               </div>
             </div>

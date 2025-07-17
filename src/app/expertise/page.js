@@ -19,15 +19,6 @@ import {
 
 const services = [
   {
-    title: null,
-    description: null,
-    treatmentTitle: null,
-    treatments: [],
-    quote: null,
-    buttonText: null,
-  },
-
-  {
     title: "Joint Replacement",
     description:
       "Joint pain limiting your movement? Dr. Hemendra Agarwal is an experienced joint replacement surgeon in Jaipur offering modern, minimally invasive procedures for patients with arthritis, cartilage damage, or failed past implants.",
@@ -90,23 +81,6 @@ const services = [
     ],
     quote: null,
     buttonText: "Get Emergency Trauma Care →",
-  },
-
-  {
-    title: null,
-    description: null,
-    treatmentTitle: null,
-    treatments: [],
-    quote: null,
-    buttonText: null,
-  },
-  {
-    title: null,
-    description: null,
-    treatmentTitle: null,
-    treatments: [],
-    quote: null,
-    buttonText: null,
   },
   {
     title: "Shoulder, Elbow & Upper Limb Surgeries",

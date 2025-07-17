@@ -1,13 +1,12 @@
-"use client";
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
+
 import Link from "next/link";
 
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
-import { useState } from "react";
-import { Phone, Calendar, Navigation, Building2 } from "lucide-react";
 
-import { ShieldCheck, Clock, MapPin, Award, Star } from "lucide-react";
+import { Phone, Calendar, Navigation, Building2 } from "lucide-react";
+import { ShieldCheck, Clock, MapPin, Award, Star, ArrowDown, ArrowUp} from "lucide-react";
 
 const reasons = [
   {
@@ -106,34 +105,20 @@ const locations = [
 ];
 
 const DoctorLocations = () => {
-  const [hoveredCard, setHoveredCard] = useState(null);
   return (
     <main>
       <Navbar />
+      {/* Hero Section */}
       <section className="relative isolate bg-slate-50">
-        {/* subtle decorative gradient */}
-        <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-sky-200 to-blue-400 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          />
-        </div>
-
-        <div className="mx-auto max-w-7xl px-6 py-18 sm:py-16 lg:px-20">
+        <div className="mx-auto max-w-7xl px-6 py-18 sm:py-16 md:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left column */}
             <div className="text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
                 Consult the{" "}
                 <span className="bg-gradient-to-r from-teal-600 via-emerald-600 to-teal-700 bg-clip-text text-transparent">
-                  Best Orthopedic Doctor
-                </span>{" "}
+                  Best Orthopedic Doctor{" "}
+                </span>
                 Near You
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-slate-700">
@@ -143,39 +128,35 @@ const DoctorLocations = () => {
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link href="/book-appointment">
+                <Link href="/contact">
                   <button className="flex-1 bg-gradient-to-r from-teal-600 to-emerald-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-teal-700 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
                     Book an Appointment
                   </button>
                 </Link>
-                <Link
-                  href="#locations"
-                  className="rounded-lg bg-white px-6 py-3 text-base font-semibold text-teal-600 shadow-md ring-1 ring-inset ring-teal-600 hover:bg-teal-50 transition"
-                >
-                  View Clinics
-                </Link>
+                <button className="flex items-center w-50 gap-9 mx-auto md:ml-0 rounded-lg bg-white px-6 py-3 text-base font-semibold text-teal-600 shadow-md ring-1 ring-inset ring-teal-600 hover:bg-teal-50 transition">
+                  View Clinics <ArrowDown />
+                </button>
               </div>
             </div>
 
             {/* Right column / image */}
             <div className="relative">
-              <div className="relative h-80 w-full overflow-hidden rounded-2xl shadow-xl lg:h-[480px]">
-                <Image
+              <div className="relative h-80 w-full overflow-hidden rounded-2xl shadow-xl md:h-[480px]">
+                <img
                   src="/Images/dr_hemendra-removebg.png" // replace with your image
                   alt="Dr. Hemendra Agarwal consulting a patient"
-                  fill
                   className="object-cover"
-                  priority
                 />
               </div>
             </div>
           </div>
-
-          {/* Clinic pills */}
         </div>
       </section>
-
-      <section className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-50 py-7 px-4 lg:px-20">
+      {/* location Section */}
+      <section
+        id="locations"
+        className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-50 py-7 px-6 md:px-20"
+      >
         {/* Header Section */}
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 relative">
@@ -204,8 +185,6 @@ const DoctorLocations = () => {
               <div
                 key={location.id}
                 className="group relative"
-                onMouseEnter={() => setHoveredCard(location.id)}
-                onMouseLeave={() => setHoveredCard(null)}
               >
                 {/* Card Background Glow */}
                 <div className="absolute inset-0 bg-gradient-to-r from-teal-600/20 to-emerald-600/20 rounded-3xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -295,17 +274,6 @@ const DoctorLocations = () => {
                       <Navigation className="w-5 h-5 text-teal-600" />
                     </div>
                   </div>
-
-                  {/* Action Button */}
-                  <div className="mt-6 flex gap-3">
-                    <button className="flex-1 bg-gradient-to-r from-teal-600 to-emerald-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-teal-700 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                      Book Appointment
-                    </button>
-                    <button className="px-6 py-3 border-2 border-teal-600 text-teal-600 rounded-xl font-semibold hover:bg-teal-600 hover:text-white transition-all duration-300">
-                      Get Directions
-                    </button>
-                  </div>
-
                   {/* Decorative Elements */}
                   <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-teal-400/20 to-emerald-400/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                   <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-emerald-400/20 to-teal-400/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
@@ -320,24 +288,31 @@ const DoctorLocations = () => {
               Book an Appointment with Dr. Hemendra Agarwal
             </h3>
             <p className="text-lg mb-6 text-teal-100">
-              Whether you're in Jaipur, Hanumangarh, or Alwar, help is just a
-              visit away. Get treated by one of the best orthopedic surgeons in
-              Rajasthan.
+              Whether you&apos;re in Jaipur, Hanumangarh, or Alwar, help is just
+              a visit away. Get treated by one of the best orthopedic surgeons
+              in Rajasthan.
             </p>
-            <button className="bg-white text-teal-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg">
-              Book Your Appointment Now
-            </button>
-            <button className="bg-white text-teal-600 px-8 py-4 mx-8 my-6 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg">
-              Call Now
-            </button>
-            <button className="bg-white text-teal-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg">
-              View All Locations on Map
-            </button>
+            <div className="flex items-center flex-wrap justify-center">
+              <Link href="/contact">
+                <button className="bg-white text-teal-600 px-7 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg">
+                  Book Your Appointment Now
+                </button>
+              </Link>
+              <a href="tel:+919210696045" target="_blank">
+                <button className="bg-white text-teal-600 px-6 py-4 mx-6 my-6 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg">
+                  Call Now
+                </button>
+              </a>
+              <button className="flex items-center gap-3 bg-white text-teal-600 px-7 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg">
+                View All Locations on Map <ArrowUp />
+              </button>
+            </div>
           </div>
         </div>
       </section>
+      {/* Why Patients Trust Section */}
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-16 sm:py-14 lg:px-20">
+        <div className="mx-auto max-w-7xl px-6 py-16 sm:py-14 md:px-20">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 text-center">
             Why Patients Across Rajasthan Trust{" "}
             <span className="bg-gradient-to-r from-teal-600 via-emerald-600 to-teal-700 bg-clip-text text-transparent">

@@ -24,10 +24,10 @@ export default function ClinicLocations() {
               />
             </div>
             <h3 className="text-xl font-semibold text-center mb-3">
-              Vaishali Nagar Clinic
+              Pratap Nagar Clinic
             </h3>
             <ul className="text-sm space-y-1 list-disc list-inside">
-              <li>Top-rated orthopedic doctor in Vaishali Nagar Jaipur</li>
+              <li>Top-rated orthopedic doctor in Pratap Nagar Jaipur</li>
               <li>Modern infrastructure, diagnostics & OPD</li>
             </ul>
           </div>

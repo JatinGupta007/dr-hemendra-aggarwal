@@ -40,7 +40,7 @@ const faqs = [
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Header />
       <HeroSection />
       <TrustUsSection />

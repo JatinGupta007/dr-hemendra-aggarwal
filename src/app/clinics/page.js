@@ -37,8 +37,8 @@ const locations = [
     title: "Narayana Multispeciality Hospital",
     subtitle: "Pratap Nagar, Jaipur",
     address: "Near Apex Circle, Pratap Nagar, Jaipur",
-    timing: "Monday to Saturday | 10:00 AM – 2:00 PM",
-    contact: "+91-XXXXXXXXXX",
+    timing: "Monday to Saturday | 8:00 AM – 9:00 PM",
+    contact: "+91-9210696045",
     specialties: [
       "Joint replacement surgery",
       "Orthopedic surgery",
@@ -53,9 +53,10 @@ const locations = [
     id: 2,
     title: "Mansarovar Clinic",
     subtitle: "Jaipur",
-    address: "[Complete Address], Mansarovar, Jaipur",
-    timing: "Monday to Friday | 5:00 PM – 8:00 PM",
-    contact: "+91-XXXXXXXXXX",
+    address:
+      "Villa 19, balaji mandir, MANGLAM ARPAN, near mohanpura, Hajiwala, Mansarovar, Jaipur",
+    timing: "Monday to Friday | 4:00 PM – 8:00 PM",
+    contact: "+91-9210696045",
     specialties: [
       "Sports injury treatment",
       "Orthopedic consultation",
@@ -66,38 +67,20 @@ const locations = [
     rating: 4.7,
     icon: MapPin,
   },
-  {
-    id: 3,
-    title: "Pratap Nagar Clinic",
-    subtitle: "Jaipur",
-    address:
-      "183/82, Rana Sanga Marg, Sector 18, Pratap Nagar, Jaipur, Rajasthan 302033",
-    timing: "Monday to Saturday | 4:00 PM – 6:00 PM",
-    contact: "+91-XXXXXXXXXX",
-    specialties: [
-      "Ligament specialist",
-      "Back pain treatment",
-      "Orthopedic consultation",
-    ],
-    mapQuery:
-      "183/82,+Rana+Sanga+Marg,+Sector+18,+Pratap+Nagar,+Jaipur,+Rajasthan+302033",
-    type: "Clinic",
-    rating: 4.9,
-    icon: MapPin,
-  },
+  
   {
     id: 4,
-    title: "Alwar Clinic",
+    title: "SMS Hospital Jaipur",
     subtitle: "Orthopedic Consultation & Surgical Services",
-    address: "[Full Clinic Address], Alwar, Rajasthan",
-    timing: "Monthly Visits – Advance Booking Required",
-    contact: "+91-XXXXXXXXXX",
+    address: "Jawahar Lal Nehru Marg, Ashok Nagar, Jaipur, Rajasthan 302001",
+    timing: "24x7 Emergency Services",
+    contact: "+91-9210696045",
     specialties: [
       "Knee replacement consultation",
       "Orthopedic surgery",
       "Specialized treatments",
     ],
-    mapQuery: "Alwar+Rajasthan",
+    mapQuer:"Jaipur+Rajasthan",
     type: "Specialized Clinic",
     rating: 4.6,
     icon: Calendar,
@@ -114,14 +97,20 @@ const DoctorLocations = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left column */}
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+              <h1
+                data-aos="flip-up"
+                className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
+              >
                 Consult the{" "}
                 <span className="bg-gradient-to-r from-teal-600 via-emerald-600 to-teal-700 bg-clip-text text-transparent">
                   Best Orthopedic Doctor{" "}
                 </span>
                 Near You
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-slate-700">
+              <p
+                data-aos="flip-up"
+                className="mt-6 text-lg leading-relaxed text-slate-700"
+              >
                 Dr. Hemendra Agarwal - 15+ years of surgical excellence in knee,
                 hip & sports injuries. Ethical, high-quality orthopedic care
                 across Rajasthan.
@@ -129,11 +118,17 @@ const DoctorLocations = () => {
 
               <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link href="/contact">
-                  <button className="flex-1 bg-gradient-to-r from-teal-600 to-emerald-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-teal-700 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                  <button
+                    data-aos="flip-up"
+                    className="flex-1 bg-gradient-to-r from-teal-600 to-emerald-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-teal-700 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  >
                     Book an Appointment
                   </button>
                 </Link>
-                <button className="flex items-center w-50 gap-9 mx-auto md:ml-0 rounded-lg bg-white px-6 py-3 text-base font-semibold text-teal-600 shadow-md ring-1 ring-inset ring-teal-600 hover:bg-teal-50 transition">
+                <button
+                  data-aos="flip-up"
+                  className="flex items-center w-50 gap-9 mx-auto md:ml-0 rounded-lg bg-white px-6 py-3 text-base font-semibold text-teal-600 shadow-md ring-1 ring-inset ring-teal-600 hover:bg-teal-50 transition"
+                >
                   View Clinics <ArrowDown />
                 </button>
               </div>
@@ -141,7 +136,10 @@ const DoctorLocations = () => {
 
             {/* Right column / image */}
             <div className="relative">
-              <div className="relative h-80 w-full overflow-hidden rounded-2xl shadow-xl md:h-[480px]">
+              <div
+                data-aos="fade-up"
+                className="relative h-80 w-full overflow-hidden rounded-2xl shadow-xl md:h-[480px]"
+              >
                 <img
                   src="/Images/dr_hemendra-removebg.png" // replace with your image
                   alt="Dr. Hemendra Agarwal consulting a patient"
@@ -162,13 +160,22 @@ const DoctorLocations = () => {
           <div className="text-center mb-16 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-teal-600/10 to-emerald-600/10 rounded-full blur-3xl transform -rotate-6"></div>
             <div className="relative">
-              <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-teal-600 via-emerald-600 to-teal-700 bg-clip-text text-transparent mb-4">
+              <h2
+                data-aos="fade-down"
+                className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-teal-600 via-emerald-600 to-teal-700 bg-clip-text text-transparent mb-4"
+              >
                 Find Dr. Hemendra Agarwal
               </h2>
-              <p className="text-xl md:text-2xl text-gray-600 font-light mb-6">
+              <p
+                data-aos="fade-down"
+                className="text-xl md:text-2xl text-gray-600 font-light mb-6"
+              >
                 Best Orthopedic Doctor Near You
               </p>
-              <div className="flex items-center justify-center gap-2 text-yellow-500 mb-4">
+              <div
+                data-aos="fade-down"
+                className="flex items-center justify-center gap-2 text-yellow-500 mb-4"
+              >
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-current" />
                 ))}
@@ -183,6 +190,7 @@ const DoctorLocations = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {locations.map((location) => (
               <div
+                data-aos="zoom-in"
                 key={location.id}
                 className="group relative"
               >
@@ -283,16 +291,19 @@ const DoctorLocations = () => {
           </div>
 
           {/* Footer CTA */}
-          <div className="text-center mt-16 bg-gradient-to-r from-teal-600 to-emerald-600 rounded-3xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">
+          <div className="text-center mt-16 bg-gradient-to-r from-teal-600/50 to-emerald-600/50 rounded-3xl p-8 text-white">
+            <h3 data-aos="flip-up" className="text-2xl font-bold mb-4">
               Book an Appointment with Dr. Hemendra Agarwal
             </h3>
-            <p className="text-lg mb-6 text-teal-100">
+            <p data-aos="flip-up" className="text-lg mb-6 text-teal-100">
               Whether you&apos;re in Jaipur, Hanumangarh, or Alwar, help is just
               a visit away. Get treated by one of the best orthopedic surgeons
               in Rajasthan.
             </p>
-            <div className="flex items-center flex-wrap justify-center">
+            <div
+              data-aos="flip-up"
+              className="flex items-center flex-wrap justify-center"
+            >
               <Link href="/contact">
                 <button className="bg-white text-teal-600 px-7 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg">
                   Book Your Appointment Now
@@ -313,7 +324,10 @@ const DoctorLocations = () => {
       {/* Why Patients Trust Section */}
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 py-16 sm:py-14 md:px-20">
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900 text-center">
+          <h2
+            data-aos="fade-down"
+            className="text-3xl font-bold tracking-tight text-slate-900 text-center"
+          >
             Why Patients Across Rajasthan Trust{" "}
             <span className="bg-gradient-to-r from-teal-600 via-emerald-600 to-teal-700 bg-clip-text text-transparent">
               Dr. Hemendra Agarwal
@@ -324,6 +338,7 @@ const DoctorLocations = () => {
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {reasons.map((r) => (
               <div
+                data-aos="zoom-in"
                 key={r.title}
                 className="flex items-start gap-4 rounded-xl border border-slate-200 bg-slate-50/50 p-6 shadow-sm"
               >
@@ -338,7 +353,10 @@ const DoctorLocations = () => {
           </div>
 
           {/* Quote block */}
-          <blockquote className="mt-12 rounded-2xl bg-teal-600/5 p-8 text-center text-lg italic text-slate-700 ring-1 ring-inset ring-teal-600/20">
+          <blockquote
+            data-aos="flip-up"
+            className="mt-12 rounded-2xl bg-teal-600/5 p-8 text-center text-lg italic text-slate-700 ring-1 ring-inset ring-teal-600/20"
+          >
             <p>
               “Now you don&apos;t have to travel far for quality care. Visit
               your nearest clinic and experience expert orthopedic treatment.”

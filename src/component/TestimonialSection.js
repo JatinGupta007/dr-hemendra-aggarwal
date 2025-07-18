@@ -33,16 +33,22 @@ export default function ReviewsSection() {
 
   return (
     <div className="md:max-w-7xl mx-auto px-6 md:px-20 py-6">
-      <h2 className="text-center text-4xl md:text-6xl font-bold text-slate-800">
+      <h2
+        data-aos="fade-down"
+        className="text-center text-4xl md:text-6xl font-bold text-slate-800"
+      >
         Some Reviews
       </h2>
-      <p className="text-center font-bold text-[#307bc4] text-xl md:text-3xl mt-1 mb-6">
+      <p
+        data-aos="fade-down"
+        className="text-center font-bold text-[#307bc4] text-xl md:text-3xl mt-1 mb-6"
+      >
         OF OUR CLIENTS
       </p>
 
       <div className="flex flex-col justify-between items-center lg:flex-row gap-8 mt-5 lg:mt-16 pb-10 relative">
         {/* Left Column */}
-        <div className="w-full lg:w-5/12 flex justify-center lg:flex-col gap-8 lg:gap-12 pt-3 relative z-10">
+        <div data-aos="flip-up" className="w-full lg:w-5/12 flex justify-center lg:flex-col gap-8 lg:gap-12 pt-3 relative z-10">
           {reviews.map((user, index) => (
             <div
               key={index}
@@ -87,7 +93,7 @@ export default function ReviewsSection() {
         </div>
 
         {/* Right Column */}
-        <div className="w-full lg:w-5/12 flex items-start">
+        <div data-aos="fade-left" className="w-full lg:w-5/12 flex items-start">
           {reviews[current].review && (
             <div className="bg-white p-6 shadow-lg rounded-lg">
               <FaQuoteLeft className="text-2xl text-[#307bc4] mb-4" />

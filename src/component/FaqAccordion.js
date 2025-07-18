@@ -11,10 +11,16 @@ export default function FaqAccordion({faqs}) {
 
   return (
     <div className="max-w-3xl mx-auto px-6 md:px-16 lg:px-0 py-16">
-      <h4 className="text-center text-blue-600 uppercase text-xl md:text-2xl font-semibold mb-2">
+      <h4
+        data-aos="flip-up"
+        className="text-center text-[#307bc4] uppercase text-xl md:text-2xl font-semibold mb-2"
+      >
         What People
       </h4>
-      <h2 className="text-center text-4xl md:text-6xl font-bold mb-12">
+      <h2
+        data-aos="flip-up"
+        className="text-center text-4xl md:text-6xl font-bold mb-12"
+      >
         Usually Asked
       </h2>
 
@@ -23,7 +29,9 @@ export default function FaqAccordion({faqs}) {
           <div
             key={index}
             className={`rounded-xl border border-[#d2eaef] transition-all duration-300 ${
-              openIndex === index ? "bg-[#d2eaef] lg:translate-7 mb-16" : "bg-white"
+              openIndex === index
+                ? "bg-[#d2eaef] lg:translate-7 mb-16"
+                : "bg-white"
             }`}
           >
             <button

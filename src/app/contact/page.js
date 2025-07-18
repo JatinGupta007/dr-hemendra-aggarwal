@@ -39,18 +39,18 @@ export default function EnhancedContactPage() {
 
   return (
     <main>
-			<Navbar />
+      <Navbar />
       <div className="min-h-screen relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-10">
           <div
-            className="absolute w-96 h-96 bg-gradient-to-r from-[#197d85] to-[#97a345] rounded-full blur-3xl animate-pulse"
+            className="absolute w-96 h-96 bg-gradient-to-r from-[#197d85]/70 to-[#97a345]/70 rounded-full blur-3xl animate-pulse"
             style={{
               left: mousePosition.x * 0.02,
               top: mousePosition.y * 0.02,
             }}
           />
-          <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-to-r from-[#97a345] to-[#197d85] rounded-full blur-2xl animate-bounce" />
+          <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-to-r from-[#97a345]/70 to-[#197d85]/70 rounded-full blur-2xl animate-bounce" />
           <div className="absolute bottom-1/4 left-1/4 w-48 h-48 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full blur-xl animate-pulse" />
         </div>
 
@@ -66,28 +66,28 @@ export default function EnhancedContactPage() {
               }`}
             >
               <div className="relative">
-                <h1 className="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#197d85] via-[#97a345] to-[#197d85] mb-6 leading-tight">
+                <h1 className="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#197d85]/40 via-[#97a345] to-[#197d85]/40 mb-6 leading-tight">
                   Let&apos;s
                   <br />
                   <span className="relative">
                     Connect
-                    <div className="absolute -bottom-4 left-0 w-full h-2 bg-gradient-to-r from-[#197d85] to-[#97a345] rounded-full transform -skew-x-12"></div>
+                    <div className="absolute -bottom-4 left-0 w-full h-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 rounded-full transform -skew-x-12"></div>
                   </span>
                 </h1>
 
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
-                  Ready to start your wellness journey? We&apos;re here to guide you
-                  every step of the way with personalized care and expert
+                  Ready to start your wellness journey? We&apos;re here to guide
+                  you every step of the way with personalized care and expert
                   support.
                 </p>
 
                 <div className="flex gap-4 mb-8">
-                  <button className="group relative px-8 py-4 bg-gradient-to-r from-[#197d85] to-[#97a345] text-white rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <button className="group relative px-8 py-4 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                     <span className="relative z-10 flex items-center gap-2">
                       Get Started
                       <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
                     </span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#97a345] to-[#197d85] transform translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#97a345]/40 to-[#197d85]/40 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
                   </button>
 
                   <button className="px-8 py-4 border-2 border-[#197d85] text-[#197d85] rounded-full font-semibold hover:bg-[#197d85] hover:text-white transition-all duration-300">
@@ -149,7 +149,7 @@ export default function EnhancedContactPage() {
 
                   <button
                     onClick={handleSubmit}
-                    className="w-full bg-gradient-to-r from-[#197d85] to-[#97a345] text-white font-semibold py-4 rounded-2xl hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+                    className="w-full bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black font-semibold py-4 rounded-2xl hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <Send className="w-5 h-5" />
                     Send Message
@@ -163,7 +163,10 @@ export default function EnhancedContactPage() {
         {/* Contact Info Section */}
         <section className="relative z-10 py-20 px-6 md:px-20">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-5xl font-bold text-center text-gray-800 mb-16">
+            <h2
+              data-aos="flip-up"
+              className="text-5xl font-bold text-center text-gray-800 mb-16"
+            >
               Get in{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#197d85] to-[#97a345]">
                 Touch
@@ -192,6 +195,7 @@ export default function EnhancedContactPage() {
                 },
               ].map((item, index) => (
                 <div
+                  data-aos="zoom-in"
                   key={index}
                   className="group relative bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer"
                 >
@@ -219,11 +223,17 @@ export default function EnhancedContactPage() {
         <section className="relative z-10 py-20 px-6 md:px-20">
           <div className="max-w-6xl mx-auto">
             <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 overflow-hidden">
-              <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+              <h3
+                data-aos="flip-up"
+                className="text-3xl font-bold text-gray-800 mb-8 text-center"
+              >
                 Find Us on the Map
               </h3>
 
-              <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <div
+                data-aos="zoom-out"
+                className="relative rounded-2xl overflow-hidden shadow-xl"
+              >
                 <iframe
                   src="https://www.google.com/maps?q=Pratap+Nagar+Clinic,+183/82,+Rana+Sanga+Marg,+Sector+18,+Pratap+Nagar,+Jaipur,+Rajasthan+302033&output=embed"
                   width="100%"
@@ -239,7 +249,7 @@ export default function EnhancedContactPage() {
           </div>
         </section>
       </div>
-			<Footer />
+      <Footer />
     </main>
   );
 }

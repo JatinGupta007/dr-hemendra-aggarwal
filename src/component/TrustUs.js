@@ -7,7 +7,7 @@ export default function TrustUsSection() {
     <section className="py-12 px-6 md:px-20 mt-64 md:mt-30 lg:mt-40">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center lg:gap-16">
         {/* Left Image */}
-        <div className="relative rounded-3xl">
+        <div data-aos="fade-right" className="relative rounded-3xl">
           <Image
             src="/Images/trust_us.png" // Replace with your actual path
             alt="Doctor"
@@ -35,17 +35,23 @@ export default function TrustUsSection() {
 
         {/* Right Content */}
         <div>
-          <p className="text-lg font-semibold text-[#197d85] mb-2">
+          <p
+            data-aos="fade-left"
+            className="text-lg font-semibold text-[#197d85] mb-2"
+          >
             Why Patients Trust Dr. Hemendra Agarwal
           </p>
-          <h2 className="text-2xl md:text-4xl font-bold text-gray-800 leading-tight mb-4">
+          <h2
+            data-aos="fade-left"
+            className="text-2xl md:text-4xl font-bold text-gray-800 leading-tight mb-4"
+          >
             Top Orthopedic Surgeon <br /> in Jaipur with Trusted Patient
             Outcomes
           </h2>
 
-          <hr className="w-24 border-teal-400 mb-4" />
+          <hr data-aos="fade-left" className="w-24 border-teal-400 mb-4" />
 
-          <p className="text-gray-600 mb-6">
+          <p data-aos="fade-left" className="text-gray-600 mb-6">
             Dr. Hemendra Agarwal is one of the most respected orthopedic
             surgeons in Jaipur, known for combining modern surgical techniques
             with a deep commitment to patient care. From knee replacements to
@@ -60,9 +66,14 @@ export default function TrustUsSection() {
               "15+ Years of Experience,",
               "3000+ Successful Surgeries",
               "400+ 5-Star Patient Reviews",
-              "Practicing at SMS Hospital & Vaishali Nagar Clinic",
+              "Practicing at SMS Hospital & Pratap Nagar Clinic",
             ].map((item, idx) => (
-              <li key={idx} className="flex items-start gap-3 text-gray-700">
+              <li
+                data-aos="fade-left"
+                data-aos-delay={`${idx * 100}`}
+                key={idx}
+                className="flex items-start gap-3 text-gray-700"
+              >
                 <FaCheck className="text-[#97a345] mt-1" />
                 {item}
               </li>
@@ -70,7 +81,10 @@ export default function TrustUsSection() {
           </ul>
 
           <Link href="/about">
-            <button className="bg-gradient-to-r from-[#C8D75E] to-[#97a345] text-black px-6 py-3 rounded-full font-medium hover:opacity-80 transition-transform hover:scale-105">
+            <button
+              data-aos="fade-left"
+              className="bg-sky-200 text-black px-6 py-3 rounded-full font-medium hover:opacity-80 transition-transform hover:scale-105"
+            >
               Learn More About Dr. Agarwal
             </button>
           </Link>

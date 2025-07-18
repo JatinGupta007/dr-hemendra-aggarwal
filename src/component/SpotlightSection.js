@@ -6,7 +6,10 @@ export default function SpotlightSection() {
   return (
     <section className="flex flex-col lg:flex-row items-center gap-5 lg:gap-16 px-6 py-12 md:px-20 bg-gray-50">
       {/* Left - Image */}
-      <div className="flex-shrink-0 rounded-full overflow-hidden w-[300px] h-[300px] md:w-[460px] md:h-[440px]">
+      <div
+        data-aos="flip-right"
+        className="flex-shrink-0 rounded-full overflow-hidden w-[300px] h-[300px] md:w-[460px] md:h-[440px]"
+      >
         <Image
           src="/Images/spotlight_img.png"
           alt="Doctor with patient"
@@ -18,14 +21,23 @@ export default function SpotlightSection() {
 
       {/* Right - Text Content */}
       <div className="max-w-xl">
-        <h3 className="text-[#197d85] font-semibold text-lg mb-1">
+        <h3
+          data-aos="flip-left"
+          className="text-[#197d85] font-semibold text-lg mb-1"
+        >
           🦿 Spotlight Section - Knee Replacement Surgery
         </h3>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        <h2
+          data-aos="flip-left"
+          className="text-3xl md:text-4xl font-bold text-gray-800 mb-4"
+        >
           Looking for the Best Knee Replacement Surgeon in Jaipur?
         </h2>
-        <hr className="border-t-2 border-[#197d85] w-20 mb-4" />
-        <p className="text-gray-600 mb-4 leading-relaxed">
+        <hr
+          data-aos="flip-left"
+          className="border-t-2 border-[#197d85] w-20 mb-4"
+        />
+        <p data-aos="flip-left" className="text-gray-600 mb-4 leading-relaxed">
           Dr. Hemendra Agarwal is among the top-rated knee replacement surgeons
           in Jaipur, offering both total and partial replacements using
           minimally invasive techniques. Patients experience reduced pain,
@@ -34,7 +46,7 @@ export default function SpotlightSection() {
           life.
         </p>
         <ul className="text-gray-700 space-y-2 mb-6">
-          <li className="flex gap-3 items-center">
+          <li data-aos="flip-left" className="flex gap-3 items-center">
             <input
               type="checkbox"
               defaultChecked
@@ -42,7 +54,7 @@ export default function SpotlightSection() {
             />
             Cost-effective treatment with insurance support
           </li>
-          <li className="flex gap-3 items-center">
+          <li data-aos="flip-left" className="flex gap-3 items-center">
             <input
               type="checkbox"
               defaultChecked
@@ -50,7 +62,7 @@ export default function SpotlightSection() {
             />
             Advanced implants & robotic navigation (if available)
           </li>
-          <li className="flex gap-3 items-center">
+          <li data-aos="flip-left" className="flex gap-3 items-center">
             <input
               type="checkbox"
               defaultChecked
@@ -60,7 +72,10 @@ export default function SpotlightSection() {
           </li>
         </ul>
 
-        <button className="flex items-center gap-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85]  hover:opacity-80 text-white px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+        <button
+          data-aos="flip-left"
+          className="flex items-center gap-2 bg-sky-200  hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105"
+        >
           <FaBookMedical /> Learn More About Knee Replacement
         </button>
       </div>

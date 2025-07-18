@@ -3,32 +3,41 @@ import Link from "next/link";
 
 export default function DoctorSection() {
   return (
-    <section className="bg-[url('/Images/department_bg.svg')] mt-30 rounded-2xl p-8 flex flex-col lg:flex-row items-center justify-between gap-8 m-6 md:m-20">
+    <section className="bg-sky-100 mt-30 rounded-2xl p-8 flex flex-col lg:flex-row items-center justify-between gap-8 m-6 md:m-20">
       {/* Left Content */}
       <div className="max-w-xl order-2 lg:order-1">
-        <p className="font-semibold  text-lg">About the Doctor</p>
-        <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
+        <p data-aos="flip-right" className="font-semibold  text-lg">
+          About the Doctor
+        </p>
+        <h2
+          data-aos="flip-right"
+          className="text-3xl md:text-4xl font-bold leading-tight mb-4"
+        >
           Dr. Hemendra Agarwal
         </h2>
-        <p className="text-gray-800 mb-6">
+        <p data-aos="flip-right" className="text-gray-800 mb-6">
           With degrees from top medical institutions and training in the latest
-          orthopedic innovations, Dr. Agarwal blends experience, empathy, and
+          orthopedic innovations, Dr. Hemendra Agarwal blends experience, empathy, and
           efficiency in every procedure. He is known for his clinical clarity
           and surgical precision.
         </p>
         <ul className="space-y-2 text-gray-800 text-base mb-6">
-          <li>🎓 MBBS, MS (Orthopedics)</li>
-          <li>🏥 Consultant - SMS Hospital Jaipur</li>
-          <li>💼 Director - Vaishali Nagar Clinic</li>
-          <li>
-            🧠 Special Interests: Joint Replacements, Arthroscopy, Sports
-            Injuries
+          <li data-aos="flip-right">MBBS, MS (Orthopedics)</li>
+          <li data-aos="flip-right">Consultant - SMS Hospital Jaipur, Mansarovar Clinic</li>
+          <li data-aos="flip-right">
+            Director - Narayana Hospital
+          </li>
+          <li data-aos="flip-right">
+            pecial Interests: Joint Replacements, Arthroscopy, Sports Injuries
           </li>
         </ul>
       </div>
 
       {/* Right Image */}
-      <div className="relative order-1 lg:order-2 lg:w-400">
+      <div
+        data-aos="fade-down"
+        className="relative order-1 lg:order-2 lg:w-400"
+      >
         <Image
           src="/Images/hemendra.png"
           alt="Dr. Hemendra Agarwal"
@@ -37,7 +46,10 @@ export default function DoctorSection() {
           className="object-top -mt-46"
         />
         <Link href="/about">
-          <button className="bg-gradient-to-r from-[#71a7e5] to-[#4e5ad7] text-xl mx-auto  text-white font-semibold px-7 py-3 rounded-4xl flex items-center gap-2 shadow-md hover:opacity-80 transition">
+          <button
+            data-aos="fade-up"
+            className="bg-sky-200 text-xl mx-auto  text-black font-semibold px-7 py-3 rounded-4xl flex items-center gap-2 shadow-md hover:opacity-80 transition"
+          >
             Full Doctor Bio →
           </button>
         </Link>

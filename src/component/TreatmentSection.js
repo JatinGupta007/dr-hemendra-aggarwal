@@ -2,7 +2,6 @@ import {
   GiKneeCap,
   GiShoulderArmor,
   GiStethoscope,
-  GiBrain,
   GiBrokenBone,
   GiRunningShoe,
   GiFootprint,
@@ -29,7 +28,7 @@ export default function TreatmentSection() {
       desc: "Minimally invasive procedures for accurate diagnosis and quicker recovery.",
     },
     {
-      icon: <GiBrain className="text-4xl text-[#197d85] mx-auto" />,
+      icon: <GiRunningShoe className="text-4xl text-[#197d85] mx-auto" />,
       title: "Ligament Reconstruction (ACL, PCL, Labral Tears)",
       desc: "Rebuild stability and strength with cutting-edge ligament reconstruction techniques.",
     },

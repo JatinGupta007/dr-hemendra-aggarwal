@@ -83,7 +83,7 @@ export default function TrustUsSection() {
           <Link href="/about">
             <button
               data-aos="fade-left"
-              className="bg-sky-200 text-black px-6 py-3 rounded-full font-medium hover:opacity-80 transition-transform hover:scale-105"
+              className="bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black px-6 py-3 rounded-full font-medium hover:opacity-80 transition-transform hover:scale-105"
             >
               Learn More About Dr. Agarwal
             </button>

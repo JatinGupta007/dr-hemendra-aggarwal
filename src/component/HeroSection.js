@@ -64,19 +64,19 @@ export default function HeroSection() {
       >
         <div className="flex items-center flex-col md:flex-row gap-8">
           <Link href="/contact">
-            <button className="flex items-center gap-2 bg-gradient-to-r hover:opacity-80 bg-sky-200 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+            <button className="flex items-center gap-2  hover:opacity-80 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               <FaCalendarCheck size={20} />
               Book Appointment
             </button>
           </Link>
           <a href="tel:+919210696045" target="_blank">
-            <button className="flex items-center gap-2 bg-sky-200 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               <FaPhoneAlt size={20} />
               Call Now
             </button>
           </a>
           <a href="https://wa.me/919210696045" target="_blank">
-            <button className="flex items-center gap-2 bg-sky-200  hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+            <button className="flex items-center gap-2 hover:opacity-80 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black-6 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               <FaWhatsapp size={20} />
               <p>WhatsApp</p>
             </button>

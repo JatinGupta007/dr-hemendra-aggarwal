@@ -44,7 +44,7 @@ const services = [
     quote:
       "Restore mobility and eliminate pain with our state-of-the-art joint replacement procedures.",
     buttonText: "Learn More",
-    icon: <Stethoscope className="w-8 h-8" />,
+    icon: <Stethoscope className="w-8 h-8" color="#197d85" />,
   },
   {
     title: "Sports Medicine",
@@ -60,7 +60,7 @@ const services = [
     quote:
       "Get back in the game faster with our specialized sports medicine expertise.",
     buttonText: "Book Consultation",
-    icon: <Heart className="w-8 h-8" />,
+    icon: <Heart className="w-8 h-8" color="#197d85" />,
   },
   {
     title: "Spine Surgery",
@@ -75,7 +75,7 @@ const services = [
     ],
     quote: "Advanced spinal care to restore function and relieve chronic pain.",
     buttonText: "Schedule Visit",
-    icon: <Shield className="w-8 h-8" />,
+    icon: <Shield className="w-8 h-8" color="#197d85" />,
   },
   {
     title: "Trauma & Emergency",
@@ -90,7 +90,7 @@ const services = [
     ],
     quote: "Immediate expert care when you need it most.",
     buttonText: "Emergency Info",
-    icon: <Award className="w-8 h-8" />,
+    icon: <Award className="w-8 h-8" color="#197d85" />,
   },
   {
     title: "Pediatric Orthopedics",
@@ -105,7 +105,7 @@ const services = [
     ],
     quote: "Specialized care for your child's growing bones and joints.",
     buttonText: "Child Care Info",
-    icon: <Users className="w-8 h-8" />,
+    icon: <Users className="w-8 h-8" color="#197d85" />,
   },
   {
     title: "Rehabilitation Services",
@@ -120,7 +120,7 @@ const services = [
     ],
     quote: "Complete recovery support from surgery to full function.",
     buttonText: "Recovery Plans",
-    icon: <Clock className="w-8 h-8" />,
+    icon: <Clock className="w-8 h-8" color="#197d85" />,
   },
 ];
 
@@ -133,23 +133,23 @@ const stats = [
 
 const highlights = [
   {
-    icon: <FaAward size={55} color="#307bc4" />,
+    icon: <FaAward size={55} color="#197d85" />,
     text: "15+ Years of Expertise in orthopedic care",
   },
   {
-    icon: <FaHospitalSymbol size={55} color="#307bc4" />,
+    icon: <FaHospitalSymbol size={55} color="#197d85" />,
     text: "Practicing at SMS Hospital & Vaishali Nagar Clinic",
   },
   {
-    icon: <FaChartLine size={55} color="#307bc4" />,
+    icon: <FaChartLine size={55} color="#197d85" />,
     text: "3000+ Successful Surgeries with 95%+ Satisfaction",
   },
   {
-    icon: <FaStethoscope size={55} color="#307bc4" />,
+    icon: <FaStethoscope size={55} color="#197d85" />,
     text: "Rusted for ethical, accurate diagnosis",
   },
   {
-    icon: <GiBrain size={55} color="#307bc4" />,
+    icon: <GiBrain size={55} color="#197d85" />,
     text: "Personalized post-op rehab & recovery planning",
   },
 ];
@@ -206,7 +206,7 @@ export default function ExpertisePage() {
               data-aos="flip-up"
               className="flex items-center bg-white  backdrop-blur mt-7 px-7 py-4 w-fit text-gray-800 rounded-2xl tracking-tight leading-tight shadow-lg"
             >
-              <FaHospital size={50} color="#307bc4" />
+              <FaHospital size={50} color="#197d85" />
               <span className="ml-4 text-gray-500 text-lg">
                 Clinics in Mahapura & SMS Hospital Jaipur
               </span>
@@ -215,7 +215,7 @@ export default function ExpertisePage() {
               data-aos="flip-up"
               className="flex items-center bg-white  backdrop-blur mt-7 px-7 py-4 w-fit text-gray-800 rounded-2xl tracking-tight leading-tight shadow-lg"
             >
-              <FaHospital size={50} color="#307bc4" />
+              <FaHospital size={50} color="#197d85" />
               <span className="ml-4 text-gray-500 text-lg">
                 Pratap Nagar Clinic - Jaipur
               </span>
@@ -233,7 +233,7 @@ export default function ExpertisePage() {
             data-aos="fade-down"
             className="flex flex-col justify-center items-center bg-white backdrop-blur absolute top-10 p-4 text-gray-800 rounded-2xl tracking-tight leading-tight shadow-lg"
           >
-            <FaMedal size={50} color="#307bc4" className="mb-3" />
+            <FaMedal size={50} color="#197d85" className="mb-3" />
             <span className="ml-2 text-gray-500">
               15+ Years of <br /> Experience
             </span>
@@ -242,7 +242,7 @@ export default function ExpertisePage() {
             data-aos="fade-left"
             className="flex justify-center items-center bg-white backdrop-blur absolute bottom-8 lg:-right-10 p-4 text-gray-800 rounded-2xl tracking-tight leading-tight shadow-lg"
           >
-            <MdHealthAndSafety size={50} color="#307bc4" />
+            <MdHealthAndSafety size={50} color="#197d85" />
             <span className="ml-2 text-gray-500">
               3000+ Successful Surgeries
             </span>
@@ -250,18 +250,18 @@ export default function ExpertisePage() {
         </div>
       </section>
       {/*Services section */}
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-teal-50">
+      <div className="min-h-screen bg-sky-50">
         {/* Header Section */}
         <section className="px-6 md:px-20 pt-20 pb-12">
           <div className="max-w-7xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg mb-6">
-              <div className="w-2 h-2 bg-gradient-to-r from-[#28D2DF] to-[#197d85] rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 rounded-full animate-pulse"></div>
               <span className="text-sm font-medium text-slate-600">
                 Premier Orthopedic Care
               </span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#307bc4] via-[#28D2DF] to-[#197d85] bg-clip-text text-transparent mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Specialized Orthopedic Services
             </h2>
 
@@ -278,7 +278,7 @@ export default function ExpertisePage() {
                   key={index}
                   className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 >
-                  <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#307bc4] to-[#28D2DF] bg-clip-text text-transparent mb-2">
+                  <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#197d85] to-[#197d85] bg-clip-text text-transparent mb-2">
                     {stat.number}
                   </div>
                   <div className="text-slate-600 font-medium">{stat.label}</div>
@@ -307,10 +307,10 @@ export default function ExpertisePage() {
                   <div className="relative z-10">
                     {/* Icon and Title */}
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="p-3 bg-gradient-to-r from-[#28D2DF]/60 to-[#197d85]/60 rounded-2xl text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <div className="p-3 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-2xl text-black shadow-lg group-hover:scale-110 transition-transform duration-300">
                         {service.icon}
                       </div>
-                      <h3 className="text-2xl font-bold text-slate-800 group-hover:text-[#307bc4] transition-colors duration-300">
+                      <h3 className="text-2xl font-bold text-slate-800 group-hover:text-[#197d85] transition-colors duration-300">
                         {service.title}
                       </h3>
                     </div>
@@ -347,7 +347,7 @@ export default function ExpertisePage() {
                     </div>
 
                     {/* Button */}
-                    <button className="w-full bg-gradient-to-r from-[#28D2DF]/60 to-[#197d85]/60 text-white px-6 py-3 rounded-xl font-semibold text-sm shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group/btn">
+                    <button className="w-full bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black px-6 py-3 rounded-xl font-semibold text-sm shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group/btn">
                       {service.buttonText}
                       <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                     </button>
@@ -361,7 +361,7 @@ export default function ExpertisePage() {
         {/* Call to Action */}
         <section className="px-6 md:px-20 pb-20">
           <div className="mx-auto text-center">
-            <div className="bg-gradient-to-r from-[#307bc4]/60 to-[#28D2DF]/60 rounded-3xl p-12 text-white shadow-2xl">
+            <div className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-3xl p-12 text-black shadow-2xl">
               <h3 className="text-3xl md:text-4xl font-bold mb-4">
                 Ready to Start Your Recovery Journey?
               </h3>
@@ -370,10 +370,10 @@ export default function ExpertisePage() {
                 and treatment plans.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-[#307bc4] px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <button className="bg-white text-[#197d85] px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                   Schedule Consultation
                 </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-[#307bc4] transition-all duration-300">
+                <button className="text-[#197d85] px-8 py-4 rounded-xl font-bold bg-white hover:scale-105 transition-all duration-300">
                   Emergency Contact
                 </button>
               </div>
@@ -382,7 +382,7 @@ export default function ExpertisePage() {
         </section>
       </div>
       {/*Why choose us section */}
-      <section className="py-20 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-white mx-7 md:mx-20 mt-24 mb-50 rounded-4xl">
+      <section className="py-20 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black mx-7 md:mx-20 mt-24 mb-50 rounded-4xl">
         <div className="max-w-7xl mx-auto px-8">
           <h2
             data-aos="fade-down"
@@ -396,7 +396,7 @@ export default function ExpertisePage() {
               <div
                 data-aos="flip-right"
                 key={index}
-                className="bg-white text-[#197d85] text-center w-full md:h-72 max-w-sm p-6 rounded-3xl shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:bg-sky-100"
+                className="bg-white text-black text-center w-full md:h-72 max-w-sm p-6 rounded-3xl shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:bg-sky-100"
               >
                 <div className="mb-10 flex items-center justify-center">
                   {item.icon}
@@ -419,55 +419,61 @@ export default function ExpertisePage() {
           {/* Card 1 */}
           <div
             data-aos="fade-right"
-            className="bg-white shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
+            className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
             <img
               src="/Images/location_1.webp"
               alt="SMS Hospital Jaipur"
               className="w-80 h-50 mb-4 rounded-2xl"
             />
-            <h3 className="text-xl font-semibold mb-2">SMS Hospital Jaipur</h3>
-            <p className="text-gray-600">For insured & emergency surgeries</p>
+            <h3 className="text-xl font-semibold mb-2 text-black">
+              SMS Hospital Jaipur
+            </h3>
+            <p className="text-black">For insured & emergency surgeries</p>
           </div>
 
           {/* Vertical Divider (only on md and above) */}
-          <div className="hidden md:block w-1 h-100  bg-[#197d85]"></div>
+          <div className="hidden md:block w-1 h-100 bg-gradient-to-b from-[#197d85]/40 to-[#97a345]/40"></div>
 
           {/* Card 2 */}
           <div
             data-aos="fade-left"
-            className="bg-white shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
+            className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
             <img
               src="/Images/location_2.webp"
               alt="Vaishali Nagar Clinic"
               className="w-80 h-50 mb-4 rounded-2xl"
             />
-            <h3 className="text-xl font-semibold mb-2">Pratap Nagar Clinic</h3>
-            <p className="text-gray-600">
+            <h3 className="text-xl font-semibold mb-2 text-black">
+              Pratap Nagar Clinic
+            </h3>
+            <p className="text-black">
               For appointments, procedures & follow-ups
             </p>
           </div>
-          <div className="hidden md:block w-1 h-100  bg-[#197d85]"></div>
+          <div className="hidden md:block w-1 h-100 bg-gradient-to-b from-[#197d85]/40 to-[#97a345]/40"></div>
           {/* Card 3 */}
           <div
             data-aos="fade-right"
-            className="bg-white shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
+            className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
             <img
               src="/Images/location_1.webp"
               alt="SMS Hospital Jaipur"
               className="w-80 h-50 mb-4 rounded-2xl"
             />
-            <h3 className="text-xl font-semibold mb-2">Narayana Hospital</h3>
-            <p className="text-gray-600">
+            <h3 className="text-xl font-semibold mb-2 text-black">
+              Narayana Hospital
+            </h3>
+            <p className="text-black">
               Orthopedic doctor in Narayana Hospital Jaipur
             </p>
           </div>
         </div>
         <p
           data-aos="fade-down"
-          className="text-xl text-center font-semibold text-[#307bc4] mt-12 lg:mt-6"
+          className="text-xl text-center font-semibold text-[#197d85] mt-12 lg:mt-6"
         >
           Both clinics equipped with latest diagnostics & OT facilities.
         </p>
@@ -475,11 +481,11 @@ export default function ExpertisePage() {
           data-aos="fade-down"
           className="flex flex-wrap items-center justify-center mt-7 gap-8"
         >
-          <button className="flex items-center gap-2 bg-sky-200  hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+          <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
             Get Directions & Timing →
           </button>
           <a href="tel:+919210696045" target="_blank">
-            <button className="flex items-center gap-2 bg-sky-200  hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               Call Now →
             </button>
           </a>
@@ -488,19 +494,19 @@ export default function ExpertisePage() {
       {/*Q&A page */}
       <FaqAccordion faqs={faqs} />
       {/*Book appointment section */}
-      <section className="bg-sky-100 mt-28 rounded-2xl px-8 flex flex-col lg:flex-row items-center justify-between m-7 md:m-20">
+      <section className="bg-gradient-to-r gap-7 lg:gap-16 from-[#197d85]/40 to-[#97a345]/40 mt-28 rounded-2xl px-8 flex flex-col lg:flex-row items-center justify-between m-7 md:m-20 py-7">
         <div data-aos="fade-down" className="relative lg:w-230">
           <img
-            src="/Images/dr_hemendra-removebg.png"
+            src="/Images/dr_hemendra.jpg"
             alt="Dr. Hemendra Agarwal"
             width={500}
             height={400}
-            className="object-top -mt-40"
+            className="object-top -mt-30 rounded-4xl"
           />
         </div>
         {/* Left Content */}
         <div data-aos="fade-left" className="lg:max-w-xl w-full">
-          <p className="text-[#307bc4] text-lg font-semibold">
+          <p className="text-[#197d85] text-lg font-bold">
             Looking for a trusted orthopedic doctor near you in Jaipur?
           </p>
           <h2 className="text-3xl md:text-3xl font-semibold leading-tighter mb-7">
@@ -509,19 +515,19 @@ export default function ExpertisePage() {
           </h2>
           <div className="flex items-center flex-wrap gap-5">
             <Link href="/contact">
-              <button className="flex items-center gap-2 bg-sky-200  hover:opacity-80 textblack  px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaCalendarCheck size={20} />
                 Book Appointment
               </button>
             </Link>
             <a href="tel:+919210696045" target="_blank">
-              <button className="flex items-center gap-2 bg-sky-200 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaPhoneAlt size={20} />
                 Call Now
               </button>
             </a>
             <a href="https://wa.me/919210696045" target="_blank">
-              <button className="flex items-center gap-2 bg-sky-200  hover:opacity-80 textblack  px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaWhatsapp size={20} />
                 <p>WhatsApp</p>
               </button>

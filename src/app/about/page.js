@@ -54,7 +54,7 @@ const Reasons = [
     id: 1,
     title: "Senior Orthopedic Consultant  SMS Hospital",
     description: "SMS Hospital Jaipur - Senior Orthopedic Consultant",
-    icon: <FaCalendarCheck className="text-3xl text-blue-500" />,
+    icon: <FaCalendarCheck className="text-3xl text-[#197d85]" />,
     position: "right",
   },
   {
@@ -62,14 +62,14 @@ const Reasons = [
     title: "Private Clinic - Vaishali Nagar",
     description:
       "Private Clinic in Vaishali Nagar Jaipur - OPD, Procedures, Follow-ups",
-    icon: <FaHospitalAlt className="text-3xl text-blue-500" />,
+    icon: <FaHospitalAlt className="text-3xl text-[#197d85]" />,
     position: "left",
   },
   {
     id: 3,
     title: "Emergency Consults Available",
     description: "Available 6 Days a Week | Emergency Consults on Call",
-    icon: <FaUserMd className="text-3xl text-blue-500" />,
+    icon: <FaUserMd className="text-3xl text-[#197d85]" />,
     position: "right",
   },
 ];
@@ -80,12 +80,12 @@ export default function Page() {
       {/*Header*/}
       <Navbar />
       {/*Hero section */}
-      <section className="flex flex-col lg:flex-row items-center gap-10 px-6 md:px-20 pt-16 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40">
+      <section className="flex flex-col lg:flex-row items-center gap-16 py-10 px-6 md:px-20 pt-16 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40">
         <div data-aos="fade-right">
           <img
-            src="/Images/dr_hemendra-removebg.png"
+            src="/Images/dr_hemendra.jpg"
             alt="Doctor"
-            width={860}
+            width={800}
             height={700}
             className="rounded-2xl"
           />
@@ -101,15 +101,15 @@ export default function Page() {
             data-aos="fade-left"
             className="flex flex-wrap items-center gap-4 mb-6"
           >
-            <span className="bg-sky-50 px-3 py-1 rounded-full text-sm font-semibold flex items-center transition duration-200 hover:scale-105 hover:shadow-lg">
+            <span className="bg-white px-3 py-2 rounded-xl text-sm font-semibold flex items-center transition duration-200 hover:scale-105 hover:shadow-lg">
               Google Reviews <span className="ml-2">⭐⭐⭐⭐⭐</span>
             </span>
-            <span className="flex items-center gap-2 bg-sky-50 px-3 py-1 rounded-full text-sm font-semibold transition duration-200 hover:scale-105 hover:shadow-lg">
-              Practo Verified <MdVerified color="yellow" size={20} />
+            <span className="flex items-center gap-2 bg-white px-3 py-2 rounded-xl text-sm font-semibold transition duration-200 hover:scale-105 hover:shadow-lg">
+              Practo Verified <MdVerified color="#197d85" size={20} />
             </span>
-            <span className="flex items-center gap-2 bg-sky-50 px-3 py-1 rounded-full text-sm font-semibold transition duration-200 hover:scale-105 hover:shadow-lg">
+            <span className="flex items-center gap-2 bg-white px-3 py-2 rounded-xl text-sm font-semibold transition duration-200 hover:scale-105 hover:shadow-lg">
               SMS Hospital Consultant{" "}
-              <MdMedicalServices color="yellow" size={20} />
+              <MdMedicalServices color="#197d85" size={20} />
             </span>
           </div>
           <h2 data-aos="fade-left" className="text-2xl font-semibold mb-6">
@@ -333,7 +333,7 @@ export default function Page() {
 
         {/* Right Heading */}
         <div data-aos="fade-left" className="order-1 lg:order-2 lg:text-right">
-          <p className="text-[#2d7cc3] font-semibold tracking-wide text-lg">
+          <p className="text-[#197d85] font-semibold tracking-wide text-lg">
             Trusted Member of Reputed Medical Organizations
           </p>
           <h2 className="text-4xl md:text-4xl font-bold text-[#1a2e40] mt-2 leading-snug">
@@ -427,7 +427,7 @@ export default function Page() {
               } md:text-${step.position} space-y-3 px-6 
               `}
             >
-              <div className="bg-blue-100 rounded-full p-6 mb-2">
+              <div className="bg-[#197d85]/20 rounded-full p-6 mb-2">
                 {step.icon}
               </div>
               <h3 className="text-xl font-semibold text-slate-800">
@@ -436,7 +436,7 @@ export default function Page() {
               <p className="text-slate-500 text-sm max-w-sm">
                 {step.description}
               </p>
-              <span className="text-4xl text-blue-100 font-bold absolute md:static top-4 right-4">
+              <span className="text-4xl text-[#197d85]/10 font-bold absolute md:static top-4 right-4">
                 {step.id < 10 ? `0${step.id}` : step.id}
               </span>
             </div>
@@ -448,11 +448,11 @@ export default function Page() {
           data-aos="fade-down"
           className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4"
         >
-          <button className="flex items-center gap-2 bg-blue-50 text-blue-600 hover:bg-blue-100 px-5 py-2 rounded-full border border-blue-200 transition">
+          <button className="flex items-center gap-2 bg-white text-[#197d85] hover:scale-105 px-5 py-2 rounded-full border border-[#197d85] transition">
             <FaMapMarkerAlt /> View Clinic Locations
           </button>
           <Link href="/contact">
-            <button className="flex items-center gap-2 bg-blue-600 text-white hover:bg-blue-700 px-5 py-2 rounded-full transition">
+            <button className="flex items-center gap-2 bg-[#197d85] text-white hover:scale-105 px-5 py-2 rounded-full transition">
               <FaPhone /> Book Appointment
             </button>
           </Link>
@@ -462,7 +462,7 @@ export default function Page() {
       <section className="max-w-7xl mx-auto px-7 md:px-20 pb-24 pt-6 text-center">
         <p
           data-aos="fade-down"
-          className="text-blue-600 font-medium text-sm md:text-2xl mb-2"
+          className="text-[#197d85] font-medium text-sm md:text-2xl mb-2"
         >
           Patient Testimonials
         </p>
@@ -485,7 +485,7 @@ export default function Page() {
               className="w-32 h-32 object-cover rounded-full mb-4"
             />
 
-            <p className="text-blue-500 text-lg mb-2">
+            <p className="text-[#197d85] text-lg mb-2">
               Knee Replacement Patient
             </p>
             <p className="text-slate-500 text-sm">
@@ -505,7 +505,7 @@ export default function Page() {
               className="w-32 h-32 object-cover rounded-full mb-4"
             />
 
-            <p className="text-blue-500 text-lg mb-2">Consultation Feedback</p>
+            <p className="text-[#197d85] text-lg mb-2">Consultation Feedback</p>
             <p className="text-slate-500 text-sm">
               “He explained everything in detail - very professional and kind.”
             </p>
@@ -522,7 +522,7 @@ export default function Page() {
               className="w-32 h-32 object-cover rounded-full mb-4"
             />
 
-            <p className="text-blue-500 text-sm mb-2">Family Experience</p>
+            <p className="text-[#197d85] text-lg mb-2">Family Experience</p>
             <p className="text-slate-500 text-lg">
               “I trusted him with my father’s hip surgery - perfect results.”
             </p>
@@ -530,14 +530,14 @@ export default function Page() {
         </div>
       </section>
       {/*Book Appointment section */}
-      <section className="bg-sky-100 mt-20 rounded-2xl px-8 flex flex-col lg:flex-row items-center justify-between m-6 md:m-20">
-        <div data-aos="fade-down" className="relative lg:w-230">
+      <section className="bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 mt-20 rounded-2xl px-8 gap-16 flex flex-col lg:flex-row items-center justify-between m-6 md:m-20 py-7">
+        <div data-aos="fade-down" className="relative lg:w-150">
           <img
-            src="/Images/dr_hemendra-removebg.png"
+            src="/Images/dr_hemendra.jpg"
             alt="Dr. Hemendra Agarwal"
             width={600}
             height={400}
-            className="object-top -mt-46"
+            className="object-top -mt-20 rounded-4xl"
           />
         </div>
         {/* Left Content */}
@@ -554,19 +554,19 @@ export default function Page() {
             className="flex flex-col md:flex-row flex-wrap items-center gap-5"
           >
             <Link href="/contact">
-              <button className="flex items-center gap-2 bg-sky-200  hover:opacity-80 textblack  px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-medium shadow-lg transition-transform hover:scale-105">
                 <FaCalendarCheck size={20} />
                 Book Appointment
               </button>
             </Link>
             <a href="tel:+919210696045" target="_blank">
-              <button className="flex items-center gap-2 bg-sky-200 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-medium shadow-lg transition-transform hover:scale-105">
                 <FaPhoneAlt size={20} />
                 Call Now
               </button>
             </a>
             <a href="https://wa.me/919210696045" target="_blank">
-              <button className="flex items-center gap-2 bg-sky-200 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-medium shadow-lg transition-transform hover:scale-105">
                 <FaWhatsapp size={20} />
                 <p>WhatsApp</p>
               </button>

@@ -89,7 +89,7 @@ export default function ClinicLocations() {
           <a href="tel:+919210696045" target="_blank">
             <button
               data-aos="fade-up"
-              className="flex items-center gap-2 bg-sky-200  hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105"
+              className="flex items-center gap-2 bg-white  hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-bold shadow-lg transition-transform hover:scale-105"
             >
               <FaPhoneAlt size={20} />
               <p>Call For Appointment</p>
@@ -97,7 +97,7 @@ export default function ClinicLocations() {
           </a>
           <button
             data-aos="fade-up"
-            className="flex items-center gap-2 bg-sky-200  hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105"
+            className="flex items-center gap-2 bg-white  hover:opacity-80 text-[#197d85] font-bold px-6 py-3 rounded-xl shadow-lg transition-transform hover:scale-105"
           >
             <LocateFixed size={20} />
             <p>Get Direction</p>

@@ -41,7 +41,7 @@ export default function ReviewsSection() {
       </h2>
       <p
         data-aos="fade-down"
-        className="text-center font-bold text-[#307bc4] text-xl md:text-3xl mt-1 mb-6"
+        className="text-center font-bold text-[#197d85] text-xl md:text-3xl mt-1 mb-6"
       >
         OF OUR CLIENTS
       </p>
@@ -77,15 +77,15 @@ export default function ReviewsSection() {
         </div>
 
         {/* Center Vertical Line */}
-        <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-[#307bc4] translate-x-[-50%] z-0">
+        <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-[#197d85] translate-x-[-50%] z-0">
           {/* Dots */}
           {reviews.map((_, index) => (
             <div
               key={index}
               className={`w-4 h-4 rounded-full absolute left-1/2 -translate-x-1/2 transition-all duration-300 mt-12 ${
                 index === current
-                  ? "bg-[#307bc4] scale-125"
-                  : "bg-[#307bc4] scale-75"
+                  ? "bg-[#197d85] scale-125"
+                  : "bg-[#197d85] scale-75"
               }`}
               style={{ top: `${index * 170 + 10}px` }}
             ></div>
@@ -96,11 +96,11 @@ export default function ReviewsSection() {
         <div data-aos="fade-left" className="w-full lg:w-5/12 flex items-start">
           {reviews[current].review && (
             <div className="bg-white p-6 shadow-lg rounded-lg">
-              <FaQuoteLeft className="text-2xl text-[#307bc4] mb-4" />
+              <FaQuoteLeft className="text-2xl text-[#197d85] mb-4" />
               <p className="text-slate-400 text-xl leading-relaxed">
                 {reviews[current].review}
               </p>
-              <div className="flex text-[#307bc4] text-xl mt-4 gap-1">
+              <div className="flex text-[#197d85] text-xl mt-4 gap-1">
                 {Array.from(
                   { length: parseInt(reviews[current].rating) },
                   (_, i) => (

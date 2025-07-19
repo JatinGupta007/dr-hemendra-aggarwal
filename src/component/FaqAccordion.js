@@ -13,7 +13,7 @@ export default function FaqAccordion({faqs}) {
     <div className="max-w-3xl mx-auto px-6 md:px-16 lg:px-0 py-16">
       <h4
         data-aos="flip-up"
-        className="text-center text-[#307bc4] uppercase text-xl md:text-2xl font-semibold mb-2"
+        className="text-center text-[#197d85] uppercase text-xl md:text-2xl font-bold mb-2"
       >
         What People
       </h4>

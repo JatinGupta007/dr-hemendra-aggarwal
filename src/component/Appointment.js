@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Appointment = () => {
   return (
-    <section className="bg-sky-100 rounded-2xl p-8 flex blackol lg:flex-row items-center justify-between gap-8 m-6 mb-12 md:mx-20 lg:m-20">
+    <section className="bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 rounded-2xl p-8 flex blackol lg:flex-row items-center justify-between gap-8 m-6 mb-12 md:mx-20 lg:m-20">
       {/* Left Content */}
       <div className="">
         <p data-aos="zoom-in" className="font-semibold text-lg">
@@ -28,18 +28,18 @@ export const Appointment = () => {
           className="flex flex-col md:flex-row flex-wrap items-center gap-8"
         >
           <Link href="/contact">
-            <button className="flex items-center gap-2 bg-sky-200  hover:opacity-80 textblack px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+            <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-bold shadow-lg transition-transform hover:scale-105">
               <FaCalendarCheck size={20} />
               Book Appointment
             </button>
           </Link>
           <a href="tel:+919210696045" target="_blank">
-            <button className="flex items-center gap-2 bg-sky-200 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+            <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-bold shadow-lg transition-transform hover:scale-105">
               <FaPhoneAlt size={20} />
               Call Now
             </button>
           </a>
-          <button className="flex items-center gap-2 bg-sky-200  hover:opacity-80 textblack px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+          <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-bold shadow-lg transition-transform hover:scale-105">
             <GrLocationPin size={20} />
             <p>Visit Pratap Nagar Clinic</p>
           </button>

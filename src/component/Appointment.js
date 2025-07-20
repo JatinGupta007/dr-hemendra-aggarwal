@@ -39,10 +39,12 @@ export const Appointment = () => {
               Call Now
             </button>
           </a>
-          <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-bold shadow-lg transition-transform hover:scale-105">
-            <GrLocationPin size={20} />
-            <p>Visit Pratap Nagar Clinic</p>
-          </button>
+          <a href="https://g.co/kgs/RFjQ2wV" target="_blank">
+            <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-bold shadow-lg transition-transform hover:scale-105">
+              <GrLocationPin size={20} />
+              <p>Visit Pratap Nagar Clinic</p>
+            </button>
+          </a>
         </div>
       </div>
 

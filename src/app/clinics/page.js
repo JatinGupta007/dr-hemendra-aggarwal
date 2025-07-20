@@ -42,9 +42,10 @@ const reasons = [
 const locations = [
   {
     id: 1,
-    title: "Narayana Multispeciality Hospital",
+    title: "Pratap Nagar Clinic",
     subtitle: "Pratap Nagar, Jaipur",
-    address: "Near Apex Circle, Pratap Nagar, Jaipur",
+    address:
+      "183/82, Rana Sanga Marg, Sector 18, Pratap Nagar, Jaipur, Rajasthan 302033",
     timing: "Monday to Saturday | 8:00 AM – 9:00 PM",
     contact: "+91-9210696045",
     specialties: [
@@ -52,7 +53,8 @@ const locations = [
       "Orthopedic surgery",
       "Hospital consultation",
     ],
-    mapQuery: "Narayana+Multispeciality+Hospital+Pratap+Nagar+Jaipur",
+    mapLink: " https://g.co/kgs/RFjQ2wV",
+    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.29600027931!2d75.83297209999999!3d26.798702100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc90a0fbec191%3A0xfad7f9958d424be5!2sORTHO-KLINIK-Dr%20Hemendra%20Agrawal%20senior%20Orthopedic%20Surgeon!5e0!3m2!1sen!2sin!4v1753001468755!5m2!1sen!2sin",
     type: "Hospital",
     rating: 4.8,
     icon: Building2,
@@ -62,7 +64,7 @@ const locations = [
     title: "Mansarovar Clinic",
     subtitle: "Jaipur",
     address:
-      "Villa 19, balaji mandir, MANGLAM ARPAN, near mohanpura, Hajiwala, Mansarovar, Jaipur",
+      "Villa 19, balaji mandir, MANGLAM ARPAN, near mohanpura, Hajiwala, Mohanpura, Rajasthan 302029",
     timing: "Monday to Friday | 4:00 PM – 8:00 PM",
     contact: "+91-9210696045",
     specialties: [
@@ -70,7 +72,8 @@ const locations = [
       "Orthopedic consultation",
       "General orthopedics",
     ],
-    mapQuery: "Mansarovar+Clinic+Jaipur",
+    mapLink: "https://g.co/kgs/riT4Q2w",
+    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.3616659387435!2d75.7357402!3d26.8284468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db591ca3cb9b9%3A0x2077186374def3fe!2sDR%20HEMENDRA%20AGRAWAL%20ORTHOPEDIC%20DOCTOR!5e0!3m2!1sen!2sin!4v1753001116217!5m2!1sen!2sin",
     type: "Clinic",
     rating: 4.7,
     icon: MapPin,
@@ -88,8 +91,8 @@ const locations = [
       "Orthopedic surgery",
       "Specialized treatments",
     ],
-    mapQuer:
-      "!1m18!1m12!1m3!1d2582.0709417775247!2d75.8164472180632!3d26.906460982660946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc8733fd70039%3A0xed6e6608b8ca9783!2sSawai%20Man%20Singh%20Hospital%20(SMS)!5e0!3m2!1sen!2sin!4v1752913910999!5m2!1sen!2sin",
+    mapLink: "https://g.co/kgs/hLnWRGb ",
+    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.9136952960685!2d75.8163148!3d26.906234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc8733fd70039%3A0xed6e6608b8ca9783!2sSawai%20Man%20Singh%20Hospital%20(SMS)!5e0!3m2!1sen!2sin!4v1753000827934!5m2!1sen!2sin",
     type: "Specialized Clinic",
     rating: 4.6,
     icon: Calendar,
@@ -272,13 +275,15 @@ const DoctorLocations = () => {
                   {/* Map Container */}
                   <div className="relative rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
                     <a
-                      href={`https://www.google.com/maps/search/?api=1&query=${location.mapQuery}`}
+                      href={location.mapLink} // e.g., "https://www.google.com/maps/place/..."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="relative block group"
+                      aria-label="Open map in new tab"
                     >
+                      {/* Map Preview */}
                       <iframe
-                        src={`https://www.google.com/maps?q=${location.mapQuery}&output=embed`}
+                        src={location.src} // e.g., embedded map URL
                         width="100%"
                         height="200"
                         style={{ border: 0, pointerEvents: "none" }}
@@ -286,12 +291,15 @@ const DoctorLocations = () => {
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                         className="hover:grayscale-0 transition-all duration-500"
+                        title="Map Preview"
                       />
-                      {/* Map Overlay Icon */}
+
+                      {/* Navigation Icon Overlay */}
                       <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <Navigation className="w-5 h-5 text-[#197d85]" />
                       </div>
-                      {/* Decorative Glows */}
+
+                      {/* Decorative Glow Effects */}
                       <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-[#197d85]/10 to-[#97a345]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                       <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-[#97a345]/10 to-[#197d85]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                     </a>

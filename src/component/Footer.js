@@ -83,14 +83,14 @@ export default function Footer() {
             183/82, Rana Sanga Marg, Sector 18, Pratap Nagar, Jaipur, Rajasthan
             302033
             <br />
-            <strong>Timing:</strong> Monday to Saturday | 4:00 PM - 6:00 PM
+            <strong>Timing:</strong> Monday to Saturday | 10:00 AM - 9:00 PM
           </p>
           <p data-aos="flip-up" className="mb-3">
             <strong>Mansarovar Clinic</strong> <br />
             Villa 19, balaji mandir, MANGLAM ARPAN, near mohanpura, Hajiwala,
-            Mansarovar, Rajasthan 302029
+            Mohanpura, Rajasthan 302029
             <br />
-            <strong>Timing:</strong> Monday to Saturday | 4:00 PM - 6:00 PM
+            <strong>Timing:</strong> 24x7 Emergency Services
           </p>
           <p data-aos="flip-up">
             <strong>SMS Hospital Jaipur</strong> <br />

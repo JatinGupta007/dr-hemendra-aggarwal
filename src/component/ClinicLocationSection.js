@@ -1,7 +1,7 @@
 import Image from "next/image";
- // Update path if needed
+import Link from "next/link";
 import { LocateFixed } from "lucide-react";
-import { FaPhoneAlt, FaWhatsapp, FaCalendarCheck } from "react-icons/fa";
+import { FaPhoneAlt} from "react-icons/fa";
 
 export default function ClinicLocations() {
   return (
@@ -22,7 +22,7 @@ export default function ClinicLocations() {
           >
             <div className="mb-4 relative mx-auto">
               <Image
-                src="/Images/location_1.webp"
+                src="/Images/location_1.png"
                 alt="Location Icon"
                 width={350}
                 height={150}
@@ -46,7 +46,7 @@ export default function ClinicLocations() {
           >
             <div className="mb-4 relative mx-auto">
               <Image
-                src="/Images/location_2.webp"
+                src="/Images/location_2.png"
                 alt="Location Icon"
                 width={350}
                 height={150}
@@ -68,7 +68,7 @@ export default function ClinicLocations() {
           >
             <div className="mb-4 relative mx-auto">
               <Image
-                src="/Images/location_1.webp"
+                src="/Images/location_3.png"
                 alt="Location Icon"
                 width={350}
                 height={150}
@@ -95,6 +95,7 @@ export default function ClinicLocations() {
               <p>Call For Appointment</p>
             </button>
           </a>
+          <Link href="/clinics">
           <button
             data-aos="fade-up"
             className="flex items-center gap-2 bg-white  hover:opacity-80 text-[#197d85] font-bold px-6 py-3 rounded-xl shadow-lg transition-transform hover:scale-105"
@@ -102,6 +103,7 @@ export default function ClinicLocations() {
             <LocateFixed size={20} />
             <p>Get Direction</p>
           </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -59,9 +59,9 @@ const Reasons = [
   },
   {
     id: 2,
-    title: "Private Clinic - Vaishali Nagar",
+    title: "Private Clinic - Pratap Nagar",
     description:
-      "Private Clinic in Vaishali Nagar Jaipur - OPD, Procedures, Follow-ups",
+      "Private Clinic in Pratap Nagar Jaipur - OPD, Procedures, Follow-ups",
     icon: <FaHospitalAlt className="text-3xl text-[#197d85]" />,
     position: "left",
   },
@@ -448,9 +448,11 @@ export default function Page() {
           data-aos="fade-down"
           className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4"
         >
-          <button className="flex items-center gap-2 bg-white text-[#197d85] hover:scale-105 px-5 py-2 rounded-full border border-[#197d85] transition">
-            <FaMapMarkerAlt /> View Clinic Locations
-          </button>
+          <Link href="/clinics">
+            <button className="flex items-center gap-2 bg-white text-[#197d85] hover:scale-105 px-5 py-2 rounded-full border border-[#197d85] transition">
+              <FaMapMarkerAlt /> View Clinic Locations
+            </button>
+          </Link>
           <Link href="/contact">
             <button className="flex items-center gap-2 bg-[#197d85] text-white hover:scale-105 px-5 py-2 rounded-full transition">
               <FaPhone /> Book Appointment

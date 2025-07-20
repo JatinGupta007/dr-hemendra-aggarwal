@@ -1,6 +1,18 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: "Segoe UI Variable";
+  src: url("/fonts/SEGUIVAR.TTF") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Segoe UI Variable", sans-serif, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 
 
 @layer utilities {

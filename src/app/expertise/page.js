@@ -255,17 +255,26 @@ export default function ExpertisePage() {
         <section className="px-6 md:px-20 pt-20 pb-12">
           <div className="max-w-7xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg mb-6">
-              <div className="w-2 h-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 rounded-full animate-pulse"></div>
+              <div
+                data-aos="fade-up"
+                className="w-2 h-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 rounded-full animate-pulse"
+              ></div>
               <span className="text-sm font-medium text-slate-600">
                 Premier Orthopedic Care
               </span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h2
+              data-aos="fade-up"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+            >
               Specialized Orthopedic Services
             </h2>
 
-            <p className="text-xl md:text-2xl text-slate-700 max-w-4xl mx-auto mb-8 leading-relaxed">
+            <p
+              data-aos="fade-up"
+              className="text-xl md:text-2xl text-slate-700 max-w-4xl mx-auto mb-8 leading-relaxed"
+            >
               We offer a comprehensive range of treatments tailored to your
               orthopedic condition - from conservative management to surgical
               excellence.
@@ -275,6 +284,7 @@ export default function ExpertisePage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
               {stats.map((stat, index) => (
                 <div
+                  data-aos="flip-up"
                   key={index}
                   className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 >
@@ -294,6 +304,7 @@ export default function ExpertisePage() {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {services.map((service, index) => (
                 <div
+                  data-aos="zoom-in"
                   key={index}
                   className="group relative bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-white/20 overflow-hidden"
                   onMouseEnter={() => setHoveredCard(index)}
@@ -347,10 +358,12 @@ export default function ExpertisePage() {
                     </div>
 
                     {/* Button */}
-                    <button className="w-full bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black px-6 py-3 rounded-xl font-semibold text-sm shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group/btn">
-                      {service.buttonText}
-                      <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                    </button>
+                    <Link href="/contact">
+                      <button className="w-full bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black px-6 py-3 rounded-xl font-semibold text-sm shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group/btn">
+                        {service.buttonText}
+                        <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -362,20 +375,33 @@ export default function ExpertisePage() {
         <section className="px-6 md:px-20 pb-20">
           <div className="mx-auto text-center">
             <div className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-3xl p-12 text-black shadow-2xl">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              <h3
+                data-aos="flip-up"
+                className="text-3xl md:text-4xl font-bold mb-4"
+              >
                 Ready to Start Your Recovery Journey?
               </h3>
-              <p className="text-xl mb-8 opacity-90">
+              <p data-aos="flip-up" className="text-xl mb-8 opacity-90">
                 Our expert team is here to provide you with personalized care
                 and treatment plans.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-[#197d85] px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  Schedule Consultation
-                </button>
-                <button className="text-[#197d85] px-8 py-4 rounded-xl font-bold bg-white hover:scale-105 transition-all duration-300">
-                  Emergency Contact
-                </button>
+                <Link href="/contact">
+                  <button
+                    data-aos="flip-up"
+                    className="bg-white text-[#197d85] px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  >
+                    Schedule Consultation
+                  </button>
+                </Link>
+                <a href="tel:+919210696045" target="_blank">
+                  <button
+                    data-aos="flip-up"
+                    className="text-[#197d85] px-8 py-4 rounded-xl font-bold bg-white hover:scale-105 transition-all duration-300"
+                  >
+                    Emergency Contact
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -422,7 +448,7 @@ export default function ExpertisePage() {
             className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
             <img
-              src="/Images/location_1.webp"
+              src="/Images/location_1.png"
               alt="SMS Hospital Jaipur"
               className="w-80 h-50 mb-4 rounded-2xl"
             />
@@ -441,7 +467,7 @@ export default function ExpertisePage() {
             className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
             <img
-              src="/Images/location_2.webp"
+              src="/Images/location_2.png"
               alt="Vaishali Nagar Clinic"
               className="w-80 h-50 mb-4 rounded-2xl"
             />
@@ -459,7 +485,7 @@ export default function ExpertisePage() {
             className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
             <img
-              src="/Images/location_1.webp"
+              src="/Images/location_3.png"
               alt="SMS Hospital Jaipur"
               className="w-80 h-50 mb-4 rounded-2xl"
             />
@@ -481,9 +507,11 @@ export default function ExpertisePage() {
           data-aos="fade-down"
           className="flex flex-wrap items-center justify-center mt-7 gap-8"
         >
-          <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-            Get Directions & Timing →
-          </button>
+          <Link href="/clinics">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              Get Directions & Timing →
+            </button>
+          </Link>
           <a href="tel:+919210696045" target="_blank">
             <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               Call Now →

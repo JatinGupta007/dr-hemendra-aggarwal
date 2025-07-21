@@ -9,6 +9,7 @@ import {
   Award,
   Users,
   Clock,
+  Navigation
 } from "lucide-react";
 
 import Navbar from "@/component/Header";
@@ -47,7 +48,7 @@ const services = [
     icon: <Stethoscope className="w-8 h-8" color="#197d85" />,
   },
   {
-    title: "Sports Medicine",
+    title: "Sports Injury & Ligament Reconstruction",
     description:
       "Comprehensive care for sports-related injuries with focus on rapid recovery and performance optimization.",
     treatmentTitle: "Specializations:",
@@ -59,67 +60,70 @@ const services = [
     ],
     quote:
       "Get back in the game faster with our specialized sports medicine expertise.",
-    buttonText: "Book Consultation",
+    buttonText: "Learn More",
     icon: <Heart className="w-8 h-8" color="#197d85" />,
   },
   {
-    title: "Spine Surgery",
+    title: "Foot, Ankle, Hand & Wrist Procedures",
     description:
-      "Expert treatment for spinal conditions using cutting-edge minimally invasive surgical techniques.",
-    treatmentTitle: "Services Include:",
+      "Pain or deformity in your feet, hands, or wrists can disrupt your daily activities.",
+    treatmentTitle: "We Treat:",
     treatments: [
-      "Disc Replacement",
-      "Spinal Fusion",
-      "Decompression Surgery",
-      "Scoliosis Correction",
+      "Carpal Tunnel Syndrome",
+      "Ankle Sprains & Instability",
+      "Trigger Finger Release",
+      "Flat Foot, Bunions, and Toe Deformities",
     ],
-    quote: "Advanced spinal care to restore function and relieve chronic pain.",
-    buttonText: "Schedule Visit",
+    quote:
+      "Dr. Hemendra Agrawal treats a wide range of peripheral orthopedic problems with both surgical and non-surgical options.",
+    buttonText: "Learn More",
     icon: <Shield className="w-8 h-8" color="#197d85" />,
   },
   {
-    title: "Trauma & Emergency",
+    title: "Fracture & Trauma Surgery",
     description:
       "24/7 emergency orthopedic care for fractures, dislocations, and traumatic injuries.",
     treatmentTitle: "Emergency Services:",
     treatments: [
       "Fracture Repair",
-      "Emergency Surgery",
-      "Trauma Reconstruction",
-      "Urgent Care",
+      "Non-healing Fracture & Revision Surgery",
+      "Internal Fixation (Plates, Screws, Rods)",
+      "Open & Closed Reduction",
     ],
     quote: "Immediate expert care when you need it most.",
-    buttonText: "Emergency Info",
+    buttonText: "Learn More",
     icon: <Award className="w-8 h-8" color="#197d85" />,
   },
   {
-    title: "Pediatric Orthopedics",
+    title: "Arthroscopy - Keyhole Surgery",
     description:
-      "Specialized care for children's bone, joint, and muscle conditions with gentle, effective treatments.",
+      "Arthroscopy is a minimally invasive procedure that allows your orthopedic surgeon to diagnose and treat joint problems using a small camera and instruments.",
     treatmentTitle: "Pediatric Care:",
     treatments: [
-      "Growth Plate Injuries",
-      "Congenital Conditions",
-      "Developmental Disorders",
-      "Pediatric Trauma",
+      "Knee Arthroscopy (for Meniscus, ACL, PCL)",
+      "Shoulder Arthroscopy (for Rotator Cuff, Labrum)",
+      "Ankle, Wrist, and Elbow Arthroscopy",
+      "Diagnostic & Corrective Keyhole Surgery",
     ],
-    quote: "Specialized care for your child's growing bones and joints.",
-    buttonText: "Child Care Info",
+    quote:
+      "Faster recovery, minimal pain, and reduced risk of complications with arthroscopy in Jaipur.",
+    buttonText: "Learn More",
     icon: <Users className="w-8 h-8" color="#197d85" />,
   },
   {
-    title: "Rehabilitation Services",
+    title: "Shoulder, Elbow & Upper Limb Surgeries",
     description:
-      "Comprehensive physical therapy and rehabilitation programs for optimal recovery outcomes.",
+      "Persistent pain or instability in your shoulder or elbow may require surgical intervention.",
     treatmentTitle: "Rehabilitation:",
     treatments: [
-      "Post-Surgical Recovery",
-      "Physical Therapy",
-      "Occupational Therapy",
-      "Pain Management",
+      "Recurrent Shoulder Dislocations",
+      "Rotator Cuff Tears",
+      "Tennis Elbow & Golfer’s Elbow",
+      "Frozen Shoulder",
     ],
-    quote: "Complete recovery support from surgery to full function.",
-    buttonText: "Recovery Plans",
+    quote:
+      "Dr. Agrawal provides specialized upper limb orthopedic care that restores strength and stability.",
+    buttonText: "Learn More",
     icon: <Clock className="w-8 h-8" color="#197d85" />,
   },
 ];
@@ -185,20 +189,20 @@ export default function ExpertisePage() {
         <div className="lg:w-3/2 space-y-5 order-2 lg:order-1">
           <h1
             data-aos="flip-up"
-            className="text-4xl md:text-6xl font-bold text-black"
+            className="text-3xl lg:text-[40px] font-bold text-black capitalize"
           >
             Our orthopedic treatments in Jaipur
           </h1>
           <p data-aos="flip-up" className="mt-4 text-lg text-black">
             If you&apos;re searching for the best orthopedic doctor in Jaipur,
             look no further. With over 15 years of experience and more than 3000
-            successful surgeries, Dr. Hemendra Agarwal is known for delivering
+            successful surgeries, Dr. Hemendra Agrawal is known for delivering
             advanced, personalized treatments for joint, ligament, bone, and
             sports-related conditions.
           </p>
           <p data-aos="flip-up">
             Patients from Vaishali Nagar, Mansarovar, Ajmer Road, and all across
-            Rajasthan choose Dr. Agarwal for his compassionate care, modern
+            Rajasthan choose Dr. Agrawal for his compassionate care, modern
             techniques, and accurate diagnosis.
           </p>
           <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
@@ -207,8 +211,8 @@ export default function ExpertisePage() {
               className="flex items-center bg-white  backdrop-blur mt-7 px-7 py-4 w-fit text-gray-800 rounded-2xl tracking-tight leading-tight shadow-lg"
             >
               <FaHospital size={50} color="#197d85" />
-              <span className="ml-4 text-gray-500 text-lg">
-                Clinics in Mahapura & SMS Hospital Jaipur
+              <span className="ml-4 text-gray-500 text-xl">
+                Clinics in Mahapura & Narayana Hospital Jaipur
               </span>
             </div>
             <div
@@ -216,7 +220,7 @@ export default function ExpertisePage() {
               className="flex items-center bg-white  backdrop-blur mt-7 px-7 py-4 w-fit text-gray-800 rounded-2xl tracking-tight leading-tight shadow-lg"
             >
               <FaHospital size={50} color="#197d85" />
-              <span className="ml-4 text-gray-500 text-lg">
+              <span className="ml-4 text-gray-500 text-xl">
                 Pratap Nagar Clinic - Jaipur
               </span>
             </div>
@@ -234,7 +238,7 @@ export default function ExpertisePage() {
             className="flex flex-col justify-center items-center bg-white backdrop-blur absolute top-10 p-4 text-gray-800 rounded-2xl tracking-tight leading-tight shadow-lg"
           >
             <FaMedal size={50} color="#197d85" className="mb-3" />
-            <span className="ml-2 text-gray-500">
+            <span className="ml-2 text-gray-500 text-xl">
               15+ Years of <br /> Experience
             </span>
           </div>
@@ -243,14 +247,14 @@ export default function ExpertisePage() {
             className="flex justify-center items-center bg-white backdrop-blur absolute bottom-8 lg:-right-10 p-4 text-gray-800 rounded-2xl tracking-tight leading-tight shadow-lg"
           >
             <MdHealthAndSafety size={50} color="#197d85" />
-            <span className="ml-2 text-gray-500">
+            <span className="ml-2 text-gray-500 text-xl">
               3000+ Successful Surgeries
             </span>
           </div>
         </div>
       </section>
       {/*Services section */}
-      <div className="min-h-screen bg-sky-50">
+      <div className="min-h-scree">
         {/* Header Section */}
         <section className="px-6 md:px-20 pt-20 pb-12">
           <div className="max-w-7xl mx-auto text-center">
@@ -321,7 +325,7 @@ export default function ExpertisePage() {
                       <div className="p-3 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-2xl text-black shadow-lg group-hover:scale-110 transition-transform duration-300">
                         {service.icon}
                       </div>
-                      <h3 className="text-2xl font-bold text-slate-800 group-hover:text-[#197d85] transition-colors duration-300">
+                      <h3 className="text-xl font-bold text-slate-800 group-hover:text-[#197d85] transition-colors duration-300">
                         {service.title}
                       </h3>
                     </div>
@@ -427,7 +431,7 @@ export default function ExpertisePage() {
                 <div className="mb-10 flex items-center justify-center">
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-1">{item.text}</h3>
+                <h3 className="text-lg font-semibold mb-1">{item.text}</h3>
               </div>
             ))}
           </div>
@@ -445,15 +449,41 @@ export default function ExpertisePage() {
           {/* Card 1 */}
           <div
             data-aos="fade-right"
-            className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
+            className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
-            <img
-              src="/Images/location_1.png"
-              alt="SMS Hospital Jaipur"
-              className="w-80 h-50 mb-4 rounded-2xl"
-            />
+            <div className="relative mb-4 h-48 rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
+              <a
+                href="https://www.google.com/search?q=Narayana+Multispeciality+Hospital+%E2%80%93+Pratap+Nagar%2C+Jaipur&rlz=1C1CHZN_enIN1094IN1094&oq=Narayana+Multispeciality+Hospital+%E2%80%93+Pratap+Nagar%2C+Jaipur&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzM4NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" // e.g., "https://www.google.com/maps/place/..."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block group"
+                aria-label="Open map in new tab"
+              >
+                {/* Map Preview */}
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.413867637782!2d75.8253632!3d26.7949476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc999fe90f309%3A0x91760491563438ac!2sNarayana%20Hospital%2C%20Jaipur!5e0!3m2!1sen!2sin!4v1753080256093!5m2!1sen!2sin" // e.g., embedded map URL
+                  width="100%"
+                  height="200"
+                  style={{ border: 0, pointerEvents: "none" }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="hover:grayscale-0 transition-all duration-500"
+                  title="Map Preview"
+                />
+
+                {/* Navigation Icon Overlay */}
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Navigation className="w-5 h-5 text-[#197d85]" />
+                </div>
+
+                {/* Decorative Glow Effects */}
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-[#197d85]/10 to-[#97a345]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-[#97a345]/10 to-[#197d85]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              </a>
+            </div>
             <h3 className="text-xl font-semibold mb-2 text-black">
-              SMS Hospital Jaipur
+              Narayana Hospital Jaipur
             </h3>
             <p className="text-black">For insured & emergency surgeries</p>
           </div>
@@ -464,13 +494,39 @@ export default function ExpertisePage() {
           {/* Card 2 */}
           <div
             data-aos="fade-left"
-            className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
+            className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
-            <img
-              src="/Images/location_2.png"
-              alt="Vaishali Nagar Clinic"
-              className="w-80 h-50 mb-4 rounded-2xl"
-            />
+            <div className="relative rounded-2xl overflow-hidden shadow-inner mb-4 bg-gray-100 group">
+              <a
+                href="https://g.co/kgs/RFjQ2wV" // e.g., "https://www.google.com/maps/place/..."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block group"
+                aria-label="Open map in new tab"
+              >
+                {/* Map Preview */}
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.29600027931!2d75.83297209999999!3d26.798702100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc90a0fbec191%3A0xfad7f9958d424be5!2sORTHO-KLINIK-Dr%20Hemendra%20Agrawal%20senior%20Orthopedic%20Surgeon!5e0!3m2!1sen!2sin!4v1753001468755!5m2!1sen!2sin" // e.g., embedded map URL
+                  width="100%"
+                  height="200"
+                  style={{ border: 0, pointerEvents: "none" }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="hover:grayscale-0 transition-all duration-500"
+                  title="Map Preview"
+                />
+
+                {/* Navigation Icon Overlay */}
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Navigation className="w-5 h-5 text-[#197d85]" />
+                </div>
+
+                {/* Decorative Glow Effects */}
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-[#197d85]/10 to-[#97a345]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-[#97a345]/10 to-[#197d85]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              </a>
+            </div>
             <h3 className="text-xl font-semibold mb-2 text-black">
               Pratap Nagar Clinic
             </h3>
@@ -482,18 +538,44 @@ export default function ExpertisePage() {
           {/* Card 3 */}
           <div
             data-aos="fade-right"
-            className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
+            className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 text-black shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
-            <img
-              src="/Images/location_3.png"
-              alt="SMS Hospital Jaipur"
-              className="w-80 h-50 mb-4 rounded-2xl"
-            />
+            <div className="relative mb-4 rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
+              <a
+                href="https://g.co/kgs/riT4Q2w" // e.g., "https://www.google.com/maps/place/..."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block group"
+                aria-label="Open map in new tab"
+              >
+                {/* Map Preview */}
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.3616659387435!2d75.7357402!3d26.8284468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db591ca3cb9b9%3A0x2077186374def3fe!2sDR%20HEMENDRA%20AGRAWAL%20ORTHOPEDIC%20DOCTOR!5e0!3m2!1sen!2sin!4v1753001116217!5m2!1sen!2sin" // e.g., embedded map URL
+                  width="100%"
+                  height="200"
+                  style={{ border: 0, pointerEvents: "none" }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="hover:grayscale-0 transition-all duration-500"
+                  title="Map Preview"
+                />
+
+                {/* Navigation Icon Overlay */}
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Navigation className="w-5 h-5 text-[#197d85]" />
+                </div>
+
+                {/* Decorative Glow Effects */}
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-[#197d85]/10 to-[#97a345]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-[#97a345]/10 to-[#197d85]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              </a>
+            </div>
             <h3 className="text-xl font-semibold mb-2 text-black">
-              Narayana Hospital
+              Mansarovar Clinic
             </h3>
             <p className="text-black">
-              Orthopedic doctor in Narayana Hospital Jaipur
+              Orthopedic doctor in Mansarovar clinic Jaipur
             </p>
           </div>
         </div>
@@ -526,7 +608,7 @@ export default function ExpertisePage() {
         <div data-aos="fade-down" className="relative lg:w-230">
           <img
             src="/Images/dr_hemendra.jpg"
-            alt="Dr. Hemendra Agarwal"
+            alt="Dr. Hemendra Agrawal"
             width={500}
             height={400}
             className="object-top -mt-30 rounded-4xl"
@@ -538,7 +620,7 @@ export default function ExpertisePage() {
             Looking for a trusted orthopedic doctor near you in Jaipur?
           </p>
           <h2 className="text-3xl md:text-3xl font-semibold leading-tighter mb-7">
-            Let Dr. Hemendra Agarwal help you get back on your feet with expert
+            Let Dr. Hemendra Agrawal help you get back on your feet with expert
             care, modern treatments, and long-term relief.
           </h2>
           <div className="flex items-center flex-wrap gap-5">

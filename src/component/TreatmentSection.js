@@ -82,7 +82,7 @@ export default function TreatmentSection() {
           <div
             data-aos="zoom-in"
             key={index}
-            className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl shadow-[#197d85] hover:scale-105 transform transition duration-300 ease-in-out"
+            className="bg-white w-80 h-55 p-6 rounded-2xl shadow-md hover:shadow-xl shadow-[#197d85] hover:scale-105 transform transition duration-300 ease-in-out"
           >
             <div className="mb-4">{item.icon}</div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">

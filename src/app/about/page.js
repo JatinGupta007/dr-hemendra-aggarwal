@@ -52,16 +52,16 @@ const chooses = [
 const Reasons = [
   {
     id: 1,
-    title: "Senior Orthopedic Consultant  SMS Hospital",
+    title: "Senior Orthopedic Consultant - Narayana Hospital",
     description: "SMS Hospital Jaipur - Senior Orthopedic Consultant",
     icon: <FaCalendarCheck className="text-3xl text-[#197d85]" />,
     position: "right",
   },
   {
     id: 2,
-    title: "Private Clinic - Pratap Nagar",
+    title: "Ortho Clinic - Pratap Nagar",
     description:
-      "Private Clinic in Pratap Nagar Jaipur - OPD, Procedures, Follow-ups",
+      "Ortho Clinic in Pratap Nagar Jaipur - OPD, Procedures, Follow-ups",
     icon: <FaHospitalAlt className="text-3xl text-[#197d85]" />,
     position: "left",
   },
@@ -93,9 +93,9 @@ export default function Page() {
         <div className="space-y-6 w-full lg:w-2xl">
           <h1
             data-aos="fade-left"
-            className="text-4xl md:text-[46px] font-bold mb-8"
+            className="text-3xl lg:text-[40px] font-bold mb-8"
           >
-            Hemendra Agarwal Experienced Orthopedic Surgeon in Jaipur
+            Dr. Hemendra Agrawal Experienced Orthopedic Surgeon in Jaipur
           </h1>
           <div
             data-aos="fade-left"
@@ -114,11 +114,11 @@ export default function Page() {
           </div>
           <h2 data-aos="fade-left" className="text-2xl font-semibold mb-6">
             Trusted by Thousands, Guided by Experience - Meet Dr. Hemendra
-            Agarwal
+            Agrawal
           </h2>
           <p data-aos="fade-left" className="text-lg lg:w-xl pb-2">
             With over 15 years of clinical and surgical excellence, Dr. Hemendra
-            Agarwal is a top-rated orthopedic surgeon in Jaipur, specializing in
+            Agrawal is a top-rated orthopedic surgeon in Jaipur, specializing in
             joint replacement, arthroscopy, ligament reconstruction, and sports
             injury management.
           </p>
@@ -270,11 +270,11 @@ export default function Page() {
             <img
               data-aos="flip-up"
               src="/Images/dr_hemendra.jpg"
-              alt="Dr. Hemendra Agarwal"
+              alt="Dr. Hemendra Agrawal"
               className="rounded-2xl shadow-xl border border-gray-200 w-full h-auto max-w-[350px] object-cover"
             />
             <p data-aos="flip-up">
-              Dr. Hemendra Agarwal is one of the few orthopedic doctors in
+              Dr. Hemendra Agrawal is one of the few orthopedic doctors in
               Jaipur trained in advanced arthroscopy and minimally invasive
               joint replacement surgery.
             </p>
@@ -347,7 +347,7 @@ export default function Page() {
           data-aos="zoom-out"
           className="md:text-center text-[#197d85] font-semibold md:text-xl"
         >
-          Why Patients Choose Dr. Hemendra Agarwal
+          Why Patients Choose Dr. Hemendra Agrawal
         </p>
         <h2
           data-aos="zoom-out"
@@ -406,7 +406,7 @@ export default function Page() {
           data-aos="flip-up"
           className="text-center text-[#197d85] font-semibold md:text-xl md:mb-4"
         >
-          Where You Can Consult Dr. Agarwal
+          Where You Can Consult Dr. Agrawal
         </p>
         <h2
           data-aos="flip-up"
@@ -472,7 +472,7 @@ export default function Page() {
           data-aos="fade-down"
           className="text-3xl md:text-4xl font-bold text-slate-800 mb-12"
         >
-          What Patients Say About Dr. Agarwal
+          What Patients Say About Dr. Agrawal
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
@@ -536,7 +536,7 @@ export default function Page() {
         <div data-aos="fade-down" className="relative lg:w-150">
           <img
             src="/Images/dr_hemendra.jpg"
-            alt="Dr. Hemendra Agarwal"
+            alt="Dr. Hemendra Agrawal"
             width={600}
             height={400}
             className="object-top -mt-20 rounded-4xl"
@@ -548,7 +548,7 @@ export default function Page() {
             data-aos="flip-up"
             className="text-2xl md:text-4xl font-semibold leading-tight mb-10"
           >
-            Need expert orthopedic care in Jaipur? Dr. Hemendra Agarwal is here
+            Need expert orthopedic care in Jaipur? Dr. Hemendra Agrawal is here
             for you.
           </h2>
           <div

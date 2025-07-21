@@ -20,7 +20,7 @@ export const Appointment = () => {
         </h2>
         <p data-aos="zoom-in" className="text-gray-800 mb-6 text-lg">
           Say goodbye to joint pain and sports injuries. Consult Dr. Hemendra
-          Agarwal, Jaipur’s most trusted orthopedic specialist.
+          Agrawal, Jaipur’s most trusted orthopedic specialist.
         </p>
 
         <div
@@ -52,7 +52,7 @@ export const Appointment = () => {
       <div data-aos="zoom-out" className="relative">
         <img
           src="/Images/appointment.jpeg"
-          alt="Dr. Hemendra Agarwal"
+          alt="Dr. Hemendra Agrawal"
           width={400}
           height={400}
           className="rounded-2xl"

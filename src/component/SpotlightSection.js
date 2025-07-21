@@ -25,7 +25,7 @@ export default function SpotlightSection() {
           data-aos="flip-left"
           className="text-[#197d85] font-semibold text-lg mb-1"
         >
-          🦿 Spotlight Section - Knee Replacement Surgery
+          Knee Replacement Surgery
         </h3>
         <h2
           data-aos="flip-left"
@@ -38,7 +38,7 @@ export default function SpotlightSection() {
           className="border-t-2 border-[#197d85] w-20 mb-4"
         />
         <p data-aos="flip-left" className="text-gray-600 mb-4 leading-relaxed">
-          Dr. Hemendra Agarwal is among the top-rated knee replacement surgeons
+          Dr. Hemendra Agrawal is among the top-rated knee replacement surgeons
           in Jaipur, offering both total and partial replacements using
           minimally invasive techniques. Patients experience reduced pain,
           shorter hospital stays, and faster recovery. If you&apos;re concerned

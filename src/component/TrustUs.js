@@ -39,7 +39,7 @@ export default function TrustUsSection() {
             data-aos="fade-left"
             className="text-lg font-semibold text-[#197d85] mb-2"
           >
-            Why Patients Trust Dr. Hemendra Agarwal
+            Why Patients Trust Dr. Hemendra Agrawal
           </p>
           <h2
             data-aos="fade-left"
@@ -52,7 +52,7 @@ export default function TrustUsSection() {
           <hr data-aos="fade-left" className="w-24 border-teal-400 mb-4" />
 
           <p data-aos="fade-left" className="text-gray-600 mb-6">
-            Dr. Hemendra Agarwal is one of the most respected orthopedic
+            Dr. Hemendra Agrawal is one of the most respected orthopedic
             surgeons in Jaipur, known for combining modern surgical techniques
             with a deep commitment to patient care. From knee replacements to
             arthroscopic procedures, he offers customized treatment plans that
@@ -85,7 +85,7 @@ export default function TrustUsSection() {
               data-aos="fade-left"
               className="bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black px-6 py-3 rounded-full font-medium hover:opacity-80 transition-transform hover:scale-105"
             >
-              Learn More About Dr. Agarwal
+              Learn More About Dr. Agrawal
             </button>
           </Link>
         </div>

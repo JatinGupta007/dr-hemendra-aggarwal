@@ -55,7 +55,7 @@ export default function EnhancedContactPage() {
         </div>
 
         {/* Hero Section */}
-        <section className="relative z-10 min-h-screen flex items-center justify-center px-6 md:px-20">
+        <section className="relative z-10 min-h-screen flex items-center justify-center bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 px-6 md:px-20">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div
@@ -200,9 +200,9 @@ export default function EnhancedContactPage() {
                   className="group relative bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer"
                 >
                   <div
-                    className={`w-16 h-16 bg-gradient-to-r ${item.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                    className={`w-16 h-16 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
                   >
-                    <item.icon className="w-8 h-8 text-white" />
+                    <item.icon className="w-8 h-8 text-white font-bold" />
                   </div>
 
                   <h3 className="text-2xl font-bold text-gray-800 mb-3">

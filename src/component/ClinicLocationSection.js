@@ -1,6 +1,6 @@
-import Image from "next/image";
+
 import Link from "next/link";
-import { LocateFixed } from "lucide-react";
+import { LocateFixed, Navigation } from "lucide-react";
 import { FaPhoneAlt} from "react-icons/fa";
 
 export default function ClinicLocations() {
@@ -21,13 +21,37 @@ export default function ClinicLocations() {
             className="rounded-2xl p-5 w-full md:w-100 shadow-lg transform transition-all duration-300 hover:scale-105 bg-sky-50 hover:opacity-80 text-black"
           >
             <div className="mb-4 relative mx-auto">
-              <Image
-                src="/Images/location_1.png"
-                alt="Location Icon"
-                width={350}
-                height={150}
-                className="rounded-2xl mx-auto"
-              />
+              <div className="relative rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
+                <a
+                  href="https://g.co/kgs/RFjQ2wV" // e.g., "https://www.google.com/maps/place/..."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block group"
+                  aria-label="Open map in new tab"
+                >
+                  {/* Map Preview */}
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.29600027931!2d75.83297209999999!3d26.798702100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc90a0fbec191%3A0xfad7f9958d424be5!2sORTHO-KLINIK-Dr%20Hemendra%20Agrawal%20senior%20Orthopedic%20Surgeon!5e0!3m2!1sen!2sin!4v1753001468755!5m2!1sen!2sin" // e.g., embedded map URL
+                    width="100%"
+                    height="200"
+                    style={{ border: 0, pointerEvents: "none" }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="hover:grayscale-0 transition-all duration-500"
+                    title="Map Preview"
+                  />
+
+                  {/* Navigation Icon Overlay */}
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Navigation className="w-5 h-5 text-[#197d85]" />
+                  </div>
+
+                  {/* Decorative Glow Effects */}
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-[#197d85]/10 to-[#97a345]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                  <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-[#97a345]/10 to-[#197d85]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                </a>
+              </div>
             </div>
             <h3 className="text-xl font-semibold text-center mb-3">
               Pratap Nagar Clinic
@@ -45,16 +69,40 @@ export default function ClinicLocations() {
             className="rounded-2xl p-6 w-full md:w-100 shadow-lg transform transition-all duration-300 hover:scale-105 bg-sky-50 hover:opacity-80 text-black"
           >
             <div className="mb-4 relative mx-auto">
-              <Image
-                src="/Images/location_2.png"
-                alt="Location Icon"
-                width={350}
-                height={150}
-                className="rounded-2xl mx-auto h-45"
-              />
+              <div className="relative rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
+                <a
+                  href="https://www.google.com/search?q=Narayana+Multispeciality+Hospital+%E2%80%93+Pratap+Nagar%2C+Jaipur&rlz=1C1CHZN_enIN1094IN1094&oq=Narayana+Multispeciality+Hospital+%E2%80%93+Pratap+Nagar%2C+Jaipur&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzM4NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" // e.g., "https://www.google.com/maps/place/..."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block group"
+                  aria-label="Open map in new tab"
+                >
+                  {/* Map Preview */}
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.413867637782!2d75.8253632!3d26.7949476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc999fe90f309%3A0x91760491563438ac!2sNarayana%20Hospital%2C%20Jaipur!5e0!3m2!1sen!2sin!4v1753080256093!5m2!1sen!2sin" // e.g., embedded map URL
+                    width="100%"
+                    height="200"
+                    style={{ border: 0, pointerEvents: "none" }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="hover:grayscale-0 transition-all duration-500"
+                    title="Map Preview"
+                  />
+
+                  {/* Navigation Icon Overlay */}
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Navigation className="w-5 h-5 text-[#197d85]" />
+                  </div>
+
+                  {/* Decorative Glow Effects */}
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-[#197d85]/10 to-[#97a345]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                  <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-[#97a345]/10 to-[#197d85]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                </a>
+              </div>
             </div>
             <h3 className="text-xl font-semibold text-center mb-3">
-              SMS Hospital Jaipur
+              Narayana Hospital Jaipur
             </h3>
             <ul className="text-sm space-y-1 list-disc list-inside">
               <li>Government hospital access</li>
@@ -67,16 +115,40 @@ export default function ClinicLocations() {
             className="rounded-2xl p-6 w-full md:w-100 shadow-lg transform transition-all duration-300 hover:scale-105 bg-sky-50 hover:opacity-80 text-black"
           >
             <div className="mb-4 relative mx-auto">
-              <Image
-                src="/Images/location_3.png"
-                alt="Location Icon"
-                width={350}
-                height={150}
-                className="rounded-2xl mx-auto h-45"
-              />
+              <div className="relative rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
+                <a
+                  href="https://g.co/kgs/riT4Q2w" // e.g., "https://www.google.com/maps/place/..."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block group"
+                  aria-label="Open map in new tab"
+                >
+                  {/* Map Preview */}
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.3616659387435!2d75.7357402!3d26.8284468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db591ca3cb9b9%3A0x2077186374def3fe!2sDR%20HEMENDRA%20AGRAWAL%20ORTHOPEDIC%20DOCTOR!5e0!3m2!1sen!2sin!4v1753001116217!5m2!1sen!2sin" // e.g., embedded map URL
+                    width="100%"
+                    height="200"
+                    style={{ border: 0, pointerEvents: "none" }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="hover:grayscale-0 transition-all duration-500"
+                    title="Map Preview"
+                  />
+
+                  {/* Navigation Icon Overlay */}
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Navigation className="w-5 h-5 text-[#197d85]" />
+                  </div>
+
+                  {/* Decorative Glow Effects */}
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-[#197d85]/10 to-[#97a345]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                  <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-[#97a345]/10 to-[#197d85]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                </a>
+              </div>
             </div>
             <h3 className="text-xl font-semibold text-center mb-3">
-              Mansarovar Clinic - Jaipur
+              Mansarovar Clinic Jaipur
             </h3>
             <ul className="text-sm space-y-1 list-disc list-inside">
               <li>Sports injury doctor in Jaipur</li>
@@ -96,13 +168,13 @@ export default function ClinicLocations() {
             </button>
           </a>
           <Link href="/clinics">
-          <button
-            data-aos="fade-up"
-            className="flex items-center gap-2 bg-white  hover:opacity-80 text-[#197d85] font-bold px-6 py-3 rounded-xl shadow-lg transition-transform hover:scale-105"
-          >
-            <LocateFixed size={20} />
-            <p>Get Direction</p>
-          </button>
+            <button
+              data-aos="fade-up"
+              className="flex items-center gap-2 bg-white  hover:opacity-80 text-[#197d85] font-bold px-6 py-3 rounded-xl shadow-lg transition-transform hover:scale-105"
+            >
+              <LocateFixed size={20} />
+              <p>Get Direction</p>
+            </button>
           </Link>
         </div>
       </div>

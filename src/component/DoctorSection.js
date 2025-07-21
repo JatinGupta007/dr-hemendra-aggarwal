@@ -13,11 +13,11 @@ export default function DoctorSection() {
           data-aos="flip-right"
           className="text-3xl md:text-4xl font-bold leading-tight mb-4"
         >
-          Dr. Hemendra Agarwal
+          Dr. Hemendra Agrawal
         </h2>
         <p data-aos="flip-right" className="text-gray-800 mb-6">
           With degrees from top medical institutions and training in the latest
-          orthopedic innovations, Dr. Hemendra Agarwal blends experience,
+          orthopedic innovations, Dr. Hemendra Agrawal blends experience,
           empathy, and efficiency in every procedure. He is known for his
           clinical clarity and surgical precision.
         </p>
@@ -40,7 +40,7 @@ export default function DoctorSection() {
       >
         <Image
           src="/Images/dr_hemendra.jpg"
-          alt="Dr. Hemendra Agarwal"
+          alt="Dr. Hemendra Agrawal"
           width={700}
           height={400}
           className="object-top -mt-20 rounded-4xl"

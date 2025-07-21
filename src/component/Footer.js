@@ -20,14 +20,14 @@ export default function Footer() {
             data-aos="flip-up"
             src="/Images/footer-logo.png"
             alt="Logo"
-            className="w-52 mb-4"
+            className="w-120 mb-4"
           />
           <p data-aos="flip-up">
-            Dr. Hemendra Agarwal is recognized as one of the best orthopedic
+            Dr. Hemendra Agrawal is recognized as one of the best orthopedic
             doctors in Jaipur, offering expertise in knee replacement,
             arthroscopy, sports injury treatment, and complex trauma surgeries.
             With clinics in Vaishali Nagar and practice at SMS Hospital Jaipur,
-            Dr. Agarwal ensures accessible and effective orthopedic care for
+            Dr. Agrawal ensures accessible and effective orthopedic care for
             all.
           </p>
           <div data-aos="flip-up" className="flex gap-4 mt-8 text-xl">
@@ -78,6 +78,13 @@ export default function Footer() {
           <h3 data-aos="flip-up" className="font-semibold text-lg mb-2">
             Get In Touch
           </h3>
+          <p data-aos="flip-up">
+            <strong>Narayana Hospital, Jaipur</strong> <br />
+            SEC 28 Kumbha Marg Pratap Nagar, Sanganer, Sitapura Industrial Area,
+            Sitapura, Jaipur, Rajasthan 302033
+            <br />
+            <strong>Timing:</strong> 24x7 Emergency Services
+          </p>
           <p data-aos="flip-up" className="mb-3">
             <strong>Pratap Nagar Clinic</strong> <br />
             183/82, Rana Sanga Marg, Sector 18, Pratap Nagar, Jaipur, Rajasthan
@@ -89,12 +96,6 @@ export default function Footer() {
             <strong>Mansarovar Clinic</strong> <br />
             Villa 19, balaji mandir, MANGLAM ARPAN, near mohanpura, Hajiwala,
             Mohanpura, Rajasthan 302029
-            <br />
-            <strong>Timing:</strong> 24x7 Emergency Services
-          </p>
-          <p data-aos="flip-up">
-            <strong>SMS Hospital Jaipur</strong> <br />
-            Jawahar Lal Nehru Marg, Ashok Nagar, Jaipur, Rajasthan 302001
             <br />
             <strong>Timing:</strong> 24x7 Emergency Services
           </p>

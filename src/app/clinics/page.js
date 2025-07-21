@@ -42,6 +42,27 @@ const reasons = [
 const locations = [
   {
     id: 1,
+    title: "Narayana Hospital, Jaipur",
+    subtitle: "Orthopedic Consultation & Surgical Services",
+    address:
+      "SEC 28 Kumbha Marg Pratap Nagar, Sanganer, Sitapura Industrial Area, Sitapura, Jaipur, Rajasthan 302033",
+    timing: "24x7 Emergency Services",
+    contact: "+91-9210696045",
+    specialties: [
+      "Knee replacement consultation",
+      "Orthopedic surgery",
+      "Specialized treatments",
+    ],
+    mapLink:
+      "https://www.google.com/search?q=Narayana+Multispeciality+Hospital+%E2%80%93+Pratap+Nagar%2C+Jaipur&rlz=1C1CHZN_enIN1094IN1094&oq=Narayana+Multispeciality+Hospital+%E2%80%93+Pratap+Nagar%2C+Jaipur&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzM4NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8",
+    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.413867637782!2d75.8253632!3d26.7949476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc999fe90f309%3A0x91760491563438ac!2sNarayana%20Hospital%2C%20Jaipur!5e0!3m2!1sen!2sin!4v1753080256093!5m2!1sen!2sin",
+    type: "Specialized Hospital",
+    rating: 4.8,
+    icon: Calendar,
+  },
+
+  {
+    id: 2,
     title: "Pratap Nagar Clinic",
     subtitle: "Pratap Nagar, Jaipur",
     address:
@@ -53,14 +74,14 @@ const locations = [
       "Orthopedic surgery",
       "Hospital consultation",
     ],
-    mapLink: " https://g.co/kgs/RFjQ2wV",
+    mapLink: "https://g.co/kgs/RFjQ2wV",
     src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.29600027931!2d75.83297209999999!3d26.798702100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc90a0fbec191%3A0xfad7f9958d424be5!2sORTHO-KLINIK-Dr%20Hemendra%20Agrawal%20senior%20Orthopedic%20Surgeon!5e0!3m2!1sen!2sin!4v1753001468755!5m2!1sen!2sin",
     type: "Hospital",
     rating: 4.8,
     icon: Building2,
   },
   {
-    id: 2,
+    id: 3,
     title: "Mansarovar Clinic",
     subtitle: "Jaipur",
     address:
@@ -78,25 +99,6 @@ const locations = [
     rating: 4.7,
     icon: MapPin,
   },
-
-  {
-    id: 4,
-    title: "SMS Hospital Jaipur",
-    subtitle: "Orthopedic Consultation & Surgical Services",
-    address: "Jawahar Lal Nehru Marg, Ashok Nagar, Jaipur, Rajasthan 302001",
-    timing: "24x7 Emergency Services",
-    contact: "+91-9210696045",
-    specialties: [
-      "Knee replacement consultation",
-      "Orthopedic surgery",
-      "Specialized treatments",
-    ],
-    mapLink: "https://g.co/kgs/hLnWRGb ",
-    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.9136952960685!2d75.8163148!3d26.906234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc8733fd70039%3A0xed6e6608b8ca9783!2sSawai%20Man%20Singh%20Hospital%20(SMS)!5e0!3m2!1sen!2sin!4v1753000827934!5m2!1sen!2sin",
-    type: "Specialized Clinic",
-    rating: 4.6,
-    icon: Calendar,
-  },
 ];
 
 const DoctorLocations = () => {
@@ -104,14 +106,14 @@ const DoctorLocations = () => {
     <main>
       <Navbar />
       {/* Hero Section */}
-      <section className="relative isolate bg-slate-50">
+      <section className="relative isolate bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40">
         <div className="mx-auto max-w-7xl px-6 py-18 sm:py-16 md:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left column */}
             <div className="text-center lg:text-left">
               <h1
                 data-aos="flip-up"
-                className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
+                className="text-3xl font-bold tracking-tight text-slate-900 lg:text-[40px]"
               >
                 Consult the{" "}
                 <span className="bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 bg-clip-text text-transparent">
@@ -123,7 +125,7 @@ const DoctorLocations = () => {
                 data-aos="flip-up"
                 className="mt-6 text-lg leading-relaxed text-slate-700"
               >
-                Dr. Hemendra Agarwal - 15+ years of surgical excellence in knee,
+                Dr. Hemendra Agrawal - 15+ years of surgical excellence in knee,
                 hip & sports injuries. Ethical, high-quality orthopedic care
                 across Rajasthan.
               </p>
@@ -154,7 +156,7 @@ const DoctorLocations = () => {
               >
                 <img
                   src="/Images/dr_hemendra-removebg.png"
-                  alt="Dr. Hemendra Agarwal consulting a patient"
+                  alt="Dr. Hemendra Agrawal consulting a patient"
                   className="object-cover"
                 />
               </div>
@@ -165,7 +167,7 @@ const DoctorLocations = () => {
       {/* location Section */}
       <section
         id="locations"
-        className="min-h-screen bg-sky-50 py-7 px-6 md:px-20"
+        className="min-h-screen py-7 px-6 md:px-20"
       >
         {/* Header Section */}
         <div className="max-w-7xl mx-auto">
@@ -176,7 +178,7 @@ const DoctorLocations = () => {
                 data-aos="fade-down"
                 className="text-4xl md:text-6xl font-bold  text-black mb-4"
               >
-                Find Dr. Hemendra Agarwal
+                Find Dr. Hemendra Agrawal
               </h2>
               <p
                 data-aos="fade-down"
@@ -312,7 +314,7 @@ const DoctorLocations = () => {
           {/* Footer CTA */}
           <div className="text-center mt-16 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 rounded-3xl p-8 text-black">
             <h3 data-aos="flip-up" className="text-2xl font-bold mb-4">
-              Book an Appointment with Dr. Hemendra Agarwal
+              Book an Appointment with Dr. Hemendra Agrawal
             </h3>
             <p data-aos="flip-up" className="text-lg mb-6">
               Whether you&apos;re in Jaipur, Hanumangarh, or Alwar, help is just
@@ -349,7 +351,7 @@ const DoctorLocations = () => {
           >
             Why Patients Across Rajasthan Trust{" "}
             <span className="bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 bg-clip-text text-transparent">
-              Dr. Hemendra Agarwal
+              Dr. Hemendra Agrawal
             </span>
           </h2>
 

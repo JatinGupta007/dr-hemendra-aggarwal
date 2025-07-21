@@ -14,13 +14,13 @@ export default function HeroSection() {
           <div className="space-y-6 lg:absolute lg:left-24 lg:z-11 lg:w-2xl">
             <h1
               data-aos="fade-right"
-              className="text-4xl lg:text-[62px] font-bold"
+              className="text-3xl lg:text-[40px] font-bold"
             >
-              Best Orthopedic Doctor in Jaipur Dr. Hemendra Agarwal
+              Best Orthopedic Doctor in Jaipur <br /> Dr. Hemendra Agrawal
             </h1>
             <p data-aos="fade-left" className="text-xl lg:w-xl lg:mb-16">
               Renowned for expertise in joint replacement, arthroscopy, and
-              sports injury treatment, Dr. Hemendra Agarwal brings 15+ years of
+              sports injury treatment, Dr. Hemendra Agrawal brings 15+ years of
               trusted orthopedic care in Jaipur.
             </p>
 

@@ -4,15 +4,12 @@ import React, { useState } from "react";
 import {
   ChevronRight,
   Stethoscope,
-  Heart,
   ShieldCheck,
-  Award,
-  Users,
   Eye,
-  Clock,
   Navigation,
   Dumbbell,
   Footprints,
+  Bone,
 } from "lucide-react";
 
 import Navbar from "@/component/Header";
@@ -133,7 +130,7 @@ const services = [
       "Dr. Agrawal provides specialized upper limb orthopedic care that restores strength and stability.",
     buttonText: "Learn More",
     path: "/expertise/shoulder-elbow",
-    icon: <Clock className="w-8 h-8" color="#197d85" />,
+    icon: <Bone className="w-8 h-8" color="#197d85" />,
   },
 ];
 

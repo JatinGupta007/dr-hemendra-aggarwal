@@ -2,7 +2,7 @@ import SpecificExpertise from "@/component/SpecificExpertise";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
 
-import { Dumbbell, CheckCircle, Clock, Shield } from "lucide-react";
+import { Dumbbell, CheckCircle} from "lucide-react";
 
 const sportsInjuryData = {
   icon: <Dumbbell className="w-8 h-8 text-[#197d85]" />,

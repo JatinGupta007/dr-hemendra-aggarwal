@@ -1,10 +1,10 @@
-import { Armchair, CheckCircle, MoveRight } from "lucide-react";
+import { CheckCircle, Bone} from "lucide-react";
 import SpecificExpertise from "@/component/SpecificExpertise";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
 
 const upperLimbData = {
-  icon: <Armchair className="w-8 h-8 text-[#197d85]" />,
+  icon: <Bone className="w-8 h-8 text-[#197d85]" />,
   title: "Shoulder, Elbow &",
   subtitle: "Upper Limb Surgeries",
   description:

@@ -8,6 +8,7 @@ import {
   GiShoulderBag,
   GiMagnifyingGlass,
 } from "react-icons/gi";
+
 import { FaRunning } from "react-icons/fa";
 
 export default function TreatmentSection() {

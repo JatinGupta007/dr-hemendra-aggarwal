@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaBookMedical } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function SpotlightSection() {
   return (
@@ -72,12 +73,14 @@ export default function SpotlightSection() {
           </li>
         </ul>
 
-        <button
-          data-aos="flip-left"
-          className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40  hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105"
-        >
-          <FaBookMedical /> Learn More About Knee Replacement
-        </button>
+        <Link href="/expertise/joint-replacement">
+          <button
+            data-aos="flip-left"
+            className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40  hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105"
+          >
+            <FaBookMedical /> Learn More About Knee Replacement
+          </button>
+        </Link>
       </div>
     </section>
   );

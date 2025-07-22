@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Menu, ChevronDown} from "lucide-react"; // You can use react-icons if preferred
+import { Menu, ChevronDown } from "lucide-react"; // You can use react-icons if preferred
 import Link from "next/link";
 import Image from "next/image";
 
@@ -13,13 +13,12 @@ import {
 } from "@/component/ui/sheet";
 
 export default function Navbar() {
-
   return (
     <header className="bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 px-6 lg:px-20 py-6">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center w-16 md:w-full">
+        <div className="flex items-center">
           <img src="/Images/just-logo.png" width={80} height={28} alt="logo" />
-          <div className="flex-col leading-4 hidden md:flex text-sm">
+          <div className="flex-col leading-4 text-sm">
             <p className="border-b pb-1 border-black">Dr. Hemendra Agrawal</p>
             <p>Orthopedic Surgeon Jaipur</p>
           </div>
@@ -39,8 +38,8 @@ export default function Navbar() {
             </Link>
 
             {/* Dropdown Content */}
-            <div className="absolute top-full hidden w-80 bg-white shadow-xl border border-gray-200 rounded-lg group-hover:block group-focus-within:block transition-all duration-300 ease-in-out z-40">
-              <ul className="py-2 text-sm text-gray-800 divide-y divide-gray-100">
+            <div className="absolute top-full hidden w-80 bg-white shadow-xl border border-[#197d85] rounded-lg group-hover:block group-focus-within:block transition-all duration-300 ease-in-out z-40">
+              <ul className="py-2 text-sm text-gray-800 divide-y divide-[#197d85]">
                 <li>
                   <Link
                     href="/expertise/joint-replacement"
@@ -104,7 +103,7 @@ export default function Navbar() {
             <SheetTrigger>
               <Menu className="lg:hidden" size={45} />
             </SheetTrigger>
-            <SheetContent className="bg-sky-50 min-w-screen">
+            <SheetContent className="bg-gradient-to-r from-[#9ae0e5] to-[#e5edb1] min-w-screen">
               <SheetHeader>
                 <SheetTitle className="border-b-2 border-gray-300">
                   <Image
@@ -121,20 +120,17 @@ export default function Navbar() {
                       <Link href="/about">About</Link>
                       <div className="relative group">
                         {/* Main Link */}
-                        <Link href="/expertise"
+                        <Link
+                          href="/expertise"
                           className="flex items-center gap-1 cursor-pointer text-black py-2 focus:outline-none"
                         >
                           Expertise
-                          <ChevronDown
-                            className="w-4 h-4 transition-transform duration-300"
-                          />
+                          <ChevronDown className="w-4 h-4 transition-transform duration-300" />
                         </Link>
 
                         {/* Dropdown Menu */}
-                        <div
-                          className="top-full w-80 bg-white shadow-xl border border-gray-200 rounded-lg transition-all duration-300 ease-in-out z-40"
-                        >
-                          <ul className="py-2 text-sm text-gray-800 divide-y divide-gray-100">
+                        <div className="top-full w-80 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 shadow-xl border border-[#197d85] rounded-lg transition-all duration-300 ease-in-out z-40">
+                          <ul className="py-2 text-sm text-gray-800 divide-y divide-[#197d85]">
                             <li>
                               <Link
                                 href="/expertise/joint-replacement"

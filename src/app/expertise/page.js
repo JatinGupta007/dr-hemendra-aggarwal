@@ -5,11 +5,14 @@ import {
   ChevronRight,
   Stethoscope,
   Heart,
-  Shield,
+  ShieldCheck,
   Award,
   Users,
+  Eye,
   Clock,
-  Navigation
+  Navigation,
+  Dumbbell,
+  Footprints,
 } from "lucide-react";
 
 import Navbar from "@/component/Header";
@@ -45,6 +48,7 @@ const services = [
     quote:
       "Restore mobility and eliminate pain with our state-of-the-art joint replacement procedures.",
     buttonText: "Learn More",
+    path: "/expertise/joint-replacement",
     icon: <Stethoscope className="w-8 h-8" color="#197d85" />,
   },
   {
@@ -61,7 +65,8 @@ const services = [
     quote:
       "Get back in the game faster with our specialized sports medicine expertise.",
     buttonText: "Learn More",
-    icon: <Heart className="w-8 h-8" color="#197d85" />,
+    path: "/expertise/sports-injury",
+    icon: <Dumbbell className="w-8 h-8 text-[#197d85]" />,
   },
   {
     title: "Foot, Ankle, Hand & Wrist Procedures",
@@ -77,7 +82,8 @@ const services = [
     quote:
       "Dr. Hemendra Agrawal treats a wide range of peripheral orthopedic problems with both surgical and non-surgical options.",
     buttonText: "Learn More",
-    icon: <Shield className="w-8 h-8" color="#197d85" />,
+    path: "/expertise/foot-ankle",
+    icon: <Footprints className="w-8 h-8 text-[#197d85]" />,
   },
   {
     title: "Fracture & Trauma Surgery",
@@ -92,7 +98,8 @@ const services = [
     ],
     quote: "Immediate expert care when you need it most.",
     buttonText: "Learn More",
-    icon: <Award className="w-8 h-8" color="#197d85" />,
+    path: "/expertise/fracture",
+    icon: <ShieldCheck className="w-8 h-8" color="#197d85" />,
   },
   {
     title: "Arthroscopy - Keyhole Surgery",
@@ -108,7 +115,8 @@ const services = [
     quote:
       "Faster recovery, minimal pain, and reduced risk of complications with arthroscopy in Jaipur.",
     buttonText: "Learn More",
-    icon: <Users className="w-8 h-8" color="#197d85" />,
+    path: "/expertise/arthroscopy",
+    icon: <Eye className="w-8 h-8 text-[#197d85]" />,
   },
   {
     title: "Shoulder, Elbow & Upper Limb Surgeries",
@@ -124,6 +132,7 @@ const services = [
     quote:
       "Dr. Agrawal provides specialized upper limb orthopedic care that restores strength and stability.",
     buttonText: "Learn More",
+    path: "/expertise/shoulder-elbow",
     icon: <Clock className="w-8 h-8" color="#197d85" />,
   },
 ];
@@ -362,7 +371,7 @@ export default function ExpertisePage() {
                     </div>
 
                     {/* Button */}
-                    <Link href="/contact">
+                    <Link href={service.path}>
                       <button className="w-full bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black px-6 py-3 rounded-xl font-semibold text-sm shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group/btn">
                         {service.buttonText}
                         <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />

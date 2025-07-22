@@ -278,12 +278,14 @@ export default function Page() {
               Jaipur trained in advanced arthroscopy and minimally invasive
               joint replacement surgery.
             </p>
-            <button
-              data-aos="flip-up"
-              className="bg-gradient-to-r from-[#197d87]/20 to-[#97a345]/20 text-black px-4 py-2 rounded-full shadow-lg hover:scale-105 transition duration-200"
-            >
-              View All Orthopedic Treatments →
-            </button>
+            <Link href="/expertise">
+              <button
+                data-aos="flip-up"
+                className="bg-gradient-to-r from-[#197d87]/20 to-[#97a345]/20 text-black px-4 py-2 rounded-full shadow-lg hover:scale-105 transition duration-200"
+              >
+                View All Orthopedic Treatments →
+              </button>
+            </Link>
           </div>
         </div>
       </section>

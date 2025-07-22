@@ -1,10 +1,17 @@
 import SpecificExpertise from "@/component/SpecificExpertise";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
-import { Stethoscope, CheckCircle } from "lucide-react"; // Or any other icon you want
+import Image from "next/image";
+import { CheckCircle } from "lucide-react"; // Or any other icon you want
 
 const jointReplacementData = {
-  icon: <Stethoscope className="w-8 h-8 text-[#197d85]" />,
+  icon: (<Image
+            src="/Images/treatment_icon_8.png"
+            alt="treatment_icon_8"
+            width={60}
+            height={60}
+            className="mx-auto"
+          />),
   title: "Joint Replacement Surgery",
   subtitle: "",
   description:

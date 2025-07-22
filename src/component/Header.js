@@ -105,13 +105,21 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent className="bg-gradient-to-r from-[#9ae0e5] to-[#e5edb1] min-w-screen">
               <SheetHeader>
-                <SheetTitle className="border-b-2 border-gray-300">
-                  <Image
-                    src="/Images/nav-logo.png"
-                    alt="doctor"
-                    width={200}
-                    height={40}
-                  />
+                <SheetTitle className="border-b-2 border-gray-300 px-2 py-3">
+                  <div className="flex items-center">
+                    <img
+                      src="/Images/just-logo.png"
+                      width={80}
+                      height={28}
+                      alt="logo"
+                    />
+                    <div className="flex-col leading-4 text-sm text-gray-600">
+                      <p className="border-b pb-1 border-black">
+                        Dr. Hemendra Agrawal
+                      </p>
+                      <p>Orthopedic Surgeon Jaipur</p>
+                    </div>
+                  </div>
                 </SheetTitle>
                 <SheetDescription asChild className="p-6">
                   <section>

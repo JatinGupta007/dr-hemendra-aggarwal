@@ -1,6 +1,7 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   ChevronRight,
   Stethoscope,
@@ -46,7 +47,15 @@ const services = [
       "Restore mobility and eliminate pain with our state-of-the-art joint replacement procedures.",
     buttonText: "Learn More",
     path: "/expertise/joint-replacement",
-    icon: <Stethoscope className="w-8 h-8" color="#197d85" />,
+    icon: (
+      <Image
+        src="/Images/treatment_icon_8.png"
+        alt="treatment_icon_8"
+        width={60}
+        height={60}
+        className="mx-auto"
+      />
+    ),
   },
   {
     title: "Sports Injury & Ligament Reconstruction",
@@ -63,7 +72,15 @@ const services = [
       "Get back in the game faster with our specialized sports medicine expertise.",
     buttonText: "Learn More",
     path: "/expertise/sports-injury",
-    icon: <Dumbbell className="w-8 h-8 text-[#197d85]" />,
+    icon: (
+      <Image
+        src="/Images/treatment_icon_4.png"
+        alt="treatment_icon_2"
+        width={60}
+        height={60}
+        className="mx-auto"
+      />
+    ),
   },
   {
     title: "Foot, Ankle, Hand & Wrist Procedures",
@@ -80,7 +97,15 @@ const services = [
       "Dr. Hemendra Agrawal treats a wide range of peripheral orthopedic problems with both surgical and non-surgical options.",
     buttonText: "Learn More",
     path: "/expertise/foot-ankle",
-    icon: <Footprints className="w-8 h-8 text-[#197d85]" />,
+    icon: (
+      <Image
+        src="/Images/treatment_icon_5.png"
+        alt="treatment_icon_5"
+        width={60}
+        height={60}
+        className="mx-auto"
+      />
+    ),
   },
   {
     title: "Fracture & Trauma Surgery",
@@ -96,7 +121,15 @@ const services = [
     quote: "Immediate expert care when you need it most.",
     buttonText: "Learn More",
     path: "/expertise/fracture",
-    icon: <ShieldCheck className="w-8 h-8" color="#197d85" />,
+    icon: (
+            <Image
+              src="/Images/treatment_icon_7.png"
+              alt="treatment_icon_7"
+              width={60}
+              height={60}
+              className="mx-auto"
+            />
+          ),
   },
   {
     title: "Arthroscopy - Keyhole Surgery",
@@ -113,7 +146,15 @@ const services = [
       "Faster recovery, minimal pain, and reduced risk of complications with arthroscopy in Jaipur.",
     buttonText: "Learn More",
     path: "/expertise/arthroscopy",
-    icon: <Eye className="w-8 h-8 text-[#197d85]" />,
+    icon: (
+      <Image
+        src="/Images/treatment_icon_2.png"
+        alt="treatment_icon_2"
+        width={60}
+        height={60}
+        className="mx-auto"
+      />
+    ),
   },
   {
     title: "Shoulder, Elbow & Upper Limb Surgeries",
@@ -130,7 +171,15 @@ const services = [
       "Dr. Agrawal provides specialized upper limb orthopedic care that restores strength and stability.",
     buttonText: "Learn More",
     path: "/expertise/shoulder-elbow",
-    icon: <Bone className="w-8 h-8" color="#197d85" />,
+    icon: (
+            <Image
+              src="/Images/treatment_icon_6.png"
+              alt="treatment_icon_6"
+              width={60}
+              height={60}
+              className="mx-auto"
+            />
+          ),
   },
 ];
 

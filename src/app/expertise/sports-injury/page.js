@@ -1,11 +1,20 @@
 import SpecificExpertise from "@/component/SpecificExpertise";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
+import Image from "next/image";
 
-import { Dumbbell, CheckCircle} from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
 const sportsInjuryData = {
-  icon: <Dumbbell className="w-8 h-8 text-[#197d85]" />,
+  icon: (
+    <Image
+      src="/Images/treatment_icon_4.png"
+      alt="treatment_icon_2"
+      width={60}
+      height={60}
+      className="mx-auto"
+    />
+  ),
   title: "Sports Injury",
   subtitle: "& Ligament Reconstruction",
   description:

@@ -1,60 +1,117 @@
 import {
-  GiKneeCap,
-  GiShoulderArmor,
-  GiStethoscope,
-  GiBrokenBone,
-  GiRunningShoe,
-  GiFootprint,
-  GiShoulderBag,
   GiMagnifyingGlass,
 } from "react-icons/gi";
 
-import { FaRunning } from "react-icons/fa";
+import Image from "next/image";
 
 export default function TreatmentSection() {
   const treatments = [
     {
-      icon: <GiKneeCap className="text-4xl text-[#197d85] mx-auto" />,
+      icon: (
+        <Image
+          src="/Images/treatment_icon_8.png"
+          alt="treatment_icon_8"
+          width={60}
+          height={60}
+          className="mx-auto"
+        />
+      ),
       title: "Knee Replacement Surgery",
       desc: "Restore mobility and eliminate pain with advanced knee replacement solutions tailored to your needs.",
     },
     {
-      icon: <GiShoulderArmor className="text-4xl text-[#197d85] mx-auto" />,
+      icon: (
+        <Image
+          src="/Images/treatment_icon_1.png"
+          alt="treatment_icon_1"
+          width={60}
+          height={60}
+          className="mx-auto"
+        />
+      ),
       title: "Hip & Shoulder Joint Replacement",
       desc: "Regain joint function and improve quality of life with expert joint replacement procedures.",
     },
     {
-      icon: <GiStethoscope className="text-4xl text-[#197d85] mx-auto" />,
+      icon: (
+        <Image
+          src="/Images/treatment_icon_2.png"
+          alt="treatment_icon_2"
+          width={60}
+          height={60}
+          className="mx-auto"
+        />
+      ),
       title: "Arthroscopy (Knee, Shoulder, Ankle, Wrist)",
       desc: "Minimally invasive procedures for accurate diagnosis and quicker recovery.",
     },
     {
-      icon: <GiRunningShoe className="text-4xl text-[#197d85] mx-auto" />,
+      icon: (
+        <Image
+          src="/Images/treatment_icon_3.png"
+          alt="treatment_icon_3"
+          width={60}
+          height={60}
+          className="mx-auto"
+        />
+      ),
       title: "Ligament Reconstruction (ACL, PCL, Labral Tears)",
       desc: "Rebuild stability and strength with cutting-edge ligament reconstruction techniques.",
     },
     {
-      icon: <GiBrokenBone className="text-4xl text-[#197d85] mx-auto" />,
+      icon: (
+        <Image
+          src="/Images/treatment_icon_7.png"
+          alt="treatment_icon_7"
+          width={60}
+          height={60}
+          className="mx-auto"
+        />
+      ),
       title: "Fracture & Trauma Surgery",
       desc: "Comprehensive care for all types of bone fractures and traumatic injuries.",
     },
     {
-      icon: <FaRunning className="text-4xl text-[#197d85] mx-auto" />,
+      icon: (
+        <Image
+          src="/Images/treatment_icon_4.png"
+          alt="treatment_icon_2"
+          width={60}
+          height={60}
+          className="mx-auto"
+        />
+      ),
       title: "Sports Injury Management",
       desc: "Customized treatment plans to get athletes back in action swiftly and safely.",
     },
     {
-      icon: <GiFootprint className="text-4xl text-[#197d85] mx-auto" />,
+      icon: (
+        <Image
+          src="/Images/treatment_icon_5.png"
+          alt="treatment_icon_5"
+          width={60}
+          height={60}
+          className="mx-auto"
+        />
+      ),
       title: "Foot, Ankle & Elbow Procedures",
       desc: "Specialized care for small joints to relieve pain and restore function.",
     },
     {
-      icon: <GiShoulderBag className="text-4xl text-[#197d85] mx-auto" />,
+      icon: (
+        <Image
+          src="/Images/treatment_icon_6.png"
+          alt="treatment_icon_6"
+          width={60}
+          height={60}
+          className="mx-auto"
+        />
+      ),
       title: "Shoulder Dislocation & Rotator Cuff Repair",
       desc: "Targeted treatments to stabilize shoulders and repair torn rotator cuffs.",
     },
     {
-      icon: <GiMagnifyingGlass className="text-4xl text-[#197d85] mx-auto" />,
+      icon: <GiMagnifyingGlass className="text-5xl text-[#197d85] mx-auto mb-4" />,
       title: "View Full List of Treatments",
       desc: "Looking for something specific? Explore our complete list of advanced orthopedic treatments tailored to your needs.",
     },
@@ -83,7 +140,7 @@ export default function TreatmentSection() {
           <div
             data-aos="zoom-in"
             key={index}
-            className="bg-white w-80 h-55 p-6 rounded-2xl shadow-md hover:shadow-xl shadow-[#197d85] hover:scale-105 transform transition duration-300 ease-in-out"
+            className="bg-white w-86 h-60 p-6 rounded-2xl shadow-md hover:shadow-xl shadow-[#197d85] hover:scale-105 transform transition duration-300 ease-in-out"
           >
             <div className="mb-4">{item.icon}</div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">

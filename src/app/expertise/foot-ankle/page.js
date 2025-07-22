@@ -1,10 +1,17 @@
-import { Footprints, CheckCircle } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import SpecificExpertise from "@/component/SpecificExpertise";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
+import Image from "next/image";
 
 const handFootData = {
-  icon: <Footprints className="w-8 h-8 text-[#197d85]" />,
+  icon: <Image
+            src="/Images/treatment_icon_5.png"
+            alt="treatment_icon_5"
+            width={60}
+            height={60}
+            className="mx-auto"
+          />,
   title: "Foot, Ankle, Hand &",
   subtitle: "Wrist Procedures",
   description:

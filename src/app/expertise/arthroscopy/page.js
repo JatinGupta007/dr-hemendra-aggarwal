@@ -1,11 +1,20 @@
 import React from "react";
+import Image from "next/image";
 import { Eye, Activity, Stethoscope, Zap } from "lucide-react";
 import SpecificExpertise from "@/component/SpecificExpertise";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
 
 const arthroscopyData = {
-  icon: <Eye className="w-8 h-8 text-[#197d85]" />,
+  icon: (
+    <Image
+      src="/Images/treatment_icon_2.png"
+      alt="treatment_icon_2"
+      width={60}
+      height={60}
+      className="mx-auto"
+    />
+  ),
   title: "Arthroscopy",
   subtitle: "Keyhole Surgery",
   description:

@@ -1,10 +1,19 @@
-import { ShieldCheck, CheckCircle, AlertTriangle } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import SpecificExpertise from "@/component/SpecificExpertise";
 import Navbar from "@/component/Header";  
 import Footer from "@/component/Footer";
+import Image from "next/image";
 
 const fractureTraumaData = {
-  icon: <ShieldCheck className="w-8 h-8 text-[#197d85]" />,
+  icon: (
+          <Image
+            src="/Images/treatment_icon_7.png"
+            alt="treatment_icon_7"
+            width={60}
+            height={60}
+            className="mx-auto"
+          />
+        ),
   title: "Fracture & Trauma",
   subtitle: "Surgery",
   description:

@@ -106,14 +106,14 @@ const DoctorLocations = () => {
     <main>
       <Navbar />
       {/* Hero Section */}
-      <section className="relative isolate bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40">
+      <section className="relative isolate bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20">
         <div className="mx-auto max-w-7xl px-6 py-18 sm:py-16 md:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left column */}
             <div className="text-center lg:text-left">
               <h1
                 data-aos="flip-up"
-                className="text-3xl font-bold tracking-tight text-slate-900 lg:text-[40px]"
+                className="text-3xl font-bold tracking-tight text-slate-900 lg:text-[36px]"
               >
                 Consult the{" "}
                 <span className="bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 bg-clip-text text-transparent">
@@ -134,7 +134,7 @@ const DoctorLocations = () => {
                 <Link href="/contact">
                   <button
                     data-aos="flip-up"
-                    className="flex-1 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black px-6 py-3 rounded-xl font-semibold hover:from-[#197d85]/60 hover:to-[#97a345]/60 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                    className="flex-1 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black px-6 py-3 rounded-xl font-semibold hover:from-[#197d85]/60 hover:to-[#97a345]/60 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                   >
                     Book an Appointment
                   </button>
@@ -213,7 +213,7 @@ const DoctorLocations = () => {
                   {/* Card Header */}
                   <div className="flex items-start justify-between mb-6">
                     <div className="flex items-center gap-3">
-                      <div className="p-3 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 rounded-2xl shadow-lg">
+                      <div className="p-3 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-2xl shadow-lg">
                         <location.icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -312,7 +312,7 @@ const DoctorLocations = () => {
           </div>
 
           {/* Footer CTA */}
-          <div className="text-center mt-16 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 rounded-3xl p-8 text-black">
+          <div className="text-center mt-16 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-3xl p-8 text-black">
             <h3 data-aos="flip-up" className="text-2xl font-bold mb-4">
               Book an Appointment with Dr. Hemendra Agrawal
             </h3>
@@ -350,7 +350,7 @@ const DoctorLocations = () => {
             className="text-3xl font-bold tracking-tight text-slate-900 text-center"
           >
             Why Patients Across Rajasthan Trust{" "}
-            <span className="bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 bg-clip-text text-transparent">
               Dr. Hemendra Agrawal
             </span>
           </h2>
@@ -363,7 +363,7 @@ const DoctorLocations = () => {
                 key={r.title}
                 className="flex items-start gap-4 rounded-xl border border-slate-200 bg-slate-50/50 p-6 shadow-sm"
               >
-                <div className="shrink-0 rounded-full bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 p-2">
+                <div className="shrink-0 rounded-full bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 p-2">
                   {r.icon}
                 </div>
                 <p className="text-base font-medium text-slate-800">

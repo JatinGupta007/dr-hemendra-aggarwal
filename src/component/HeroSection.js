@@ -8,13 +8,13 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <main>
-      <section className="bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 lg:h-[700px] flex items-center p-6 md:p-16 lg:relative lg:overflow-hidden">
+      <section className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 lg:h-[700px] flex items-center p-6 md:p-16 lg:relative lg:overflow-hidden">
         <div className="lg:max-w-7xl lg:w-full flex flex-col lg:flex-row gap-10 items-center">
           {/* Left Content */}
           <div className="space-y-6 lg:absolute lg:left-24 lg:z-11 lg:w-2xl">
             <h1
               data-aos="fade-right"
-              className="text-3xl lg:text-[40px] font-bold"
+              className="text-3xl lg:text-[36px] font-bold"
             >
               Best Orthopedic Doctor in Jaipur <br /> Dr. Hemendra Agrawal
             </h1>
@@ -30,7 +30,7 @@ export default function HeroSection() {
             >
               <p className="text-lg md:text-xl flex items-center gap-3">
                 <TiTickOutline size={30} color="black" />
-                Over 3000 Successful Surgeries
+                14+ years of Exprience & 20,000 + Surgeries
               </p>
               <p className="text-lg md:text-xl flex items-center gap-3">
                 <TiTickOutline size={30} color="black" />
@@ -53,14 +53,14 @@ export default function HeroSection() {
               alt="Doctor"
               width={860}
               height={700}
-              className="lg:z-10 w-100 lg:w-210"
+              className="lg:z-10 w-100 lg:w-188"
             />
           </div>
         </div>
       </section>
       <div
         data-aos="fade-up"
-        className="absolute mx-10 lg:w-full left-5 md:left-5 lg:left-1/5 xl:left-2/9 bg-white rounded-2xl shadow-xl shadow-[#197d85] px-10 lg:px-12 py-8 lg:py-16  max-w-[670px] -mt-16 flex flex-col md:flex-row justify-between items-center gap-8 z-12"
+        className="absolute mx-10 lg:w-full left-5 md:left-5 lg:left-1/5 xl:left-2/9 bg-white rounded-2xl shadow-xl shadow-[#197d85] px-10 lg:px-12 py-8 lg:py-16  max-w-[670px] -mt-20 flex flex-col md:flex-row justify-between items-center gap-8 z-12"
       >
         <div className="flex items-center flex-col md:flex-row gap-8">
           <Link href="/contact">

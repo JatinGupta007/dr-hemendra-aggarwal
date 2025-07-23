@@ -27,7 +27,7 @@ export default function Footer() {
             doctors in Jaipur, offering expertise in knee replacement,
             arthroscopy, sports injury treatment, and complex trauma surgeries.
             With clinics in Vaishali Nagar and practice at SMS Hospital Jaipur,
-            Dr. Agrawal ensures accessible and effective orthopedic care for
+            Dr. Hemendra Agrawal ensures accessible and effective orthopedic care for
             all.
           </p>
           <div data-aos="fade-up" className="flex gap-4 mt-8 text-xl">

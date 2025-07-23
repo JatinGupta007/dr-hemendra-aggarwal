@@ -63,8 +63,8 @@ export default function TrustUsSection() {
 
           <ul className="space-y-3 mb-8">
             {[
-              "15+ Years of Experience,",
-              "3000+ Successful Surgeries",
+              "14+ Years of Experience,",
+              "20000+ Successful Surgeries",
               "400+ 5-Star Patient Reviews",
               "Practicing at SMS Hospital & Pratap Nagar Clinic",
             ].map((item, idx) => (
@@ -85,7 +85,7 @@ export default function TrustUsSection() {
               data-aos="fade-left"
               className="bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black px-6 py-3 rounded-full font-medium hover:opacity-80 transition-transform hover:scale-105"
             >
-              Learn More About Dr. Agrawal
+              Learn More About Dr. Hemendra Agrawal
             </button>
           </Link>
         </div>

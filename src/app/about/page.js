@@ -80,7 +80,7 @@ export default function Page() {
       {/*Header*/}
       <Navbar />
       {/*Hero section */}
-      <section className="flex flex-col lg:flex-row items-center gap-16 py-10 px-6 md:px-20 pt-16 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40">
+      <section className="flex flex-col lg:flex-row items-center gap-16 py-10 px-6 md:px-20 pt-16 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20">
         <div data-aos="fade-right">
           <img
             src="/Images/dr_hemendra.jpg"
@@ -93,7 +93,7 @@ export default function Page() {
         <div className="space-y-6 w-full lg:w-2xl">
           <h1
             data-aos="fade-left"
-            className="text-3xl lg:text-[40px] font-bold mb-8"
+            className="text-3xl lg:text-[36px] font-bold mb-8"
           >
             Dr. Hemendra Agrawal Experienced Orthopedic Surgeon in Jaipur
           </h1>
@@ -139,7 +139,7 @@ export default function Page() {
           {/* Cards Container with background */}
           <div className="relative flex-1 flex justify-center">
             <div
-              className="absolute -top-28 lg:-left-8 md:left-5 w-screen md:w-full lg:w-[860px] h-full bg-gradient-to-b from-[#97a345]/40 to-[#197d85]/40 rounded-3xl z-0"
+              className="absolute -top-28 lg:-left-8 md:left-5 w-screen md:w-full lg:w-[860px] h-full bg-gradient-to-b from-[#97a345]/20 to-[#197d85]/20 rounded-3xl z-0"
               style={{ filter: "blur(1px)" }}
             ></div>
             <div className="relative z-10 flex flex-col md:flex-row gap-8 w-full justify-center">
@@ -295,19 +295,19 @@ export default function Page() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-2xl order-2 lg:order-1">
           <div
             data-aos="flip-right"
-            className="bg-gradient-to-b from-[#197d85]/40 to-[#97a345]/40 text-center p-6 lg:h-[300px] lg:w-[200px] rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all"
+            className="bg-gradient-to-b from-[#197d85]/20 to-[#97a345]/20 text-center p-6 lg:h-[300px] lg:w-[200px] rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all"
           >
             <FiUsers className="text-[#197d85] text-7xl" />
-            <p className="mt-4 text-white font-medium text-lg">
+            <p className="mt-4 text-black font-medium text-lg">
               Member - Indian Orthopaedic Association (IOA)
             </p>
           </div>
           <div
             data-aos="flip-right"
-            className="bg-gradient-to-b from-[#197d85]/40 to-[#97a345]/40 text-center p-6 rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all"
+            className="bg-gradient-to-b from-[#197d85]/20 to-[#97a345]/20 text-center p-6 rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all"
           >
             <MdMedicalServices className="text-[#197d85] text-7xl" />
-            <p className="mt-4 text-white font-medium text-lg">
+            <p className="mt-4 text-black font-medium text-lg">
               Registered Medical Practitioner - Rajasthan Medical Council
             </p>
           </div>
@@ -315,19 +315,19 @@ export default function Page() {
           <div className="max-w-md hidden lg:block"></div>
           <div
             data-aos="flip-left"
-            className="bg-gradient-to-b from-[#197d85]/40 to-[#97a345]/40 lg:h-[300px] text-center p-6 rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all"
+            className="bg-gradient-to-b from-[#197d85]/20 to-[#97a345]/20 lg:h-[300px] text-center p-6 rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all"
           >
             <HiOutlineMicrophone className="text-[#197d85] text-7xl" />
-            <p className="mt-4 text-white font-medium text-lg">
+            <p className="mt-4 text-black font-medium text-lg">
               Regular Speaker at Orthopedic Conferences
             </p>
           </div>
           <div
             data-aos="flip-left"
-            className="bg-gradient-to-b from-[#197d85]/40 to-[#97a345]/40 text-center p-6 rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all"
+            className="bg-gradient-to-b from-[#197d85]/20 to-[#97a345]/20 text-center p-6 rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all"
           >
             <FaHandshake className="text-[#197d85] text-7xl" />
-            <p className="mt-4 text-white font-medium text-lg">
+            <p className="mt-4 text-black font-medium text-lg">
               Collaborates with Physical Therapists & Rehab Experts
             </p>
           </div>
@@ -408,7 +408,7 @@ export default function Page() {
           data-aos="flip-up"
           className="text-center text-[#197d85] font-semibold md:text-xl md:mb-4"
         >
-          Where You Can Consult Dr. Agrawal
+          Where You Can Consult Dr. Hemendar Agrawal
         </p>
         <h2
           data-aos="flip-up"
@@ -474,7 +474,7 @@ export default function Page() {
           data-aos="fade-down"
           className="text-3xl md:text-4xl font-bold text-slate-800 mb-12"
         >
-          What Patients Say About Dr. Agrawal
+          What Patients Say About Dr. Hemendar Agrawal
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
@@ -534,7 +534,7 @@ export default function Page() {
         </div>
       </section>
       {/*Book Appointment section */}
-      <section className="bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 mt-20 rounded-2xl px-8 gap-16 flex flex-col lg:flex-row items-center justify-between m-6 md:m-20 py-7">
+      <section className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 mt-20 rounded-2xl px-8 gap-16 flex flex-col lg:flex-row items-center justify-between m-6 md:m-20 py-7">
         <div data-aos="fade-down" className="relative lg:w-150">
           <img
             src="/Images/dr_hemendra.jpg"

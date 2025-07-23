@@ -12,7 +12,7 @@ export default function SpecificExpertise({ data }) {
   } = data;
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 py-20 px-6 md:px-20">
+    <div className="relative overflow-hidden bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 py-20 px-6 md:px-20">
       <div className="relative max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -139,11 +139,11 @@ export default function SpecificExpertise({ data }) {
 
         {/* Keyword Tags */}
         <div data-aos="fade-up" className="mt-16 text-center">
-          <div className="inline-flex flex-wrap gap-2 justify-center">
+          <div className="inline-flex flex-wrap gap-7 justify-center">
             {keywords.map((keyword, index) => (
               <span
                 key={index}
-                className="bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-gray-600 border border-white/40"
+                className="bg-white/80 backdrop-blur-sm px-4 py-2 rounded-2xl text-sm font-medium text-gray-600 border border-white/40 capitalize"
               >
                 {keyword}
               </span>

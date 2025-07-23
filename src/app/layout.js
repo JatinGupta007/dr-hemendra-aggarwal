@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         <AOSInitializer /> {/* ✅ Init AOS on client */}
         {children}

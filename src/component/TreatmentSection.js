@@ -111,7 +111,9 @@ export default function TreatmentSection() {
       desc: "Targeted treatments to stabilize shoulders and repair torn rotator cuffs.",
     },
     {
-      icon: <GiMagnifyingGlass className="text-5xl text-[#197d85] mx-auto mb-4" />,
+      icon: (
+        <GiMagnifyingGlass className="text-5xl text-[#197d85] mx-auto mb-4" />
+      ),
       title: "View Full List of Treatments",
       desc: "Looking for something specific? Explore our complete list of advanced orthopedic treatments tailored to your needs.",
     },

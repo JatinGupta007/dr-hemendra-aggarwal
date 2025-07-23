@@ -1,17 +1,18 @@
 'use client';
 
 import React, { useState, useEffect } from "react";
-import { Phone, Mail, MapPin, Send, ArrowRight, Star } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowRight, Star, Navigation } from "lucide-react";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
+import Image from "next/image";
 
 export default function EnhancedContactPage() {
   const [isVisible, setIsVisible] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -25,17 +26,17 @@ export default function EnhancedContactPage() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const handleInputChange = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
 
-  const handleSubmit = () => {
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-  };
+  // const handleSubmit = () => {
+  //   // Handle form submission here
+  //   console.log("Form submitted:", formData);
+  // };
 
   return (
     <main>
@@ -55,8 +56,8 @@ export default function EnhancedContactPage() {
         </div>
 
         {/* Hero Section */}
-        <section className="relative z-10 min-h-screen flex items-center justify-center bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 px-6 md:px-20">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <section className="relative z-10 min-h-screen flex items-center justify-center bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 px-6 md:px-20">
+          <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             {/* Left Content */}
             <div
               className={`transform transition-all duration-1000 ${
@@ -71,7 +72,7 @@ export default function EnhancedContactPage() {
                   <br />
                   <span className="relative">
                     Connect
-                    <div className="absolute -bottom-4 left-0 w-full h-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 rounded-full transform -skew-x-12"></div>
+                    <div className="absolute -bottom-4 left-0 w-full h-2 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-full transform -skew-x-12"></div>
                   </span>
                 </h1>
 
@@ -82,7 +83,7 @@ export default function EnhancedContactPage() {
                 </p>
 
                 <div className="flex gap-4 mb-8">
-                  <button className="group relative px-8 py-4 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <button className="group relative px-8 py-4 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                     <span className="relative z-10 flex items-center gap-2">
                       Get Started
                       <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
@@ -96,9 +97,10 @@ export default function EnhancedContactPage() {
                 </div>
               </div>
             </div>
+            <Image src="/Images/dr_hemendra.jpg" alt="Dr Hemendra" height={500} width={480} className="rounded-4xl" />
 
             {/* Right Content - Contact Form */}
-            <div
+            {/* <div
               className={`transform transition-all duration-1000 delay-300 ${
                 isVisible
                   ? "translate-x-0 opacity-100"
@@ -149,7 +151,7 @@ export default function EnhancedContactPage() {
 
                   <button
                     onClick={handleSubmit}
-                    className="w-full bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black font-semibold py-4 rounded-2xl hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+                    className="w-full bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black font-semibold py-4 rounded-2xl hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <Send className="w-5 h-5" />
                     Send Message
@@ -157,6 +159,7 @@ export default function EnhancedContactPage() {
                 </div>
               </div>
             </div>
+          </div> */}
           </div>
         </section>
 
@@ -200,7 +203,7 @@ export default function EnhancedContactPage() {
                   className="group relative bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer"
                 >
                   <div
-                    className={`w-16 h-16 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                    className={`w-16 h-16 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
                   >
                     <item.icon className="w-8 h-8 text-white font-bold" />
                   </div>
@@ -220,33 +223,154 @@ export default function EnhancedContactPage() {
         </section>
 
         {/* Map Section */}
-        <section className="relative z-10 py-20 px-6 md:px-20">
-          <div className="max-w-6xl mx-auto">
-            <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 overflow-hidden">
-              <h3
-                data-aos="flip-up"
-                className="text-3xl font-bold text-gray-800 mb-8 text-center"
-              >
-                Find Us on the Map
-              </h3>
+        <section className="relative px-7 md:px-20 mb-4">
+          <h2
+            data-aos="fade-up"
+            className="text-4xl font-bold text-center mb-3 md:mb-10"
+          >
+            Visit Our Clinics in Jaipur
+          </h2>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-7 lg:gap-10 relative">
+            {/* Card 1 */}
+            <div
+              data-aos="fade-right"
+              className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
+            >
+              <div className="relative mb-4 h-48 rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
+                <a
+                  href="https://www.google.com/search?q=Narayana+Multispeciality+Hospital+%E2%80%93+Pratap+Nagar%2C+Jaipur&rlz=1C1CHZN_enIN1094IN1094&oq=Narayana+Multispeciality+Hospital+%E2%80%93+Pratap+Nagar%2C+Jaipur&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzM4NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" // e.g., "https://www.google.com/maps/place/..."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block group"
+                  aria-label="Open map in new tab"
+                >
+                  {/* Map Preview */}
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.413867637782!2d75.8253632!3d26.7949476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc999fe90f309%3A0x91760491563438ac!2sNarayana%20Hospital%2C%20Jaipur!5e0!3m2!1sen!2sin!4v1753080256093!5m2!1sen!2sin" // e.g., embedded map URL
+                    width="100%"
+                    height="200"
+                    style={{ border: 0, pointerEvents: "none" }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="hover:grayscale-0 transition-all duration-500"
+                    title="Map Preview"
+                  />
 
-              <div
-                data-aos="zoom-out"
-                className="relative rounded-2xl overflow-hidden shadow-xl"
-              >
-                <iframe
-                  src="https://www.google.com/maps?q=Pratap+Nagar+Clinic,+183/82,+Rana+Sanga+Marg,+Sector+18,+Pratap+Nagar,+Jaipur,+Rajasthan+302033&output=embed"
-                  width="100%"
-                  height="400"
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="filter contrast-110 saturate-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/10 pointer-events-none"></div>
+                  {/* Navigation Icon Overlay */}
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Navigation className="w-5 h-5 text-[#197d85]" />
+                  </div>
+
+                  {/* Decorative Glow Effects */}
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-[#197d85]/10 to-[#97a345]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                  <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-[#97a345]/10 to-[#197d85]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                </a>
               </div>
+              <h3 className="text-xl font-semibold mb-2 text-black">
+                Narayana Hospital Jaipur
+              </h3>
+              <p className="text-black">For insured & emergency surgeries</p>
+            </div>
+
+            {/* Vertical Divider (only on md and above) */}
+            <div className="hidden md:block w-1 h-100 bg-gradient-to-b from-[#197d85]/40 to-[#97a345]/40"></div>
+
+            {/* Card 2 */}
+            <div
+              data-aos="fade-left"
+              className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-inner mb-4 bg-gray-100 group">
+                <a
+                  href="https://g.co/kgs/RFjQ2wV" // e.g., "https://www.google.com/maps/place/..."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block group"
+                  aria-label="Open map in new tab"
+                >
+                  {/* Map Preview */}
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.29600027931!2d75.83297209999999!3d26.798702100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc90a0fbec191%3A0xfad7f9958d424be5!2sORTHO-KLINIK-Dr%20Hemendra%20Agrawal%20senior%20Orthopedic%20Surgeon!5e0!3m2!1sen!2sin!4v1753001468755!5m2!1sen!2sin" // e.g., embedded map URL
+                    width="100%"
+                    height="200"
+                    style={{ border: 0, pointerEvents: "none" }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="hover:grayscale-0 transition-all duration-500"
+                    title="Map Preview"
+                  />
+
+                  {/* Navigation Icon Overlay */}
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Navigation className="w-5 h-5 text-[#197d85]" />
+                  </div>
+
+                  {/* Decorative Glow Effects */}
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-[#197d85]/10 to-[#97a345]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                  <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-[#97a345]/10 to-[#197d85]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                </a>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-black">
+                Pratap Nagar Clinic
+              </h3>
+              <p className="text-black">
+                For appointments, procedures & follow-ups
+              </p>
+            </div>
+            <div className="hidden md:block w-1 h-100 bg-gradient-to-b from-[#197d85]/40 to-[#97a345]/40"></div>
+            {/* Card 3 */}
+            <div
+              data-aos="fade-right"
+              className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 text-black shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
+            >
+              <div className="relative mb-4 rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
+                <a
+                  href="https://g.co/kgs/riT4Q2w" // e.g., "https://www.google.com/maps/place/..."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block group"
+                  aria-label="Open map in new tab"
+                >
+                  {/* Map Preview */}
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.3616659387435!2d75.7357402!3d26.8284468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db591ca3cb9b9%3A0x2077186374def3fe!2sDR%20HEMENDRA%20AGRAWAL%20ORTHOPEDIC%20DOCTOR!5e0!3m2!1sen!2sin!4v1753001116217!5m2!1sen!2sin" // e.g., embedded map URL
+                    width="100%"
+                    height="200"
+                    style={{ border: 0, pointerEvents: "none" }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="hover:grayscale-0 transition-all duration-500"
+                    title="Map Preview"
+                  />
+
+                  {/* Navigation Icon Overlay */}
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Navigation className="w-5 h-5 text-[#197d85]" />
+                  </div>
+
+                  {/* Decorative Glow Effects */}
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-[#197d85]/10 to-[#97a345]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                  <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-[#97a345]/10 to-[#197d85]/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                </a>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-black">
+                Mansarovar Clinic
+              </h3>
+              <p className="text-black">
+                Orthopedic doctor in Mansarovar clinic Jaipur
+              </p>
             </div>
           </div>
+          <p
+            data-aos="fade-down"
+            className="text-xl text-center font-semibold text-[#197d85] mt-12 lg:mt-6"
+          >
+            Both clinics equipped with latest diagnostics & OT facilities.
+          </p>
+          
         </section>
       </div>
       <Footer />

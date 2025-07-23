@@ -168,7 +168,7 @@ const services = [
       "Frozen Shoulder",
     ],
     quote:
-      "Dr. Agrawal provides specialized upper limb orthopedic care that restores strength and stability.",
+      "Dr. Hemendar Agrawal provides specialized upper limb orthopedic care that restores strength and stability.",
     buttonText: "Learn More",
     path: "/expertise/shoulder-elbow",
     icon: (
@@ -184,8 +184,8 @@ const services = [
 ];
 
 const stats = [
-  { number: "15,000+", label: "Successful Surgeries" },
-  { number: "25+", label: "Years Experience" },
+  { number: "20,000+", label: "Successful Surgeries" },
+  { number: "14+", label: "Years Experience" },
   { number: "98%", label: "Patient Satisfaction" },
   { number: "24/7", label: "Emergency Care" },
 ];
@@ -193,7 +193,7 @@ const stats = [
 const highlights = [
   {
     icon: <FaAward size={55} color="#197d85" />,
-    text: "15+ Years of Expertise in orthopedic care",
+    text: "14+ Years of Expertise in orthopedic care",
   },
   {
     icon: <FaHospitalSymbol size={55} color="#197d85" />,
@@ -201,7 +201,7 @@ const highlights = [
   },
   {
     icon: <FaChartLine size={55} color="#197d85" />,
-    text: "3000+ Successful Surgeries with 95%+ Satisfaction",
+    text: "20000+ Successful Surgeries with 98%+ Satisfaction",
   },
   {
     icon: <FaStethoscope size={55} color="#197d85" />,
@@ -239,12 +239,12 @@ export default function ExpertisePage() {
       {/*Header*/}
       <Navbar />
       {/*Hero section */}
-      <section className="flex flex-col lg:flex-row items-center gap-10 px-6 md:px-20 py-10 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40">
+      <section className="flex flex-col lg:flex-row items-center gap-10 px-6 md:px-20 py-10 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20">
         {/* Title Section */}
         <div className="lg:w-3/2 space-y-5 order-2 lg:order-1">
           <h1
             data-aos="flip-up"
-            className="text-3xl lg:text-[40px] font-bold text-black capitalize"
+            className="text-3xl lg:text-[36px] font-bold text-black capitalize"
           >
             Our orthopedic treatments in Jaipur
           </h1>
@@ -257,7 +257,7 @@ export default function ExpertisePage() {
           </p>
           <p data-aos="flip-up">
             Patients from Vaishali Nagar, Mansarovar, Ajmer Road, and all across
-            Rajasthan choose Dr. Agrawal for his compassionate care, modern
+            Rajasthan choose Dr. Hemendar Agrawal for his compassionate care, modern
             techniques, and accurate diagnosis.
           </p>
           <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
@@ -267,7 +267,7 @@ export default function ExpertisePage() {
             >
               <FaHospital size={50} color="#197d85" />
               <span className="ml-4 text-gray-500 text-xl">
-                Clinics in Mahapura & Narayana Hospital Jaipur
+                Mansarovar Clinic & Narayana Hospital Jaipur
               </span>
             </div>
             <div
@@ -294,7 +294,7 @@ export default function ExpertisePage() {
           >
             <FaMedal size={50} color="#197d85" className="mb-3" />
             <span className="ml-2 text-gray-500 text-xl">
-              15+ Years of <br /> Experience
+              14+ Years of <br /> Experience
             </span>
           </div>
           <div
@@ -303,7 +303,7 @@ export default function ExpertisePage() {
           >
             <MdHealthAndSafety size={50} color="#197d85" />
             <span className="ml-2 text-gray-500 text-xl">
-              3000+ Successful Surgeries
+              20000+ Successful Surgeries
             </span>
           </div>
         </div>
@@ -316,7 +316,7 @@ export default function ExpertisePage() {
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg mb-6">
               <div
                 data-aos="fade-up"
-                className="w-2 h-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 rounded-full animate-pulse"
+                className="w-2 h-2 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-full animate-pulse"
               ></div>
               <span className="text-sm font-medium text-slate-600">
                 Premier Orthopedic Care
@@ -418,7 +418,7 @@ export default function ExpertisePage() {
 
                     {/* Button */}
                     <Link href={service.path}>
-                      <button className="w-full bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black px-6 py-3 rounded-xl font-semibold text-sm shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group/btn">
+                      <button className="w-full bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black px-6 py-3 rounded-xl font-semibold text-sm shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group/btn">
                         {service.buttonText}
                         <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                       </button>
@@ -467,7 +467,7 @@ export default function ExpertisePage() {
         </section>
       </div>
       {/*Why choose us section */}
-      <section className="py-20 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black mx-7 md:mx-20 mt-24 mb-50 rounded-4xl">
+      <section className="py-20 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black mx-7 md:mx-20 mt-24 mb-50 rounded-4xl">
         <div className="max-w-7xl mx-auto px-8">
           <h2
             data-aos="fade-down"
@@ -645,12 +645,12 @@ export default function ExpertisePage() {
           className="flex flex-wrap items-center justify-center mt-7 gap-8"
         >
           <Link href="/clinics">
-            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               Get Directions & Timing →
             </button>
           </Link>
           <a href="tel:+919210696045" target="_blank">
-            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               Call Now →
             </button>
           </a>
@@ -660,7 +660,7 @@ export default function ExpertisePage() {
       <FaqAccordion faqs={faqs} />
       {/*Book appointment section */}
       <section className="bg-gradient-to-r gap-7 lg:gap-16 from-[#197d85]/40 to-[#97a345]/40 mt-28 rounded-2xl px-8 flex flex-col lg:flex-row items-center justify-between m-7 md:m-20 py-7">
-        <div data-aos="fade-down" className="relative lg:w-230">
+        <div data-aos="fade-down" className="relative lg:w-200">
           <img
             src="/Images/dr_hemendra.jpg"
             alt="Dr. Hemendra Agrawal"

@@ -1,6 +1,6 @@
 import SpecificExpertise from "@/component/SpecificExpertise";
 import Image from "next/image";
-import { Thermometer, Scalpel, HandMetal} from "lucide-react";
+import { Thermometer, Hammer, HandMetal} from "lucide-react";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
 
@@ -29,7 +29,7 @@ const triggerFingerData = {
       title: "Trigger Finger Release Surgery",
       subtitle:
         "Minimally invasive procedure to release the tight tendon sheath and restore normal finger movement.",
-      icon: <Scalpel className="w-6 h-6" />,
+      icon: <Hammer className="w-6 h-6" />,
     },
     {
       title: "Post-Surgery Rehabilitation",

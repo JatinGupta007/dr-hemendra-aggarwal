@@ -1,6 +1,6 @@
 import SpecificExpertise from "@/component/SpecificExpertise";
 import Image from "next/image";
-import { MoveUpRight, Shoe, Bone } from "lucide-react";
+import { MoveUpRight, Footprints, Bone } from "lucide-react";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
 
@@ -23,7 +23,7 @@ const footDeformitiesData = {
       title: "Flat Foot Treatment",
       subtitle:
         "Custom orthotics, physical therapy, and surgical options to restore arch support and reduce pain.",
-      icon: <Shoe className="w-6 h-6" />,
+      icon: <Footprints className="w-6 h-6" />,
     },
     {
       title: "Bunion Care",

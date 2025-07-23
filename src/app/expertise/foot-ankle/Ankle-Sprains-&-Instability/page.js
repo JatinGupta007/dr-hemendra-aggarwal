@@ -1,6 +1,6 @@
 import SpecificExpertise from "@/component/SpecificExpertise";
 import Image from "next/image";
-import { BarChart2, HeartPulse, Scalpel } from "lucide-react";
+import { BarChart2, HeartPulse, Hammer } from "lucide-react";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
 
@@ -29,7 +29,7 @@ const ankleInstabilityData = {
       title: "Minimally Invasive Surgery",
       subtitle:
         "Arthroscopic repair or ligament reconstruction to restore joint stability in severe or recurrent cases.",
-      icon: <Scalpel className="w-6 h-6" />,
+      icon: <Hammer className="w-6 h-6" />,
     },
     {
       title: "Rehabilitation Programs",

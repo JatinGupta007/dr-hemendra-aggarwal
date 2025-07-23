@@ -1,13 +1,13 @@
 import SpecificExpertise from "@/component/SpecificExpertise";
 import Image from "next/image";
-import { Ruler, Screwdriver, Bone } from "lucide-react";
+import { Ruler, Hammer, Bone } from "lucide-react";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
 
 const revisionSurgeryData = {
   icon: (
     <Image
-      src="/Images/treatment_icon_22.png"
+      src="/Images/treatment_icon_7.png"
       alt="treatment_icon_22"
       width={60}
       height={60}
@@ -23,7 +23,7 @@ const revisionSurgeryData = {
       title: "Revision Internal Fixation",
       subtitle:
         "Adjusting or replacing implants like plates, screws, or rods to improve bone stability and support healing.",
-      icon: <Screwdriver className="w-6 h-6" />,
+      icon: <Hammer className="w-6 h-6" />,
     },
     {
       title: "Bone Grafting Techniques",

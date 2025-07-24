@@ -134,17 +134,12 @@ const DoctorLocations = () => {
                 <Link href="/contact">
                   <button
                     data-aos="flip-up"
-                    className="flex-1 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black px-6 py-3 rounded-xl font-semibold hover:from-[#197d85]/60 hover:to-[#97a345]/60 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                    className="flex-1 bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 text-black px-6 py-3 rounded-xl font-semibold hover:from-[#197d85]/60 hover:to-[#97a345]/60 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                   >
                     Book an Appointment
                   </button>
                 </Link>
-                <button
-                  data-aos="flip-up"
-                  className="flex items-center w-50 gap-9 mx-auto md:ml-0 rounded-lg bg-white px-6 py-3 text-base font-semibold text-[#197d85] shadow-md ring-1 ring-inset ring-[#197d85] hover:bg-[#197d85]/10 transition"
-                >
-                  View Clinics <ArrowDown className="text-[#197d85]" />
-                </button>
+                
               </div>
             </div>
 
@@ -213,7 +208,7 @@ const DoctorLocations = () => {
                   {/* Card Header */}
                   <div className="flex items-start justify-between mb-6">
                     <div className="flex items-center gap-3">
-                      <div className="p-3 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-2xl shadow-lg">
+                      <div className="p-3 bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 rounded-2xl shadow-lg">
                         <location.icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -335,9 +330,7 @@ const DoctorLocations = () => {
                   Call Now
                 </button>
               </a>
-              <button className="flex items-center gap-3 bg-white text-[#197d85] px-7 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg">
-                View All Locations on Map <ArrowUp className="text-[#197d85]" />
-              </button>
+              
             </div>
           </div>
         </div>
@@ -350,7 +343,7 @@ const DoctorLocations = () => {
             className="text-3xl font-bold tracking-tight text-slate-900 text-center"
           >
             Why Patients Across Rajasthan Trust{" "}
-            <span className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#197d85]/70 to-[#97a345]/70 bg-clip-text text-transparent">
               Dr. Hemendra Agrawal
             </span>
           </h2>

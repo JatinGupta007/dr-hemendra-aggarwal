@@ -5,7 +5,7 @@ export default function DoctorSection() {
   return (
     <section className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 mt-30 rounded-2xl p-8 flex flex-col lg:flex-row items-center justify-between gap-8 m-6 md:m-20">
       {/* Left Content */}
-      <div className="max-w-xl order-2 lg:order-1">
+      <div className="order-2 lg:order-1">
         <p data-aos="flip-right" className="font-semibold  text-lg">
           About the Doctor
         </p>

@@ -4,13 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import {
   ChevronRight,
-  Stethoscope,
-  ShieldCheck,
-  Eye,
   Navigation,
-  Dumbbell,
-  Footprints,
-  Bone,
 } from "lucide-react";
 
 import Navbar from "@/component/Header";
@@ -250,13 +244,13 @@ export default function ExpertisePage() {
           </h1>
           <p data-aos="flip-up" className="mt-4 text-lg text-black">
             If you&apos;re searching for the best orthopedic doctor in Jaipur,
-            look no further. With over 15 years of experience and more than 3000
+            look no further. With over 14 years of experience and more than 20000+
             successful surgeries, Dr. Hemendra Agrawal is known for delivering
             advanced, personalized treatments for joint, ligament, bone, and
             sports-related conditions.
           </p>
           <p data-aos="flip-up">
-            Patients from Vaishali Nagar, Mansarovar, Ajmer Road, and all across
+            Patients from Pratap Nagar, Mansarovar, Ajmer Road, and all across
             Rajasthan choose Dr. Hemendar Agrawal for his compassionate care, modern
             techniques, and accurate diagnosis.
           </p>

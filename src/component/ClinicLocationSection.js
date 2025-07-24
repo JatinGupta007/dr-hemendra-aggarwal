@@ -14,7 +14,7 @@ export default function ClinicLocations() {
           Visit Our Orthopedic Clinics in Jaipur
         </h2>
 
-        <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 mx-auto">
           {/* Card 1 */}
           <div
             data-aos="zoom-out"

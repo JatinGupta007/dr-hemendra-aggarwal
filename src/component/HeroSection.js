@@ -20,7 +20,7 @@ export default function HeroSection() {
             </h1>
             <p data-aos="fade-left" className="text-xl lg:w-xl lg:mb-16">
               Renowned for expertise in joint replacement, arthroscopy, and
-              sports injury treatment, Dr. Hemendra Agrawal brings 15+ years of
+              sports injury treatment, Dr. Hemendra Agrawal brings 14+ years of
               trusted orthopedic care in Jaipur.
             </p>
 

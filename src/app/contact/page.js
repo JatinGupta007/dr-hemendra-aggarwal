@@ -203,7 +203,7 @@ export default function EnhancedContactPage() {
                   className="group relative bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer"
                 >
                   <div
-                    className={`w-16 h-16 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                    className={`w-16 h-16 bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
                   >
                     <item.icon className="w-8 h-8 text-white font-bold" />
                   </div>
@@ -230,7 +230,7 @@ export default function EnhancedContactPage() {
           >
             Visit Our Clinics in Jaipur
           </h2>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-7 lg:gap-10 relative">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-7 lg:gap-7 relative">
             {/* Card 1 */}
             <div
               data-aos="fade-right"
@@ -366,7 +366,7 @@ export default function EnhancedContactPage() {
           </div>
           <p
             data-aos="fade-down"
-            className="text-xl text-center font-semibold text-[#197d85] mt-12 lg:mt-6"
+            className="text-xl text-center font-semibold text-[#197d85] my-12 lg:mt-6"
           >
             Both clinics equipped with latest diagnostics & OT facilities.
           </p>

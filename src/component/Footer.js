@@ -26,7 +26,7 @@ export default function Footer() {
             Dr. Hemendra Agrawal is recognized as one of the best orthopedic
             doctors in Jaipur, offering expertise in knee replacement,
             arthroscopy, sports injury treatment, and complex trauma surgeries.
-            With clinics in Vaishali Nagar and practice at SMS Hospital Jaipur,
+            With clinics in Pratap Nagar and Narayana Hospital Jaipur,
             Dr. Hemendra Agrawal ensures accessible and effective orthopedic care for
             all.
           </p>

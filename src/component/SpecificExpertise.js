@@ -1,6 +1,11 @@
+"use client";
+import { usePathname } from "next/navigation";
 import { CheckCircle, Clock, Shield, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function SpecificExpertise({ data }) {
+  const pathname = usePathname();
+  console.log(pathname)
   const {
     title,
     subtitle,
@@ -18,7 +23,7 @@ export default function SpecificExpertise({ data }) {
         <div className="text-center mb-16">
           <div
             data-aos="flip-up"
-            className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-2xl shadow-lg mb-6"
+            className="inline-flex items-center justify-center w-30 h-30 bg-white rounded-2xl shadow-lg mb-6"
           >
             {data.icon}
           </div>
@@ -45,23 +50,34 @@ export default function SpecificExpertise({ data }) {
         </div>
 
         {/* Services Grid */}
-        <div className="flex flex-wrap items-center justify-center gap-10 mb-16">
+        <div className="flex flex-wrap items-center justify-center gap-7 mb-16">
           {services.map((service, index) => (
-            <div
-              data-aos="zoom-in"
+            <Link
               key={index}
-              className="group flex flex-col justify-center items-center w-82 h-56 bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/20"
+              href={
+                pathname === `/expertise/${title.replaceAll(" ", "-")}`
+                  ? `/expertise/${title.replaceAll(
+                      " ",
+                      "-"
+                    )}/${service.title.replaceAll(" ", "-")}`
+                  : "#"
+              }
             >
-              <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-[#197d85]/60 to-[#97a345]/60 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300 text-white">
-                {service.icon}
+              <div
+                data-aos="zoom-in"
+                className="group flex flex-col justify-center items-center w-86 h-60 bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/20"
+              >
+                <div className="flex items-center justify-center w-18 h-18 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {service.icon}
+                </div>
+                <h3 className="font-bold text-center text-lg text-black mb-2 group-hover:text-[#197d85] transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 text-sm text-center">
+                  {service.subtitle}
+                </p>
               </div>
-              <h3 className="font-bold text-center text-lg text-black mb-2 group-hover:text-[#197d85] transition-colors">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 text-sm text-center">
-                {service.subtitle}
-              </p>
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -116,7 +132,7 @@ export default function SpecificExpertise({ data }) {
               <div className="bg-gradient-to-br from-[#197d85]/20 to-[#97a345]/20 rounded-2xl p-8 text-center">
                 <div
                   data-aos="fade-right"
-                  className="bg-white rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6 shadow-lg"
+                  className="bg-white rounded-full w-32 h-32 flex items-center justify-center mx-auto mb-6 shadow-lg"
                 >
                   {data.icon}
                 </div>
@@ -125,10 +141,12 @@ export default function SpecificExpertise({ data }) {
                 </h3>
                 <p className="text-gray-700 mb-6">{highlights.description}</p>
 
-                <button className="group bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 text-black px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center mx-auto space-x-2">
-                  <span>{highlights.button}</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                <Link href="/contact">
+                  <button className="group bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 text-black px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center mx-auto space-x-2">
+                    <span>{highlights.button}</span>
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </Link>
               </div>
               {/* Decorative circles */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#97a345]/30 rounded-full"></div>

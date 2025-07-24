@@ -117,7 +117,7 @@ export default function Page() {
             Agrawal
           </h2>
           <p data-aos="fade-left" className="text-lg lg:w-xl pb-2">
-            With over 15 years of clinical and surgical excellence, Dr. Hemendra
+            With over 14 years of clinical and surgical excellence, Dr. Hemendra
             Agrawal is a top-rated orthopedic surgeon in Jaipur, specializing in
             joint replacement, arthroscopy, ligament reconstruction, and sports
             injury management.
@@ -183,10 +183,10 @@ export default function Page() {
                   <MdWorkspacePremium className="text-6xl text-[#197d85] mx-auto" />
                 </div>
                 <h3 className="text-2xl font-bold text-[#24445c] text-center mb-4">
-                  15+ Years of Hands-On Orthopedic Experience
+                  14+ Years of Hands-On Orthopedic Experience
                 </h3>
                 <ul className="text-gray-500 text-center space-y-3">
-                  <li>3000+ orthopedic surgeries performed successfully</li>
+                  <li>20000+ orthopedic surgeries performed successfully</li>
                   <li>10+ years of service at SMS Hospital Jaipur</li>
                   <li>
                     Founder & Director of private orthopedic clinic in Vaishali

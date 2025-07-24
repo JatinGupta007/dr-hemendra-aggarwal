@@ -82,7 +82,7 @@ export default function SpecificExpertise({ data }) {
         </div>
 
         {/* Benefits Section */}
-        <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-white/30">
+        <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-4 md:p-12 shadow-2xl border border-white/30">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2
@@ -129,7 +129,7 @@ export default function SpecificExpertise({ data }) {
 
             {/* Highlight Box */}
             <div data-aos="fade-left" className="relative">
-              <div className="bg-gradient-to-br from-[#197d85]/20 to-[#97a345]/20 rounded-2xl p-8 text-center">
+              <div className="bg-gradient-to-br from-[#197d85]/20 to-[#97a345]/20 rounded-2xl p-4 md:p-8 text-center">
                 <div
                   data-aos="fade-right"
                   className="bg-white rounded-full w-32 h-32 flex items-center justify-center mx-auto mb-6 shadow-lg"
@@ -142,7 +142,7 @@ export default function SpecificExpertise({ data }) {
                 <p className="text-gray-700 mb-6">{highlights.description}</p>
 
                 <Link href="/contact">
-                  <button className="group bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 text-black px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center mx-auto space-x-2">
+                  <button className="group bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 text-black px-3 md:px-8 py-1 md:py-4 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center mx-auto space-x-1 md:space-x-2">
                     <span>{highlights.button}</span>
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </button>

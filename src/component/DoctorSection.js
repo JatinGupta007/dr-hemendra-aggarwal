@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,7 +25,7 @@ export default function DoctorSection() {
         <ul className="space-y-2 text-gray-800 text-base mb-6">
           <li data-aos="flip-right">MBBS, MS (Orthopedics)</li>
           <li data-aos="flip-right">
-            Consultant - SMS Hospital Jaipur, Mansarovar Clinic
+            Consultant - Pratap Nagar Clinic, Mansarovar Clinic
           </li>
           <li data-aos="flip-right">Director - Narayana Hospital</li>
           <li data-aos="flip-right">
@@ -48,9 +49,10 @@ export default function DoctorSection() {
         <Link href="/about">
           <button
             data-aos="fade-up"
-            className="bg-white text-xl mx-auto  text-[#197d85] font-bold px-7 py-3 rounded-xl flex items-center gap-2 shadow-md hover:opacity-80 transition mt-7"
+            className="flex gap-2 items-center text-xl bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105 mt-7 mx-auto"
           >
-            Full Doctor Bio →
+            Full Doctor Bio 
+            <ArrowRight />
           </button>
         </Link>
       </div>

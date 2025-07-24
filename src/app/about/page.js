@@ -23,6 +23,7 @@ import {
   FaPhoneAlt,
   FaWhatsapp,
 } from "react-icons/fa";
+import ReviewsSection from "@/component/TestimonialSection";
 
 const chooses = [
   {
@@ -53,7 +54,7 @@ const Reasons = [
   {
     id: 1,
     title: "Senior Orthopedic Consultant - Narayana Hospital",
-    description: "SMS Hospital Jaipur - Senior Orthopedic Consultant",
+    description: "Narayan Hospital Jaipur - Senior Orthopedic Consultant",
     icon: <FaCalendarCheck className="text-3xl text-[#197d85]" />,
     position: "right",
   },
@@ -189,7 +190,7 @@ export default function Page() {
                   <li>20000+ orthopedic surgeries performed successfully</li>
                   <li>10+ years of service at SMS Hospital Jaipur</li>
                   <li>
-                    Founder & Director of private orthopedic clinic in Vaishali
+                    Founder & Director of private orthopedic clinic in Pratap
                     Nagar Jaipur
                   </li>
                   <li>
@@ -281,7 +282,7 @@ export default function Page() {
             <Link href="/expertise">
               <button
                 data-aos="flip-up"
-                className="bg-gradient-to-r from-[#197d87]/20 to-[#97a345]/20 text-black px-4 py-2 rounded-full shadow-lg hover:scale-105 transition duration-200"
+                className="bg-gradient-to-r from-[#197d87]/40 to-[#97a345]/40 text-black px-4 py-2 rounded-full shadow-lg hover:scale-105 transition duration-200"
               >
                 View All Orthopedic Treatments →
               </button>
@@ -290,7 +291,7 @@ export default function Page() {
         </div>
       </section>
       {/*Affiliation section */}
-      <section className="max-w-7xl mx-auto px-6 md:px-20 py-12 flex flex-col justify-between lg:flex-row items-center gap-12">
+      <section className="mx-auto px-6 md:px-20 py-12 flex flex-col justify-between lg:flex-row items-center gap-12">
         {/* Left Grid of Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-2xl order-2 lg:order-1">
           <div
@@ -403,7 +404,7 @@ export default function Page() {
         </div>
       </section>
       {/*Clinic Location section */}
-      <section className="max-w-7xl mx-auto px-7 md:px-20 py-16">
+      <section className="mx-auto px-7 md:px-20 py-16">
         <p
           data-aos="flip-up"
           className="text-center text-[#197d85] font-semibold md:text-xl md:mb-4"
@@ -463,7 +464,8 @@ export default function Page() {
         </div>
       </section>
       {/*Patient Testimonial section */}
-      <section className="max-w-7xl mx-auto px-7 md:px-20 pb-24 pt-6 text-center">
+      <ReviewsSection />
+      {/* <section className="mx-auto px-7 md:px-20 pb-24 pt-6 text-center">
         <p
           data-aos="fade-down"
           className="text-[#197d85] font-medium text-sm md:text-2xl mb-2"
@@ -478,7 +480,7 @@ export default function Page() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
-          {/* Card 1 */}
+          /* Card 1 
           <div
             data-aos="zoom-in"
             className="flex flex-col items-center bg-white rounded-xl p-6 shadow-md shadow-[#197d85]"
@@ -498,7 +500,7 @@ export default function Page() {
             </p>
           </div>
 
-          {/* Card 2 */}
+          {/* Card 2 
           <div
             data-aos="zoom-in"
             className="flex flex-col items-center bg-white rounded-xl p-6 shadow-md shadow-[#197d85]"
@@ -515,7 +517,7 @@ export default function Page() {
             </p>
           </div>
 
-          {/* Card 3 */}
+          {/* Card 3 
           <div
             data-aos="zoom-in"
             className="flex flex-col items-center bg-white rounded-xl p-6 shadow-md shadow-[#197d85]"
@@ -532,7 +534,7 @@ export default function Page() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
       {/*Book Appointment section */}
       <section className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 mt-20 rounded-2xl px-8 gap-16 flex flex-col lg:flex-row items-center justify-between m-6 md:m-20 py-7">
         <div data-aos="fade-down" className="relative lg:w-150">
@@ -558,19 +560,19 @@ export default function Page() {
             className="flex flex-col md:flex-row flex-wrap items-center gap-5"
           >
             <Link href="/contact">
-              <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-medium shadow-lg transition-transform hover:scale-105">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaCalendarCheck size={20} />
                 Book Appointment
               </button>
             </Link>
             <a href="tel:+919210696045" target="_blank">
-              <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-medium shadow-lg transition-transform hover:scale-105">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaPhoneAlt size={20} />
                 Call Now
               </button>
             </a>
             <a href="https://wa.me/919210696045" target="_blank">
-              <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-medium shadow-lg transition-transform hover:scale-105">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaWhatsapp size={20} />
                 <p>WhatsApp</p>
               </button>

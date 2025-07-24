@@ -5,25 +5,26 @@ import { FaQuoteLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 const reviews = [
   {
-    name: "Vedant Tomar",
+    name: "Abhishek Katara",
     location: "Jaipur, India",
     image: "/Images/vedant-tomar.jpeg",
     review:
-      "Dr. Agarwal is the best orthopedic doctor near me - very honest and skilled.",
+      "Dr. Hemendra Agrawal is an outstanding orthopedic specialist. He takes the time to listen carefully to each patient, never rushing through appointments. His calm demeanor immediately puts one at ease, creating a truly comfortable experience. Not only does he explain procedures and treatment options in clear, patient-friendly language, but he also shows genuine care for your recovery and well-being.",
     rating: 4,
   },
   {
-    name: "Sarojini Singh",
+    name: "Manju singh",
     location: "Ajmer, India",
     image: "/Images/sarojini-singh.webp",
-    review: "I could walk 2 days after my knee replacement. Thank you!",
+    review:
+      "70 days since my knee ACL surgery. Now I am walking well and doing all the normal routine work. I am also driving. Dr. Hemender Sir is very good, your nature is very helpful. Thank you!",
     rating: 4.5,
   },
   {
-    name: "Rajni Gupta",
+    name: "Jasveer choudhary",
     location: "Pushkar, India",
     image: "/Images/rajni-gupta.jpeg",
-    review: "Perfect diagnosis for my ligament tear - recovery was fast.",
+    review: "I got my brother-in-law's ACL ligament operated by Dr. Hemendra and now he has no problem. I would like to thank Hemendra Sir a lot for this. And I would like to tell you that if anyone has any ortho related problem then one must meet Dr. Hemendra once. He is very talented and calm by nature. He provides excellent treatment at very low cost.",
     rating: 5,
   },
 ];
@@ -32,7 +33,7 @@ export default function ReviewsSection() {
   const [current, setCurrent] = useState(1);
 
   return (
-    <div className="md:max-w-7xl mx-auto px-6 md:px-20 py-6">
+    <div className="mx-auto px-6 md:px-20 py-6">
       <h2
         data-aos="fade-down"
         className="text-center text-4xl md:text-6xl font-bold text-slate-800"

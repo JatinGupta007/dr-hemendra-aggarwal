@@ -1,8 +1,9 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
-import Image from "next/image";
+
 import {
+  ArrowRight,
   ChevronRight,
   Navigation,
 } from "lucide-react";
@@ -42,12 +43,12 @@ const services = [
     buttonText: "Learn More",
     path: "/expertise/joint-replacement",
     icon: (
-      <Image
+      <img
         src="/Images/treatment_icon_8.png"
         alt="treatment_icon_8"
         width={60}
         height={60}
-        className="mx-auto"
+        className="mx-auto w-11"
       />
     ),
   },
@@ -67,12 +68,12 @@ const services = [
     buttonText: "Learn More",
     path: "/expertise/sports-injury",
     icon: (
-      <Image
+      <img
         src="/Images/treatment_icon_4.png"
         alt="treatment_icon_2"
-        width={60}
+        width={70}
         height={60}
-        className="mx-auto"
+        className="mx-auto w-12"
       />
     ),
   },
@@ -92,12 +93,12 @@ const services = [
     buttonText: "Learn More",
     path: "/expertise/foot-ankle",
     icon: (
-      <Image
+      <img
         src="/Images/treatment_icon_5.png"
         alt="treatment_icon_5"
         width={60}
         height={60}
-        className="mx-auto"
+        className="mx-auto w-12"
       />
     ),
   },
@@ -116,12 +117,12 @@ const services = [
     buttonText: "Learn More",
     path: "/expertise/fracture",
     icon: (
-            <Image
+            <img
               src="/Images/treatment_icon_7.png"
               alt="treatment_icon_7"
               width={60}
               height={60}
-              className="mx-auto"
+              className="mx-auto w-11"
             />
           ),
   },
@@ -141,7 +142,7 @@ const services = [
     buttonText: "Learn More",
     path: "/expertise/arthroscopy",
     icon: (
-      <Image
+      <img
         src="/Images/treatment_icon_2.png"
         alt="treatment_icon_2"
         width={60}
@@ -166,7 +167,7 @@ const services = [
     buttonText: "Learn More",
     path: "/expertise/shoulder-elbow",
     icon: (
-            <Image
+            <img
               src="/Images/treatment_icon_6.png"
               alt="treatment_icon_6"
               width={60}
@@ -191,7 +192,7 @@ const highlights = [
   },
   {
     icon: <FaHospitalSymbol size={55} color="#197d85" />,
-    text: "Practicing at SMS Hospital & Vaishali Nagar Clinic",
+    text: "Practicing at Narayana Hospital & Mansarovar Clinic",
   },
   {
     icon: <FaChartLine size={55} color="#197d85" />,
@@ -307,10 +308,9 @@ export default function ExpertisePage() {
         {/* Header Section */}
         <section className="px-6 md:px-20 pt-20 pb-12">
           <div className="max-w-7xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg mb-6">
+            <div data-aos="fade-up" className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg mb-6">
               <div
-                data-aos="fade-up"
-                className="w-2 h-2 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-full animate-pulse"
+                className="w-2 h-2 bg-gradient-to-r from-[#197d85] to-[#97a345] rounded-full animate-pulse"
               ></div>
               <span className="text-sm font-medium text-slate-600">
                 Premier Orthopedic Care
@@ -353,13 +353,13 @@ export default function ExpertisePage() {
 
         {/* Services Grid */}
         <section className="px-6 md:px-20 pb-20">
-          <div className="max-w-7xl mx-auto">
+          <div className="mx-auto">
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {services.map((service, index) => (
                 <div
                   data-aos="zoom-in"
                   key={index}
-                  className="group relative bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-white/20 overflow-hidden"
+                  className="group relative bg-white/70 backdrop-blur-sm rounded-3xl p-4 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-white/20 overflow-hidden"
                   onMouseEnter={() => setHoveredCard(index)}
                   onMouseLeave={() => setHoveredCard(null)}
                 >
@@ -371,7 +371,7 @@ export default function ExpertisePage() {
                   <div className="relative z-10">
                     {/* Icon and Title */}
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="p-3 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-2xl text-black shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <div className="p-2 h-16 w-24 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-2xl text-black shadow-lg group-hover:scale-110 transition-transform duration-300">
                         {service.icon}
                       </div>
                       <h3 className="text-xl font-bold text-slate-800 group-hover:text-[#197d85] transition-colors duration-300">
@@ -412,7 +412,7 @@ export default function ExpertisePage() {
 
                     {/* Button */}
                     <Link href={service.path}>
-                      <button className="w-full bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black px-6 py-3 rounded-xl font-semibold text-sm shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group/btn">
+                      <button className="w-full bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black px-6 py-3 rounded-xl font-semibold text-sm shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group/btn">
                         {service.buttonText}
                         <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
                       </button>
@@ -442,7 +442,7 @@ export default function ExpertisePage() {
                 <Link href="/contact">
                   <button
                     data-aos="flip-up"
-                    className="bg-white text-[#197d85] px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                    className="bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105"
                   >
                     Schedule Consultation
                   </button>
@@ -450,7 +450,7 @@ export default function ExpertisePage() {
                 <a href="tel:+919210696045" target="_blank">
                   <button
                     data-aos="flip-up"
-                    className="text-[#197d85] px-8 py-4 rounded-xl font-bold bg-white hover:scale-105 transition-all duration-300"
+                    className="bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105"
                   >
                     Emergency Contact
                   </button>
@@ -462,7 +462,7 @@ export default function ExpertisePage() {
       </div>
       {/*Why choose us section */}
       <section className="py-20 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black mx-7 md:mx-20 mt-24 mb-50 rounded-4xl">
-        <div className="max-w-7xl mx-auto px-8">
+        <div className="mx-auto px-8">
           <h2
             data-aos="fade-down"
             className="text-4xl font-bold text-center mb-18"
@@ -500,7 +500,7 @@ export default function ExpertisePage() {
             data-aos="fade-right"
             className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
-            <div className="relative mb-4 h-48 rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
+            <div className="relative mb-4 h-full w-full rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
               <a
                 href="https://www.google.com/search?q=Narayana+Multispeciality+Hospital+%E2%80%93+Pratap+Nagar%2C+Jaipur&rlz=1C1CHZN_enIN1094IN1094&oq=Narayana+Multispeciality+Hospital+%E2%80%93+Pratap+Nagar%2C+Jaipur&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzM4NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" // e.g., "https://www.google.com/maps/place/..."
                 target="_blank"
@@ -534,7 +534,7 @@ export default function ExpertisePage() {
             <h3 className="text-xl font-semibold mb-2 text-black">
               Narayana Hospital Jaipur
             </h3>
-            <p className="text-black">For insured & emergency surgeries</p>
+            <p className="text-black">For insured & emergency surgeries in Pratap Nagar</p>
           </div>
 
           {/* Vertical Divider (only on md and above) */}
@@ -545,7 +545,7 @@ export default function ExpertisePage() {
             data-aos="fade-left"
             className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-inner mb-4 bg-gray-100 group">
+            <div className="relative rounded-2xl overflow-hidden shadow-inner mb-4 bg-gray-100 group w-full h-full">
               <a
                 href="https://g.co/kgs/RFjQ2wV" // e.g., "https://www.google.com/maps/place/..."
                 target="_blank"
@@ -589,7 +589,7 @@ export default function ExpertisePage() {
             data-aos="fade-right"
             className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 text-black shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
-            <div className="relative mb-4 rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
+            <div className="relative mb-4 rounded-2xl overflow-hidden shadow-inner bg-gray-100 group w-full h-full">
               <a
                 href="https://g.co/kgs/riT4Q2w" // e.g., "https://www.google.com/maps/place/..."
                 target="_blank"
@@ -639,13 +639,15 @@ export default function ExpertisePage() {
           className="flex flex-wrap items-center justify-center mt-7 gap-8"
         >
           <Link href="/clinics">
-            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-              Get Directions & Timing →
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              Get Directions & Timing 
+              <ArrowRight />
             </button>
           </Link>
           <a href="tel:+919210696045" target="_blank">
-            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-              Call Now →
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              Call Now
+              <ArrowRight />
             </button>
           </a>
         </div>
@@ -653,7 +655,7 @@ export default function ExpertisePage() {
       {/*Q&A page */}
       <FaqAccordion faqs={faqs} />
       {/*Book appointment section */}
-      <section className="bg-gradient-to-r gap-7 lg:gap-16 from-[#197d85]/40 to-[#97a345]/40 mt-28 rounded-2xl px-8 flex flex-col lg:flex-row items-center justify-between m-7 md:m-20 py-7">
+      <section className="bg-gradient-to-r gap-7 lg:gap-16 from-[#197d85]/20 to-[#97a345]/20 mt-28 rounded-2xl px-8 flex flex-col lg:flex-row items-center justify-between m-7 md:m-20 py-7">
         <div data-aos="fade-down" className="relative lg:w-200">
           <img
             src="/Images/dr_hemendra.jpg"
@@ -674,19 +676,19 @@ export default function ExpertisePage() {
           </h2>
           <div className="flex items-center flex-wrap gap-5">
             <Link href="/contact">
-              <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaCalendarCheck size={20} />
                 Book Appointment
               </button>
             </Link>
             <a href="tel:+919210696045" target="_blank">
-              <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaPhoneAlt size={20} />
                 Call Now
               </button>
             </a>
             <a href="https://wa.me/919210696045" target="_blank">
-              <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
                 <FaWhatsapp size={20} />
                 <p>WhatsApp</p>
               </button>

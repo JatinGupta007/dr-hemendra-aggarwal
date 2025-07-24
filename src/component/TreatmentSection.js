@@ -137,7 +137,7 @@ export default function TreatmentSection() {
         Whether you are dealing with knee pain, a sports injury, or require
         joint replacement - we’ve got you covered.
       </p>
-      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 place-items-center max-w-7xl mx-auto">
+      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 place-items-center mx-auto">
         {treatments.map((item, index) => (
           <div
             data-aos="zoom-in"

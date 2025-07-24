@@ -6,24 +6,16 @@ import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
 
 import { Phone, Calendar, Navigation, Building2 } from "lucide-react";
-import {
-  ShieldCheck,
-  Clock,
-  MapPin,
-  Award,
-  Star,
-  ArrowDown,
-  ArrowUp,
-} from "lucide-react";
+import { ShieldCheck, Clock, MapPin, Award, Star } from "lucide-react";
 
 const reasons = [
   {
     icon: <Clock className="h-6 w-6 text-[#197d85]" />,
-    title: "15+ Years of Orthopedic Experience",
+    title: "14+ Years of Orthopedic Experience",
   },
   {
     icon: <ShieldCheck className="h-6 w-6 text-[#197d85]" />,
-    title: "Practicing at SMS Hospital Jaipur & Top Private Clinics",
+    title: "Practicing at Top Private Clinics",
   },
   {
     icon: <Award className="h-6 w-6 text-[#197d85]" />,
@@ -31,7 +23,7 @@ const reasons = [
   },
   {
     icon: <MapPin className="h-6 w-6 text-[#197d85]" />,
-    title: "Clinics in Jaipur, Hanumangarh, and Alwar",
+    title: "Clinics in Pratap Nagar and Mansarovar Clinic",
   },
   {
     icon: <Star className="h-6 w-6 text-[#197d85]" />,
@@ -106,8 +98,8 @@ const DoctorLocations = () => {
     <main>
       <Navbar />
       {/* Hero Section */}
-      <section className="relative isolate bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20">
-        <div className="mx-auto max-w-7xl px-6 py-18 sm:py-16 md:px-20">
+      <section className="relative bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20">
+        <div className="mx-auto px-6 py-18 md:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left column */}
             <div className="text-center lg:text-left">
@@ -125,7 +117,7 @@ const DoctorLocations = () => {
                 data-aos="flip-up"
                 className="mt-6 text-lg leading-relaxed text-slate-700"
               >
-                Dr. Hemendra Agrawal - 15+ years of surgical excellence in knee,
+                Dr. Hemendra Agrawal - 14+ years of surgical excellence in knee,
                 hip & sports injuries. Ethical, high-quality orthopedic care
                 across Rajasthan.
               </p>
@@ -139,7 +131,6 @@ const DoctorLocations = () => {
                     Book an Appointment
                   </button>
                 </Link>
-                
               </div>
             </div>
 
@@ -160,12 +151,9 @@ const DoctorLocations = () => {
         </div>
       </section>
       {/* location Section */}
-      <section
-        id="locations"
-        className="min-h-screen py-7 px-6 md:px-20"
-      >
+      <section id="locations" className="py-7 px-6 md:px-20">
         {/* Header Section */}
-        <div className="max-w-7xl mx-auto">
+        <div className="mx-auto">
           <div className="text-center mb-16 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-[#197d85]/10 to-[#97a345]/10 rounded-full blur-3xl transform -rotate-6"></div>
             <div className="relative">
@@ -204,7 +192,7 @@ const DoctorLocations = () => {
                 className="group relative"
               >
                 {/* Main Card */}
-                <div className="relative bg-white/70 backdrop-blur-sm border border-white/20 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer overflow-hidden">
+                <div className="relative bg-white/70 backdrop-blur-sm border border-white/20 rounded-3xl p-4 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer overflow-hidden">
                   {/* Card Header */}
                   <div className="flex items-start justify-between mb-6">
                     <div className="flex items-center gap-3">
@@ -282,7 +270,7 @@ const DoctorLocations = () => {
                       <iframe
                         src={location.src} // e.g., embedded map URL
                         width="100%"
-                        height="200"
+                        height="250"
                         style={{ border: 0, pointerEvents: "none" }}
                         allowFullScreen
                         loading="lazy"
@@ -318,26 +306,27 @@ const DoctorLocations = () => {
             </p>
             <div
               data-aos="flip-up"
-              className="flex items-center flex-wrap justify-center"
+              className="flex items-center flex-wrap justify-center gap-16"
             >
               <Link href="/contact">
-                <button className="bg-white text-[#197d85] px-7 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg">
+                <button className="flex item-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+                  <Calendar />
                   Book Your Appointment Now
                 </button>
               </Link>
               <a href="tel:+919210696045" target="_blank">
-                <button className="bg-white text-[#197d85] px-6 py-4 mx-6 my-6 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg">
+                <button className="flex item-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+                  <Phone />
                   Call Now
                 </button>
               </a>
-              
             </div>
           </div>
         </div>
       </section>
       {/* Why Patients Trust Section */}
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-16 sm:py-14 md:px-20">
+        <div className="mx-auto px-6 py-16 sm:py-14 md:px-20">
           <h2
             data-aos="fade-down"
             className="text-3xl font-bold tracking-tight text-slate-900 text-center"

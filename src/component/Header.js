@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { ChevronDown, Menu } from "lucide-react";
+import { ChevronDown, ChevronRight, Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -100,17 +100,24 @@ export default function Header() {
           </Link>
 
           {/* Expertise Dropdown */}
-          <div className="absolute top-full -left-40 hidden w-80 bg-white shadow-xl border border-[#197d85] rounded-lg group-hover/parent:block z-40">
-            <ul className="py-2 text-sm text-gray-800 divide-y divide-[#197d85]">
+          <div className="absolute top-full -left-40 hidden w-75 bg-white shadow-2xl rounded-xl group-hover/parent:block z-40">
+            <ul className="py-2 text-sm text-gray-800 space-y-3 w-75">
               {expertiseMenu.map((menu, idx) => (
-                <li key={idx} className="relative group">
+                <li
+                  key={idx}
+                  className="relative group flex items-center"
+                >
                   <Link
                     href={`/expertise/${menu.title.replace(/\s+/g, "-")}`}
-                    className="block px-5 py-3 hover:bg-[#f1f5f9] hover:text-[#197d85]"
+                    className="px-5 py-3 hover:bg-[#f1f5f9] hover:text-[#197d85] flex items-center justify-between w-full"
                   >
                     {menu.title}
+                    <ChevronRight size={18} className="hidden group-hover:inline" />
                   </Link>
-                  <ul className="absolute left-full py-2 divide-y divide-[#197d85] top-0 hidden w-72 bg-white shadow-lg border border-[#197d85] rounded-lg group-hover:block z-50">
+                  <ul
+                    style={{ top: `-${idx * 40}px` }}
+                    className="absolute left-full space-y-3 hidden w-72 py-2 bg-white shadow-xl rounded-xl group-hover:block z-50"
+                  >
                     {menu.subItems.map((item, i) => {
                       const href = `/expertise/${menu.title.replace(
                         /\s+/g,
@@ -118,11 +125,12 @@ export default function Header() {
                       )}/${item.replace(/\s+/g, "-")}`;
 
                       return (
-                        <Link key={i} href={href}>
-                          <li className="px-4 py-2 hover:bg-[#f1f5f9] border-b border-[#197d85] text-sm">
-                            {item}
-                          </li>
-                        </Link>
+                        <li
+                          key={i}
+                          className="block px-5 py-3 hover:bg-[#f1f5f9] hover:text-[#197d85]"
+                        >
+                          <Link href={href}>{item}</Link>
+                        </li>
                       );
                     })}
                   </ul>
@@ -167,7 +175,9 @@ export default function Header() {
                   <Link href="/">Home</Link>
                   <Link href="/about">About</Link>
                   <div>
-                    <p className="py-2 text-black font-medium">Expertise</p>
+                    <Link href="/expertise">
+                      <p className="py-2 text-black font-medium">Expertise</p>
+                    </Link>
                     <ul className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-lg border border-[#197d85] divide-y divide-[#197d85] text-sm">
                       {expertiseMenu.map((menu, idx) => (
                         <li key={idx}>

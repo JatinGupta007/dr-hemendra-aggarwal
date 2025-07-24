@@ -56,7 +56,7 @@ export default function EnhancedContactPage() {
         </div>
 
         {/* Hero Section */}
-        <section className="relative z-10 min-h-screen flex items-center justify-center bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 px-6 md:px-20">
+        <section className="relative z-10 flex items-center justify-center bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 px-6 md:px-20">
           <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             {/* Left Content */}
             <div
@@ -83,7 +83,7 @@ export default function EnhancedContactPage() {
                 </p>
 
                 <div className="flex gap-4 mb-8">
-                  <button className="group relative px-8 py-4 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <button className="group relative px-8 py-4 bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 text-black rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                     <span className="relative z-10 flex items-center gap-2">
                       Get Started
                       <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
@@ -165,7 +165,7 @@ export default function EnhancedContactPage() {
 
         {/* Contact Info Section */}
         <section className="relative z-10 py-20 px-6 md:px-20">
-          <div className="max-w-6xl mx-auto">
+          <div className="mx-auto">
             <h2
               data-aos="flip-up"
               className="text-5xl font-bold text-center text-gray-800 mb-16"
@@ -176,7 +176,7 @@ export default function EnhancedContactPage() {
               </span>
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
               {[
                 {
                   icon: Phone,
@@ -193,14 +193,14 @@ export default function EnhancedContactPage() {
                 {
                   icon: MapPin,
                   title: "Location",
-                  info: "Pratap Nagar Clinic – Jaipur",
+                  info: "Pratap Nagar Clinic - Jaipur",
                   color: "from-green-500 to-emerald-500",
                 },
               ].map((item, index) => (
                 <div
                   data-aos="zoom-in"
                   key={index}
-                  className="group relative bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+                  className="flex flex-col items-center justify-center group relative bg-gradient-to-r from-[#197d85]/10 to-[#97a345]/10 backdrop-blur-xl rounded-3xl p-8 shadow-xl border border-white/20 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer"
                 >
                   <div
                     className={`w-16 h-16 bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
@@ -236,7 +236,7 @@ export default function EnhancedContactPage() {
               data-aos="fade-right"
               className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
             >
-              <div className="relative mb-4 h-48 rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
+              <div className="relative mb-4 h-full rounded-2xl overflow-hidden shadow-inner bg-gray-100 group w-full">
                 <a
                   href="https://www.google.com/search?q=Narayana+Multispeciality+Hospital+%E2%80%93+Pratap+Nagar%2C+Jaipur&rlz=1C1CHZN_enIN1094IN1094&oq=Narayana+Multispeciality+Hospital+%E2%80%93+Pratap+Nagar%2C+Jaipur&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzM4NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" // e.g., "https://www.google.com/maps/place/..."
                   target="_blank"
@@ -248,7 +248,7 @@ export default function EnhancedContactPage() {
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.413867637782!2d75.8253632!3d26.7949476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc999fe90f309%3A0x91760491563438ac!2sNarayana%20Hospital%2C%20Jaipur!5e0!3m2!1sen!2sin!4v1753080256093!5m2!1sen!2sin" // e.g., embedded map URL
                     width="100%"
-                    height="200"
+                    height="300"
                     style={{ border: 0, pointerEvents: "none" }}
                     allowFullScreen
                     loading="lazy"
@@ -270,7 +270,7 @@ export default function EnhancedContactPage() {
               <h3 className="text-xl font-semibold mb-2 text-black">
                 Narayana Hospital Jaipur
               </h3>
-              <p className="text-black">For insured & emergency surgeries</p>
+              <p className="text-black">For insured & emergency surgeries in Pratap Nagar</p>
             </div>
 
             {/* Vertical Divider (only on md and above) */}
@@ -281,7 +281,7 @@ export default function EnhancedContactPage() {
               data-aos="fade-left"
               className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
             >
-              <div className="relative rounded-2xl overflow-hidden shadow-inner mb-4 bg-gray-100 group">
+              <div className="relative rounded-2xl overflow-hidden shadow-inner mb-4 bg-gray-100 group w-full h-full">
                 <a
                   href="https://g.co/kgs/RFjQ2wV" // e.g., "https://www.google.com/maps/place/..."
                   target="_blank"
@@ -325,7 +325,7 @@ export default function EnhancedContactPage() {
               data-aos="fade-right"
               className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 text-black shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
             >
-              <div className="relative mb-4 rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
+              <div className="relative mb-4 rounded-2xl overflow-hidden shadow-inner bg-gray-100 group w-full h-full">
                 <a
                   href="https://g.co/kgs/riT4Q2w" // e.g., "https://www.google.com/maps/place/..."
                   target="_blank"

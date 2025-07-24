@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { FaPhoneAlt, FaCalendarCheck } from "react-icons/fa";
-import { GrLocationPin } from "react-icons/gr";
+import { TiLocation } from "react-icons/ti";
 import Link from "next/link";
 
 export const Appointment = () => {
@@ -28,20 +28,20 @@ export const Appointment = () => {
           className="flex flex-col md:flex-row flex-wrap items-center gap-8"
         >
           <Link href="/contact">
-            <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-bold shadow-lg transition-transform hover:scale-105">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               <FaCalendarCheck size={20} />
               Book Appointment
             </button>
           </Link>
           <a href="tel:+919210696045" target="_blank">
-            <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-bold shadow-lg transition-transform hover:scale-105">
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
               <FaPhoneAlt size={20} />
               Call Now
             </button>
           </a>
           <a href="https://g.co/kgs/RFjQ2wV" target="_blank">
-            <button className="flex items-center gap-2 bg-white hover:opacity-80 text-[#197d85] px-6 py-3 rounded-xl font-bold shadow-lg transition-transform hover:scale-105">
-              <GrLocationPin size={20} />
+            <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
+              <TiLocation size={20} />
               <p>Visit Pratap Nagar Clinic</p>
             </button>
           </a>

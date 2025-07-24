@@ -56,8 +56,8 @@ export default function EnhancedContactPage() {
         </div>
 
         {/* Hero Section */}
-        <section className="relative z-10 flex items-center justify-center bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 px-6 md:px-20">
-          <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <section className="relative z-10 flex items-center justify-center bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 px-6 md:px-20 py-20">
+          <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
             {/* Left Content */}
             <div
               className={`transform transition-all duration-1000 ${

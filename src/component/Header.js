@@ -171,12 +171,12 @@ export default function Header() {
               </SheetTitle>
 
               <SheetDescription asChild className="p-6">
-                <nav className="lg:hidden flex flex-col mb-12 space-y-2 text-xl">
+                <nav className="lg:hidden flex flex-col mb-12 space-y-3 text-xl">
                   <Link href="/">Home</Link>
                   <Link href="/about">About</Link>
                   <div>
                     <Link href="/expertise">
-                      <p className="py-2 text-black font-medium">Expertise</p>
+                      <p className="text-black font-medium">Expertise</p>
                     </Link>
                     <ul className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-lg border border-[#197d85] divide-y divide-[#197d85] text-sm">
                       {expertiseMenu.map((menu, idx) => (

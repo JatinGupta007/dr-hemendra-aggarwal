@@ -210,7 +210,7 @@ export default function Page() {
         >
           Specialized Orthopedic Services Offered
         </h2>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl p-7">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl p-4 md:p-8">
           <div className="w-full max-w-2xl">
             <ul className="space-y-5 text-lg md:text-xl">
               <li
@@ -536,7 +536,7 @@ export default function Page() {
         </div>
       </section> */}
       {/*Book Appointment section */}
-      <section className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 mt-20 rounded-2xl px-8 gap-16 flex flex-col lg:flex-row items-center justify-between m-6 md:m-20 py-7">
+      <section className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 mt-20 rounded-2xl px-4 md:px-8 gap-16 flex flex-col lg:flex-row items-center justify-between m-6 md:m-20 py-7">
         <div data-aos="fade-down" className="relative lg:w-150">
           <img
             src="/Images/dr_hemendra.jpg"

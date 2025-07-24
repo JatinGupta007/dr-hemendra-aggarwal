@@ -425,7 +425,7 @@ export default function ExpertisePage() {
         </section>
 
         {/* Call to Action */}
-        <section className="px-6 md:px-20 pb-20">
+        <section className="px-4 md:px-20 pb-20">
           <div className="mx-auto text-center">
             <div className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-3xl p-12 text-black shadow-2xl">
               <h3
@@ -462,7 +462,7 @@ export default function ExpertisePage() {
       </div>
       {/*Why choose us section */}
       <section className="py-20 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black mx-7 md:mx-20 mt-24 mb-50 rounded-4xl">
-        <div className="mx-auto px-8">
+        <div className="mx-auto px-4 md:px-8">
           <h2
             data-aos="fade-down"
             className="text-4xl font-bold text-center mb-18"
@@ -498,7 +498,7 @@ export default function ExpertisePage() {
           {/* Card 1 */}
           <div
             data-aos="fade-right"
-            className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
+            className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-4 md:p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
             <div className="relative mb-4 h-full w-full rounded-2xl overflow-hidden shadow-inner bg-gray-100 group">
               <a
@@ -543,7 +543,7 @@ export default function ExpertisePage() {
           {/* Card 2 */}
           <div
             data-aos="fade-left"
-            className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
+            className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 shadow-xl rounded-2xl p-4 md:p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
             <div className="relative rounded-2xl overflow-hidden shadow-inner mb-4 bg-gray-100 group w-full h-full">
               <a
@@ -587,7 +587,7 @@ export default function ExpertisePage() {
           {/* Card 3 */}
           <div
             data-aos="fade-right"
-            className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 text-black shadow-xl rounded-2xl p-6 w-full md:w-1/2 flex flex-col items-center text-center"
+            className="bg-gradient-to-r h-84 from-[#197d85]/20 to-[#97a345]/20 text-black shadow-xl rounded-2xl p-4 md:p-6 w-full md:w-1/2 flex flex-col items-center text-center"
           >
             <div className="relative mb-4 rounded-2xl overflow-hidden shadow-inner bg-gray-100 group w-full h-full">
               <a
@@ -655,7 +655,7 @@ export default function ExpertisePage() {
       {/*Q&A page */}
       <FaqAccordion faqs={faqs} />
       {/*Book appointment section */}
-      <section className="bg-gradient-to-r gap-7 lg:gap-16 from-[#197d85]/20 to-[#97a345]/20 mt-28 rounded-2xl px-8 flex flex-col lg:flex-row items-center justify-between m-7 md:m-20 py-7">
+      <section className="bg-gradient-to-r gap-7 lg:gap-16 from-[#197d85]/20 to-[#97a345]/20 mt-28 rounded-2xl px-4 md:px-8 flex flex-col lg:flex-row items-center justify-between m-7 md:m-20 py-7">
         <div data-aos="fade-down" className="relative lg:w-200">
           <img
             src="/Images/dr_hemendra.jpg"

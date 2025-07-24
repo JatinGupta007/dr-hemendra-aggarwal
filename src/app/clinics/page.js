@@ -295,7 +295,7 @@ const DoctorLocations = () => {
           </div>
 
           {/* Footer CTA */}
-          <div className="text-center mt-16 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-3xl p-8 text-black">
+          <div className="text-center mt-16 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-3xl p-4 md:p-8 text-black">
             <h3 data-aos="flip-up" className="text-2xl font-bold mb-4">
               Book an Appointment with Dr. Hemendra Agrawal
             </h3>

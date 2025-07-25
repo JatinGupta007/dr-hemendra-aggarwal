@@ -3,9 +3,11 @@ import {
   GiMagnifyingGlass,
 } from "react-icons/gi";
 
-import Image from "next/image";
+import Link from "next/link";
+
 
 export default function TreatmentSection() {
+  
   const treatments = [
     {
       icon: (
@@ -19,6 +21,7 @@ export default function TreatmentSection() {
       ),
       title: "Knee Replacement Surgery",
       desc: "Restore mobility and eliminate pain with advanced knee replacement solutions tailored to your needs.",
+      href: "/expertise/Joint-Replacement-Surgery",
     },
     {
       icon: (
@@ -32,6 +35,7 @@ export default function TreatmentSection() {
       ),
       title: "Hip & Shoulder Joint Replacement",
       desc: "Regain joint function and improve quality of life with expert joint replacement procedures.",
+      href: "/expertise/Joint-Replacement-Surgery/Hip-Replacement-Surgery",
     },
     {
       icon: (
@@ -45,6 +49,7 @@ export default function TreatmentSection() {
       ),
       title: "Arthroscopy (Knee, Shoulder, Ankle, Wrist)",
       desc: "Minimally invasive procedures for accurate diagnosis and quicker recovery.",
+      href: "/expertise/Arthroscopy---Keyhole-Surgery",
     },
     {
       icon: (
@@ -58,6 +63,7 @@ export default function TreatmentSection() {
       ),
       title: "Ligament Reconstruction (ACL, PCL, Labral Tears)",
       desc: "Rebuild stability and strength with cutting-edge ligament reconstruction techniques.",
+      href: "/expertise/Sports-Injury-&-Ligament-Reconstruction",
     },
     {
       icon: (
@@ -71,6 +77,7 @@ export default function TreatmentSection() {
       ),
       title: "Fracture & Trauma Surgery",
       desc: "Comprehensive care for all types of bone fractures and traumatic injuries.",
+      href: "/expertise/Fracture-&-Trauma-Surgery",
     },
     {
       icon: (
@@ -84,6 +91,7 @@ export default function TreatmentSection() {
       ),
       title: "Sports Injury Management",
       desc: "Customized treatment plans to get athletes back in action swiftly and safely.",
+      href: "/expertise/Sports-Injury-&-Ligament-Reconstruction",
     },
     {
       icon: (
@@ -97,6 +105,7 @@ export default function TreatmentSection() {
       ),
       title: "Foot, Ankle & Elbow Procedures",
       desc: "Specialized care for small joints to relieve pain and restore function.",
+      href: "/expertise/Foot,-Ankle,-Hand-&-Wrist-Procedures",
     },
     {
       icon: (
@@ -110,6 +119,7 @@ export default function TreatmentSection() {
       ),
       title: "Shoulder Dislocation & Rotator Cuff Repair",
       desc: "Targeted treatments to stabilize shoulders and repair torn rotator cuffs.",
+      href: "/expertise/Shoulder,-Elbow-&-Upper-Limb-Surgeries",
     },
     {
       icon: (
@@ -117,6 +127,7 @@ export default function TreatmentSection() {
       ),
       title: "View Full List of Treatments",
       desc: "Looking for something specific? Explore our complete list of advanced orthopedic treatments tailored to your needs.",
+      href: "/expertise"
     },
   ];
 
@@ -140,17 +151,15 @@ export default function TreatmentSection() {
       </p>
       <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 place-items-center mx-auto">
         {treatments.map((item, index) => (
-          <div
-            data-aos="zoom-in"
-            key={index}
-            className="bg-white w-86 h-60 p-6 rounded-2xl shadow-md hover:shadow-xl shadow-[#197d85] hover:scale-105 transform transition duration-300 ease-in-out"
-          >
-            <div className="mb-4">{item.icon}</div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              {item.title}
-            </h3>
-            <p className="text-gray-600 text-sm">{item.desc}</p>
-          </div>
+          <Link href={item.href} data-aos="zoom-in" key={index}>
+            <div className="bg-white w-86 h-60 p-6 rounded-2xl shadow-md hover:shadow-xl shadow-[#197d85] hover:scale-105 transform transition duration-300 ease-in-out">
+              <div className="mb-4">{item.icon}</div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                {item.title}
+              </h3>
+              <p className="text-gray-600 text-sm">{item.desc}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </section>

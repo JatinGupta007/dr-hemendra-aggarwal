@@ -152,7 +152,7 @@ export default function Header() {
           <SheetTrigger>
             <Menu className="lg:hidden" size={45} />
           </SheetTrigger>
-          <SheetContent className="bg-gradient-to-r from-[#c4ebed] to-[#e8ebd0] min-w-screen overflow-y min-h-screen">
+          <SheetContent className="bg-gradient-to-r from-[#d7f7f9] to-[#f1f3e0] min-w-screen overflow-y min-h-screen">
             <SheetHeader>
               <SheetTitle className="border-b-2 border-gray-300 px-2 py-3">
                 <div className="flex items-center">
@@ -176,10 +176,11 @@ export default function Header() {
                   <Link href="/">Home</Link>
                   <Link href="/about">About</Link>
                   <div>
-                    <Link href="/expertise">
-                      <p className="text-black font-medium">Expertise</p>
+                    <Link href="/expertise" className="flex items-center gap-2">
+                      <p className="text-black font-medium mb-1">Expertise</p>
+                      <ChevronDown size={18} />
                     </Link>
-                    <ul className="mt-5 mb-2 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-lg border border-[#197d85] divide-y divide-[#197d85] text-sm">
+                    <ul className="bg-gradient-to-r from-[#197d85]/  rounded-lg text-sm">
                       {expertiseMenu.map((menu, idx) => (
                         <li key={idx}>
                           <Link

@@ -438,7 +438,7 @@ export default function Page() {
               <p className="text-slate-500 text-sm max-w-sm">
                 {step.description}
               </p>
-              <span className="text-4xl text-[#197d85]/10 font-bold absolute md:static top-4 right-4">
+              <span className="text-4xl hidden md:block text-[#197d85]/10 font-bold absolute md:static top-4 right-4">
                 {step.id < 10 ? `0${step.id}` : step.id}
               </span>
             </div>

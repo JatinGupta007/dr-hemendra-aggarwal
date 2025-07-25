@@ -89,7 +89,7 @@ export default function SpecificExpertise({ data }) {
                 data-aos="fade-right"
                 className="text-3xl md:text-4xl font-bold text-black mb-6"
               >
-                Why Choose <span className="text-[#97a345]">{title}</span>?
+                Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/90">{title}</span>?
               </h2>
 
               <div className="space-y-4 mb-8">

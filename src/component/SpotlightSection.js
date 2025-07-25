@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Image from "next/image";
 import { FaBookMedical } from "react-icons/fa6";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ export default function SpotlightSection() {
         data-aos="flip-right"
         className="flex-shrink-0 rounded-full overflow-hidden w-[300px] h-[300px] md:w-[460px] md:h-[440px]"
       >
-        <Image
+        <img
           src="/Images/spotlight_img.png"
           alt="Doctor with patient"
           width={400}

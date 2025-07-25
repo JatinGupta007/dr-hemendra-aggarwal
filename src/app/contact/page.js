@@ -1,10 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import React, { useState, useEffect } from "react";
 import { Phone, Mail, MapPin, ArrowRight, Star, Navigation } from "lucide-react";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
-import Image from "next/image";
+
 
 export default function EnhancedContactPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -97,7 +98,7 @@ export default function EnhancedContactPage() {
                 </div>
               </div>
             </div>
-            <Image src="/Images/dr_hemendra.jpg" alt="Dr Hemendra" height={500} width={480} className="rounded-4xl" />
+            <img src="/Images/dr_hemendra.jpg" alt="Dr Hemendra" height={500} width={480} className="rounded-4xl" />
 
             {/* Right Content - Contact Form */}
             {/* <div

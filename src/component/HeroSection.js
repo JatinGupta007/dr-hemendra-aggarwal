@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"; // Only for app directory
 
-import Image from "next/image";
 import { TiTickOutline } from "react-icons/ti";
 import { FaPhoneAlt, FaWhatsapp, FaCalendarCheck } from "react-icons/fa";
 import Link from "next/link";
@@ -38,7 +38,7 @@ export default function HeroSection() {
               </p>
               <p className="text-lg md:text-xl flex items-center gap-3">
                 <TiTickOutline size={30} color="black" />
-                Clinics in Pratap Nagar & SMS Hospital Jaipur
+                Clinics in Pratap Nagar & Narayana Hospital Jaipur
               </p>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function HeroSection() {
             data-aos="fade-down"
             className="flex lg:justify-end lg:absolute lg:right-1 lg:top-10"
           >
-            <Image
+            <img
               src="/Images/doctors_img.png"
               alt="Doctor"
               width={860}

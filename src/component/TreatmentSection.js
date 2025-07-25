@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {
   GiMagnifyingGlass,
 } from "react-icons/gi";
@@ -8,7 +9,7 @@ export default function TreatmentSection() {
   const treatments = [
     {
       icon: (
-        <Image
+        <img
           src="/Images/treatment_icon_8.png"
           alt="treatment_icon_8"
           width={60}
@@ -21,7 +22,7 @@ export default function TreatmentSection() {
     },
     {
       icon: (
-        <Image
+        <img
           src="/Images/treatment_icon_9.png"
           alt="treatment_icon_1"
           width={60}
@@ -34,7 +35,7 @@ export default function TreatmentSection() {
     },
     {
       icon: (
-        <Image
+        <img
           src="/Images/treatment_icon_2.png"
           alt="treatment_icon_2"
           width={60}
@@ -47,7 +48,7 @@ export default function TreatmentSection() {
     },
     {
       icon: (
-        <Image
+        <img
           src="/Images/treatment_icon_13.png"
           alt="treatment_icon_3"
           width={60}
@@ -60,7 +61,7 @@ export default function TreatmentSection() {
     },
     {
       icon: (
-        <Image
+        <img
           src="/Images/treatment_icon_7.png"
           alt="treatment_icon_7"
           width={60}
@@ -73,7 +74,7 @@ export default function TreatmentSection() {
     },
     {
       icon: (
-        <Image
+        <img
           src="/Images/treatment_icon_4.png"
           alt="treatment_icon_2"
           width={60}
@@ -86,7 +87,7 @@ export default function TreatmentSection() {
     },
     {
       icon: (
-        <Image
+        <img
           src="/Images/treatment_icon_5.png"
           alt="treatment_icon_5"
           width={60}
@@ -99,7 +100,7 @@ export default function TreatmentSection() {
     },
     {
       icon: (
-        <Image
+        <img
           src="/Images/treatment_icon_6.png"
           alt="treatment_icon_6"
           width={60}

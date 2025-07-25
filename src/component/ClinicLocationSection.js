@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import { LocateFixed, Navigation } from "lucide-react";
 import { FaPhoneAlt} from "react-icons/fa";

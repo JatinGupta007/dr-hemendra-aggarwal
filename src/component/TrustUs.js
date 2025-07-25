@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { FaCheck, FaBookMedical } from "react-icons/fa";
 
@@ -8,7 +8,7 @@ export default function TrustUsSection() {
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 items-center lg:gap-16">
         {/* Left Image */}
         <div data-aos="fade-right" className="relative rounded-3xl">
-          <Image
+          <img
             src="/Images/trust_us.png" // Replace with your actual path
             alt="Doctor"
             width={600}
@@ -16,7 +16,7 @@ export default function TrustUsSection() {
             className="w-full h-full"
           />
 
-          <Image
+          <img
             src="/Images/tick.svg"
             alt="High Quality"
             width={50}
@@ -24,7 +24,7 @@ export default function TrustUsSection() {
             className="absolute top-0 right-26 z-6"
           />
 
-          <Image
+          <img
             src="/Images/circle.svg"
             alt="High Quality"
             width={180}

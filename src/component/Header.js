@@ -101,18 +101,18 @@ export default function Header() {
 
           {/* Expertise Dropdown */}
           <div className="absolute top-full -left-40 hidden w-75 bg-white shadow-2xl rounded-xl group-hover/parent:block z-40">
-            <ul className="py-2 text-sm text-gray-800 space-y-3 w-75">
+            <ul className="py-2 text-sm text-gray-800 w-75">
               {expertiseMenu.map((menu, idx) => (
-                <li
-                  key={idx}
-                  className="relative group flex items-center"
-                >
+                <li key={idx} className="relative group flex items-center">
                   <Link
                     href={`/expertise/${menu.title.replace(/\s+/g, "-")}`}
-                    className="px-5 py-3 hover:bg-[#f1f5f9] hover:text-[#197d85] flex items-center justify-between w-full"
+                    className="px-5 py-6 hover:bg-[#f1f5f9] hover:text-[#197d85] flex items-center justify-between w-full"
                   >
                     {menu.title}
-                    <ChevronRight size={18} className="hidden group-hover:inline" />
+                    <ChevronRight
+                      size={18}
+                      className="hidden group-hover:inline"
+                    />
                   </Link>
                   <ul
                     style={{ top: `-${idx * 40}px` }}
@@ -125,12 +125,13 @@ export default function Header() {
                       )}/${item.replace(/\s+/g, "-")}`;
 
                       return (
-                        <li
+                        <Link
                           key={i}
-                          className="block px-5 py-3 hover:bg-[#f1f5f9] hover:text-[#197d85]"
+                          href={href}
+                          className="block hover:bg-[#f1f5f9] hover:text-[#197d85]"
                         >
-                          <Link href={href}>{item}</Link>
-                        </li>
+                          <li className="p-5">{item}</li>
+                        </Link>
                       );
                     })}
                   </ul>
@@ -178,7 +179,7 @@ export default function Header() {
                     <Link href="/expertise">
                       <p className="text-black font-medium">Expertise</p>
                     </Link>
-                    <ul className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-lg border border-[#197d85] divide-y divide-[#197d85] text-sm">
+                    <ul className="mt-5 mb-2 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-lg border border-[#197d85] divide-y divide-[#197d85] text-sm">
                       {expertiseMenu.map((menu, idx) => (
                         <li key={idx}>
                           <Link

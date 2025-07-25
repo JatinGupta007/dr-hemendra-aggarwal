@@ -24,7 +24,7 @@ export default function FaqAccordion({faqs}) {
         Usually Asked
       </h2>
 
-      <div className="space-y-6">
+      <div className="space-y-6" data-aos="zoom-in">
         {faqs.map((faq, index) => (
           <div
             key={index}

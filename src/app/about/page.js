@@ -109,7 +109,7 @@ export default function Page() {
               Practo Verified <MdVerified color="#197d85" size={20} />
             </span>
             <span className="flex items-center gap-2 bg-white px-3 py-2 rounded-xl text-sm font-semibold transition duration-200 hover:scale-105 hover:shadow-lg">
-              SMS Hospital Consultant{" "}
+              Narayana Hospital Consultant{" "}
               <MdMedicalServices color="#197d85" size={20} />
             </span>
           </div>
@@ -188,10 +188,9 @@ export default function Page() {
                 </h3>
                 <ul className="text-gray-500 text-center space-y-3">
                   <li>20000+ orthopedic surgeries performed successfully</li>
-                  <li>10+ years of service at SMS Hospital Jaipur</li>
+                  <li>12+ years of Experience</li>
                   <li>
-                    Founder & Director of private orthopedic clinic in Pratap
-                    Nagar Jaipur
+                    Founder & Director of Ortho K Link clinic
                   </li>
                   <li>
                     Consulted over 25,000 patients with orthopedic conditions

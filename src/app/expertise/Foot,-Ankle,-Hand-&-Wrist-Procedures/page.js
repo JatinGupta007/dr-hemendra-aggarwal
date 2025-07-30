@@ -54,7 +54,7 @@ const handFootData = {
           className="mx-auto"
         />
       ),
-      title: "Flat Foot, Bunions & Toe Deformities",
+      title: "Flat Foot, Bunions, and Toe Deformities",
       subtitle: "Realignment and correction procedures",
     },
     {

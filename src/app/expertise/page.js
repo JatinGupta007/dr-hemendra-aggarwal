@@ -15,6 +15,7 @@ import Link from "next/link";
 
 import { FaMedal, FaHospital } from "react-icons/fa6";
 import { MdHealthAndSafety } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { GiBrain } from "react-icons/gi";
 import {
   FaAward,
@@ -23,7 +24,6 @@ import {
   FaStethoscope,
   FaCalendarCheck,
   FaPhoneAlt,
-  FaWhatsapp,
 } from "react-icons/fa";
 
 const services = [
@@ -86,7 +86,7 @@ const services = [
       "Carpal Tunnel Syndrome",
       "Ankle Sprains & Instability",
       "Trigger Finger Release",
-      "Flat Foot, Bunions, and Toe Deformities",
+      "Flat Foot, Bunions, & Toe Deformities",
     ],
     quote:
       "Dr. Hemendra Agrawal treats a wide range of peripheral orthopedic problems with both surgical and non-surgical options.",
@@ -159,7 +159,7 @@ const services = [
     treatments: [
       "Recurrent Shoulder Dislocations",
       "Rotator Cuff Tears",
-      "Tennis Elbow & Golfer’s Elbow",
+      "Tennis Elbow & Golfers Elbow",
       "Frozen Shoulder",
     ],
     quote:
@@ -245,15 +245,15 @@ export default function ExpertisePage() {
           </h1>
           <p data-aos="flip-up" className="mt-4 text-lg text-black">
             If you&apos;re searching for the best orthopedic doctor in Jaipur,
-            look no further. With over 14 years of experience and more than 20000+
-            successful surgeries, Dr. Hemendra Agrawal is known for delivering
-            advanced, personalized treatments for joint, ligament, bone, and
-            sports-related conditions.
+            look no further. With over 14 years of experience and more than
+            20000+ successful surgeries, Dr. Hemendra Agrawal is known for
+            delivering advanced, personalized treatments for joint, ligament,
+            bone, and sports-related conditions.
           </p>
           <p data-aos="flip-up">
             Patients from Pratap Nagar, Mansarovar, Ajmer Road, and all across
-            Rajasthan choose Dr. Hemendar Agrawal for his compassionate care, modern
-            techniques, and accurate diagnosis.
+            Rajasthan choose Dr. Hemendar Agrawal for his compassionate care,
+            modern techniques, and accurate diagnosis.
           </p>
           <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
             <div
@@ -308,10 +308,11 @@ export default function ExpertisePage() {
         {/* Header Section */}
         <section className="px-6 md:px-20 pt-20 pb-12">
           <div className="max-w-7xl mx-auto text-center">
-            <div data-aos="fade-up" className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg mb-6">
-              <div
-                className="w-2 h-2 bg-gradient-to-r from-[#197d85] to-[#97a345] rounded-full animate-pulse"
-              ></div>
+            <div
+              data-aos="fade-up"
+              className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg mb-6"
+            >
+              <div className="w-2 h-2 bg-gradient-to-r from-[#197d85] to-[#97a345] rounded-full animate-pulse"></div>
               <span className="text-sm font-medium text-slate-600">
                 Premier Orthopedic Care
               </span>
@@ -411,7 +412,9 @@ export default function ExpertisePage() {
                     </div>
 
                     {/* Button */}
-                    <Link href={service.path}>
+                    <Link
+                      href={`/expertise/${service.title.replaceAll(" ", "-")}`}
+                    >
                       <button className="w-full bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black px-6 py-3 rounded-xl font-semibold text-sm shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 group/btn">
                         {service.buttonText}
                         <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
@@ -534,7 +537,9 @@ export default function ExpertisePage() {
             <h3 className="text-xl font-semibold mb-2 text-black">
               Narayana Hospital Jaipur
             </h3>
-            <p className="text-black">For insured & emergency surgeries in Pratap Nagar</p>
+            <p className="text-black">
+              For insured & emergency surgeries in Pratap Nagar
+            </p>
           </div>
 
           {/* Vertical Divider (only on md and above) */}
@@ -640,7 +645,7 @@ export default function ExpertisePage() {
         >
           <Link href="/clinics">
             <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-              Get Directions & Timing 
+              Get Directions & Timing
               <ArrowRight />
             </button>
           </Link>
@@ -689,7 +694,7 @@ export default function ExpertisePage() {
             </a>
             <a href="https://wa.me/919210696045" target="_blank">
               <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-                <FaWhatsapp size={20} />
+                <IoLogoWhatsapp size={20} />
                 <p>WhatsApp</p>
               </button>
             </a>

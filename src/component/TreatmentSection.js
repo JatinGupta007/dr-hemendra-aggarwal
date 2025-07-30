@@ -149,10 +149,10 @@ export default function TreatmentSection() {
         Whether you are dealing with knee pain, a sports injury, or require
         joint replacement - we’ve got you covered.
       </p>
-      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 place-items-center mx-auto">
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center mx-auto">
         {treatments.map((item, index) => (
           <Link href={item.href} data-aos="zoom-in" key={index}>
-            <div className="bg-white w-86 h-60 p-6 rounded-2xl shadow-md hover:shadow-xl shadow-[#197d85] hover:scale-105 transform transition duration-300 ease-in-out">
+            <div className="bg-white w-80 h-60 p-6 rounded-2xl shadow-md hover:shadow-xl shadow-[#197d85] hover:scale-105 transform transition duration-300 ease-in-out">
               <div className="mb-4">{item.icon}</div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 {item.title}

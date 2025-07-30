@@ -35,7 +35,7 @@ export default function SpecificExpertise({ data }) {
             {title}
             <span
               data-aos="flip-up"
-              className="block text-[#197d85] text-3xl md:text-4xl lg:text-5xl mt-2"
+              className="block text-transparent bg-clip-text bg-gradient-to-r from-[#197d85] to-[#97a345] text-3xl md:text-4xl lg:text-5xl mt-2"
             >
               {subtitle}
             </span>
@@ -89,7 +89,11 @@ export default function SpecificExpertise({ data }) {
                 data-aos="fade-right"
                 className="text-3xl md:text-4xl font-bold text-black mb-6"
               >
-                Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/90">{title}</span>?
+                Why Choose{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#197d85]/90 to-[#97a345]/90">
+                  {title}
+                </span>
+                ?
               </h2>
 
               <div className="space-y-4 mb-8">
@@ -99,7 +103,7 @@ export default function SpecificExpertise({ data }) {
                     key={index}
                     className="flex items-center space-x-3"
                   >
-                    <CheckCircle className="w-6 h-6 text-[#97a345] flex-shrink-0" />
+                    <CheckCircle className="w-6 h-6 text-[#197d85] flex-shrink-0" />
                     <span className="text-gray-700 font-medium">{benefit}</span>
                   </div>
                 ))}

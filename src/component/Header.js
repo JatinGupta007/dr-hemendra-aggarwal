@@ -152,7 +152,7 @@ export default function Header() {
           <SheetTrigger>
             <Menu className="lg:hidden" size={45} />
           </SheetTrigger>
-          <SheetContent className="bg-gradient-to-r from-[#d7f7f9] to-[#f1f3e0] min-w-screen overflow-y min-h-screen">
+          <SheetContent className="bg-gradient-to-r from-[#d7f7f9] to-[#f1f3e0] min-w-screen min-h-screen">
             <SheetHeader>
               <SheetTitle className="border-b-2 border-gray-300 px-2 py-3">
                 <div className="flex items-center">

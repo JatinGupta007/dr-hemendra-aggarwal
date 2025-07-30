@@ -2,7 +2,8 @@
 "use client"; // Only for app directory
 
 import { TiTickOutline } from "react-icons/ti";
-import { FaPhoneAlt, FaWhatsapp, FaCalendarCheck } from "react-icons/fa";
+import { FaPhoneAlt, FaCalendarCheck } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 import Link from "next/link";
 
 export default function HeroSection() {
@@ -77,7 +78,7 @@ export default function HeroSection() {
           </a>
           <a href="https://wa.me/919210696045" target="_blank">
             <button className="flex items-center gap-2 hover:opacity-80 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black-6 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-              <FaWhatsapp size={20} />
+              <IoLogoWhatsapp size={20} />
               <p>WhatsApp</p>
             </button>
           </a>

@@ -9,11 +9,13 @@ import Footer from "@/component/Footer";
 
 export default function EnhancedContactPage() {
   const [isVisible, setIsVisible] = useState(false);
-  // const [formData, setFormData] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // });
+  const [isOpen, setOpen] = useState(false);
+  const [errMsg, setErrMsg] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -27,17 +29,23 @@ export default function EnhancedContactPage() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  // const handleInputChange = (e) => {
-  //   setFormData({
-  //     ...formData,
-  //     [e.target.name]: e.target.value,
-  //   });
-  // };
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-  // const handleSubmit = () => {
-  //   // Handle form submission here
-  //   console.log("Form submitted:", formData);
-  // };
+  const handleSubmit = () => {
+    // Handle form submission here
+    if (formData.name === "" && formData.email === "") {
+      setErrMsg("Please Enter name or Email")
+    } else{
+      console.log("Form submitted:", formData);
+      setOpen(false);
+    }
+    
+  };
 
   return (
     <main>
@@ -84,83 +92,89 @@ export default function EnhancedContactPage() {
                 </p>
 
                 <div className="flex gap-4 mb-8">
-                  <button className="group relative px-8 py-4 bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 text-black rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <button
+                    onClick={() => setOpen(true)}
+                    className="group relative px-8 py-4 bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 text-black rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  >
                     <span className="relative z-10 flex items-center gap-2">
                       Get Started
                       <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
                     </span>
                     <div className="absolute inset-0 bg-gradient-to-r from-[#97a345]/40 to-[#197d85]/40 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
                   </button>
-
-                  <button className="px-8 py-4 border-2 border-[#197d85] text-[#197d85] rounded-full font-semibold hover:bg-[#197d85] hover:text-white transition-all duration-300">
-                    Learn More
-                  </button>
                 </div>
               </div>
             </div>
-            <img src="/Images/dr_hemendra.jpg" alt="Dr Hemendra" height={500} width={480} className="rounded-4xl" />
 
-            {/* Right Content - Contact Form */}
-            {/* <div
-              className={`transform transition-all duration-1000 delay-300 ${
-                isVisible
-                  ? "translate-x-0 opacity-100"
-                  : "translate-x-20 opacity-0"
-              }`}
-            >
-              <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20">
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-[#197d85] to-[#97a345] rounded-full animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-[#97a345] to-[#197d85] rounded-full animate-pulse delay-1000"></div>
+            {isOpen ? (
+              <div
+                className={`transform transition-all duration-1000 delay-300 ${
+                  isVisible
+                    ? "translate-x-0 opacity-100"
+                    : "translate-x-20 opacity-0"
+                }`}
+              >
+                <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20">
+                  <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-[#197d85] to-[#97a345] rounded-full animate-pulse"></div>
+                  <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-[#97a345] to-[#197d85] rounded-full animate-pulse delay-1000"></div>
 
-                <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
-                  Send us a message
-                </h2>
+                  <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+                    Send us a message
+                  </h2>
 
-                <div className="space-y-6">
-                  <div className="group">
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      placeholder="Your Name"
-                      className="w-full px-6 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#197d85] focus:border-transparent transition-all duration-300 group-hover:shadow-md"
-                    />
+                  <div className="space-y-6">
+                    <div className="group">
+                      <input
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        placeholder="Your Name"
+                        className="w-full px-6 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#197d85] focus:border-transparent transition-all duration-300 group-hover:shadow-md"
+                      />
+                    </div>
+
+                    <div className="group">
+                      <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        placeholder="Your Email"
+                        className="w-full px-6 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#197d85] focus:border-transparent transition-all duration-300 group-hover:shadow-md"
+                      />
+                    </div>
+
+                    <div className="group">
+                      <textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleInputChange}
+                        placeholder="Your Message"
+                        rows="5"
+                        className="w-full px-6 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#197d85] focus:border-transparent transition-all duration-300 group-hover:shadow-md resize-none"
+                      />
+                    </div>
+
+                    <button
+                      onClick={handleSubmit}
+                      className="w-full bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black font-semibold py-4 rounded-2xl hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+                    >
+                      Send Message
+                    </button>
+                    <p className="text-red-600">{errMsg}</p>
                   </div>
-
-                  <div className="group">
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      placeholder="Your Email"
-                      className="w-full px-6 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#197d85] focus:border-transparent transition-all duration-300 group-hover:shadow-md"
-                    />
-                  </div>
-
-                  <div className="group">
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      placeholder="Your Message"
-                      rows="5"
-                      className="w-full px-6 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#197d85] focus:border-transparent transition-all duration-300 group-hover:shadow-md resize-none"
-                    />
-                  </div>
-
-                  <button
-                    onClick={handleSubmit}
-                    className="w-full bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black font-semibold py-4 rounded-2xl hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
-                  >
-                    <Send className="w-5 h-5" />
-                    Send Message
-                  </button>
                 </div>
               </div>
-            </div>
-          </div> */}
+            ) : (
+              <img
+                src="/Images/dr_hemendra.jpg"
+                alt="Dr Hemendra"
+                height={500}
+                width={480}
+                className="rounded-4xl"
+              />
+            )}
           </div>
         </section>
 
@@ -188,7 +202,7 @@ export default function EnhancedContactPage() {
                 {
                   icon: Mail,
                   title: "Email",
-                  info: "cvibha@yahoo.com",
+                  info: "Orthoklinik19@gmail.com",
                   color: "from-purple-500 to-pink-500",
                 },
                 {
@@ -271,7 +285,9 @@ export default function EnhancedContactPage() {
               <h3 className="text-xl font-semibold mb-2 text-black">
                 Narayana Hospital Jaipur
               </h3>
-              <p className="text-black">For insured & emergency surgeries in Pratap Nagar</p>
+              <p className="text-black">
+                For insured & emergency surgeries in Pratap Nagar
+              </p>
             </div>
 
             {/* Vertical Divider (only on md and above) */}
@@ -371,7 +387,6 @@ export default function EnhancedContactPage() {
           >
             Both clinics equipped with latest diagnostics & OT facilities.
           </p>
-          
         </section>
       </div>
       <Footer />

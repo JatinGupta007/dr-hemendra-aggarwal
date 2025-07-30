@@ -1,10 +1,13 @@
 import { Appointment } from "@/component/Appointment";
+import AwardAndRecognitions from "@/component/Award&Recongnition";
 import ClinicLocations from "@/component/ClinicLocationSection";
+import ConferenceAndMedia from "@/component/Conference&Media";
 import DoctorSection from "@/component/DoctorSection";
 import FaqAccordion from "@/component/FaqAccordion";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
 import HeroSection from "@/component/HeroSection";
+import SugeriesAndOT from "@/component/Sergeries&OT";
 import SpotlightSection from "@/component/SpotlightSection";
 import Testimonial from "@/component/TestimonialSection";
 import TreatmentSection from "@/component/TreatmentSection";
@@ -44,8 +47,11 @@ export default function Home() {
       <Header />
       <HeroSection />
       <TrustUsSection />
+      <AwardAndRecognitions />
       <TreatmentSection />
+      <ConferenceAndMedia />
       <SpotlightSection />
+      <SugeriesAndOT />
       <ClinicLocations />
       <DoctorSection />
       <Testimonial />

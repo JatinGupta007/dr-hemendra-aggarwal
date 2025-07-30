@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { FiUsers } from "react-icons/fi";
 import { HiOutlineMicrophone } from "react-icons/hi";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 import {
   MdMedicalServices,
@@ -21,7 +22,6 @@ import {
   FaUserMd,
   FaPhone,
   FaPhoneAlt,
-  FaWhatsapp,
 } from "react-icons/fa";
 import ReviewsSection from "@/component/TestimonialSection";
 
@@ -188,10 +188,8 @@ export default function Page() {
                 </h3>
                 <ul className="text-gray-500 text-center space-y-3">
                   <li>20000+ orthopedic surgeries performed successfully</li>
-                  <li>12+ years of Experience</li>
-                  <li>
-                    Founder & Director of Ortho K Link clinic
-                  </li>
+                  <li>14+ years of Experience</li>
+                  <li>Founder & Director of Ortho K Link clinic</li>
                   <li>
                     Consulted over 25,000 patients with orthopedic conditions
                   </li>
@@ -572,7 +570,7 @@ export default function Page() {
             </a>
             <a href="https://wa.me/919210696045" target="_blank">
               <button className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40 text-black hover:opacity-80 px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105">
-                <FaWhatsapp size={20} />
+                <IoLogoWhatsapp size={20} />
                 <p>WhatsApp</p>
               </button>
             </a>

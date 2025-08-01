@@ -12,14 +12,14 @@ const SugeriesAndOT = () => {
           Latest Activities
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
           <div className="rounded-2xl overflow-hidden shadow-md">
             <Image
               src="/Images/surgeries_img_1.jpg"
               alt="Facility 1"
               width={500}
               height={400}
-              className="w-full h-70 object-cover"
+              className="w-full h-60 object-cover"
             />
           </div>
           <div className="rounded-2xl overflow-hidden shadow-md">
@@ -28,7 +28,7 @@ const SugeriesAndOT = () => {
               alt="Facility 2"
               width={500}
               height={400}
-              className="w-full h-70 object-cover"
+              className="w-full h-60 object-cover"
             />
           </div>
           <div className="rounded-2xl overflow-hidden shadow-md">
@@ -37,7 +37,88 @@ const SugeriesAndOT = () => {
               alt="Facility 3"
               width={500}
               height={400}
-              className="w-full h-70 object-cover"
+              className="w-full h-60 object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-md">
+            <Image
+              src="/Images/surgeries_img_4.jpg"
+              alt="Facility 3"
+              width={500}
+              height={400}
+              className="w-full h-60 object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-md">
+            <Image
+              src="/Images/surgeries_img_5.jpg"
+              alt="Facility 3"
+              width={500}
+              height={400}
+              className="w-full h-60 object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-md">
+            <Image
+              src="/Images/surgeries_img_6.jpg"
+              alt="Facility 3"
+              width={500}
+              height={400}
+              className="w-full h-60 object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-md">
+            <Image
+              src="/Images/surgeries_img_7.jpg"
+              alt="Facility 3"
+              width={500}
+              height={400}
+              className="w-full h-60 object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-md">
+            <Image
+              src="/Images/surgeries_img_8.jpg"
+              alt="Facility 3"
+              width={500}
+              height={400}
+              className="w-full h-60 object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-md">
+            <Image
+              src="/Images/surgeries_img_9.jpg"
+              alt="Facility 3"
+              width={500}
+              height={400}
+              className="w-full h-60 object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-md">
+            <Image
+              src="/Images/surgeries_img_10.jpg"
+              alt="Facility 3"
+              width={500}
+              height={400}
+              className="w-full h-60 object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-md">
+            <Image
+              src="/Images/surgeries_img_11.jpg"
+              alt="Facility 3"
+              width={500}
+              height={400}
+              className="w-full h-60 object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-md">
+            <Image
+              src="/Images/surgeries_img_12.jpg"
+              alt="Facility 3"
+              width={500}
+              height={400}
+              className="w-full h-60 object-cover"
             />
           </div>
         </div>

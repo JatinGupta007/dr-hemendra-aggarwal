@@ -47,10 +47,10 @@ export default function HeroSection() {
           {/* Right Image */}
           <div
             data-aos="fade-down"
-            className="flex lg:justify-end lg:absolute lg:right-1 lg:top-10"
+            className="flex lg:justify-end lg:absolute lg:-right-7 lg:top-10"
           >
             <img
-              src="/Images/doctors_img.png"
+              src="/Images/dr_hemendra-removebg.png"
               alt="Doctor"
               width={860}
               height={700}

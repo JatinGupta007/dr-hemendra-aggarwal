@@ -100,7 +100,7 @@ export default function Header() {
           </Link>
 
           {/* Expertise Dropdown */}
-          <div className="absolute top-full -left-40 hidden w-75 bg-white shadow-2xl rounded-xl group-hover/parent:block z-40">
+          <div className="absolute top-full -left-40 hidden w-75 h-110 bg-white shadow-2xl rounded-xl group-hover/parent:block z-40">
             <ul className="py-2 text-sm text-gray-800 w-75">
               {expertiseMenu.map((menu, idx) => (
                 <li key={idx} className="relative group flex items-center">
@@ -115,8 +115,8 @@ export default function Header() {
                     />
                   </Link>
                   <ul
-                    style={{ top: `-${idx * 40}px` }}
-                    className="absolute left-full space-y-3 hidden w-72 py-2 bg-white shadow-xl rounded-xl group-hover:block z-50"
+                    style={{ top: `-${idx * 68 + 7}px` }}
+                    className="absolute left-full space-y-3 hidden w-72 h-110 py-2 bg-white shadow-xl rounded-xl group-hover:block z-50"
                   >
                     {menu.subItems.map((item, i) => {
                       const href = `/expertise/${menu.title.replace(

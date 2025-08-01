@@ -11,6 +11,16 @@ const images = [
   "award_img_4.jpg",
   "award_img_5.jpg",
   "award_img_6.jpg",
+  "award_img_7.jpg",
+  "award_img_8.jpg",
+  "award_img_9.jpg",
+  "award_img_10.jpg",
+  "award_img_11.jpg",
+  "award_img_12.jpg",
+  "award_img_13.jpg",
+  "award_img_14.jpg",
+  "award_img_15.jpg",
+  "award_img_16.jpg",
 ];
 
 const Recognitions = () => {
@@ -68,14 +78,14 @@ const Recognitions = () => {
             {images.map((src, idx) => (
               <div
                 key={idx}
-                className="keen-slider__slide rounded-xl overflow-hidden shadow-md"
+                className="keen-slider__slide rounded-xl overflow-hidden shadow-md my-7"
               >
                 <Image
                   src={`/Images/${src}`}
                   alt={`Recognition ${idx + 1}`}
                   width={500}
                   height={400}
-                  className="w-full h-70 object-cover"
+                  className="w-full h-80 object-cover"
                 />
               </div>
             ))}

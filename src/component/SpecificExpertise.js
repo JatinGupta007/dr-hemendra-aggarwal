@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function SpecificExpertise({ data }) {
   const pathname = usePathname();
-  console.log(pathname)
+  console.log(pathname);
   const {
     title,
     subtitle,
@@ -51,21 +51,18 @@ export default function SpecificExpertise({ data }) {
 
         {/* Services Grid */}
         <div className="flex flex-wrap items-center justify-center gap-7 mb-16">
-          {services.map((service, index) => (
-            <Link
-              key={index}
-              href={
-                pathname === `/expertise/${title.replaceAll(" ", "-")}`
-                  ? `/expertise/${title.replaceAll(
-                      " ",
-                      "-"
-                    )}/${service.title.replaceAll(" ", "-")}`
-                  : "#"
-              }
-            >
+          {services.map((service, index) => {
+            const isActive =
+              pathname === `/expertise/${title.replaceAll(" ", "-")}`;
+            const cardContent = (
               <div
                 data-aos="zoom-in"
-                className="group flex flex-col justify-center items-center w-86 h-60 bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/20"
+                className={`group flex flex-col justify-center items-center w-86 h-60 bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-lg transition-all duration-300 border border-white/20 ${
+                  isActive
+                    ? "hover:shadow-2xl hover:-translate-y-2 cursor-pointer"
+                    : "opacity-60 cursor-not-allowed"
+                }`}
+                style={!isActive ? { pointerEvents: "none" } : {}}
               >
                 <div className="flex items-center justify-center w-18 h-18 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
@@ -77,8 +74,21 @@ export default function SpecificExpertise({ data }) {
                   {service.subtitle}
                 </p>
               </div>
-            </Link>
-          ))}
+            );
+            return isActive ? (
+              <Link
+                key={index}
+                href={`/expertise/${title.replaceAll(
+                  " ",
+                  "-"
+                )}/${service.title.replaceAll(" ", "-")}`}
+              >
+                {cardContent}
+              </Link>
+            ) : (
+              <div key={index}>{cardContent}</div>
+            );
+          })}
         </div>
 
         {/* Benefits Section */}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SugeriesAndOT = () => {
   return (
-    <section className="py-16 px-4 bg-white md:mx-20 mx-6">
+    <section className="py-16 px-4 bg-white md:mx-auto mx-6">
       <div className="max-w-6xl mx-auto">
         <p className="text-[#197d85] text-lg font-semibold mb-2">
           HAVE A LOOK AT
@@ -12,115 +12,35 @@ const SugeriesAndOT = () => {
           Latest Activities
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/Images/surgeries_img_1.jpg"
-              alt="Facility 1"
-              width={500}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/Images/surgeries_img_2.jpg"
-              alt="Facility 2"
-              width={500}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/Images/surgeries_img_3.jpg"
-              alt="Facility 3"
-              width={500}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/Images/surgeries_img_4.jpg"
-              alt="Facility 3"
-              width={500}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/Images/surgeries_img_5.jpg"
-              alt="Facility 3"
-              width={500}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/Images/surgeries_img_6.jpg"
-              alt="Facility 3"
-              width={500}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/Images/surgeries_img_7.jpg"
-              alt="Facility 3"
-              width={500}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/Images/surgeries_img_8.jpg"
-              alt="Facility 3"
-              width={500}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/Images/surgeries_img_9.jpg"
-              alt="Facility 3"
-              width={500}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/Images/surgeries_img_10.jpg"
-              alt="Facility 3"
-              width={500}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/Images/surgeries_img_11.jpg"
-              alt="Facility 3"
-              width={500}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/Images/surgeries_img_12.jpg"
-              alt="Facility 3"
-              width={500}
-              height={400}
-              className="w-full h-60 object-cover"
-            />
-          </div>
+        <div className="flex flex-wrap gap-3">
+          {[
+            { src: "/Images/surgeries_img_1.jpg", alt: "Facility 1" },
+            { src: "/Images/surgeries_img_2.jpg", alt: "Facility 2" },
+            { src: "/Images/surgeries_img_3.jpg", alt: "Facility 3" },
+            { src: "/Images/surgeries_img_4.jpg", alt: "Facility 4" },
+            { src: "/Images/surgeries_img_5.jpg", alt: "Facility 5" },
+            { src: "/Images/surgeries_img_6.jpg", alt: "Facility 6" },
+            { src: "/Images/surgeries_img_7.jpg", alt: "Facility 7" },
+            { src: "/Images/surgeries_img_8.jpg", alt: "Facility 8" },
+            { src: "/Images/surgeries_img_9.jpg", alt: "Facility 9" },
+            { src: "/Images/surgeries_img_10.jpg", alt: "Facility 10" },
+            { src: "/Images/surgeries_img_11.jpg", alt: "Facility 11" },
+            { src: "/Images/surgeries_img_12.jpg", alt: "Facility 12" },
+          ].map((img, idx) => (
+            <div
+              key={img.src}
+              className="rounded-2xl overflow-hidden shadow-md flex items-center justify-center aspect-[5/4] bg-black/5"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                width={350}
+                height={300}
+                className="w-94 h-full object-fill"
+                style={{ background: "#fff" }}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

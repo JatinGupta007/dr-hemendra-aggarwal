@@ -85,7 +85,7 @@ const Recognitions = () => {
                   alt={`Recognition ${idx + 1}`}
                   width={500}
                   height={400}
-                  className="w-full h-80 object-cover"
+                  className="w-full h-80 object-fill"
                 />
               </div>
             ))}

@@ -33,12 +33,12 @@ export default function SpecificExpertise({ data }) {
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4"
           >
             {title}
-            <span
+            <p
               data-aos="flip-up"
-              className="block text-transparent bg-clip-text bg-gradient-to-r from-[#197d85] to-[#97a345] text-3xl md:text-4xl lg:text-5xl mt-2"
+              className="block text-transparent bg-clip-text bg-gradient-to-r from-[#197d85] to-[#97a345] text-3xl md:text-4xl lg:text-5xl mt-2 leading-16"
             >
               {subtitle}
-            </span>
+            </p>
           </h1>
 
           <p

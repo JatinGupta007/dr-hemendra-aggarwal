@@ -76,16 +76,9 @@ export default function EnhancedContactPage() {
               }`}
             >
               <div className="relative">
-                <h1 className="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#197d85]/40 via-[#97a345] to-[#197d85]/40 mb-6 leading-tight">
-                  Let&apos;s
-                  <br />
-                  <span className="relative">
-                    Connect
-                    <div className="absolute -bottom-4 left-0 w-full h-2 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-full transform -skew-x-12"></div>
-                  </span>
-                </h1>
+                
 
-                <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-lg">
+                <p className="text-2xl text-gray-600 mb-8 leading-relaxed max-w-lg">
                   Ready to start your wellness journey? We&apos;re here to guide
                   you every step of the way with personalized care and expert
                   support.
@@ -94,7 +87,7 @@ export default function EnhancedContactPage() {
                 <div className="flex gap-4 mb-8">
                   <button
                     onClick={() => setOpen(true)}
-                    className="group relative px-8 py-4 bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 text-black rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                    className="group relative px-16 py-4 bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 text-black rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   >
                     <span className="relative z-10 flex items-center gap-2">
                       Get Started
@@ -171,7 +164,7 @@ export default function EnhancedContactPage() {
                 src="/Images/dr_hemendra.jpg"
                 alt="Dr Hemendra"
                 height={500}
-                width={480}
+                width={450}
                 className="rounded-4xl"
               />
             )}

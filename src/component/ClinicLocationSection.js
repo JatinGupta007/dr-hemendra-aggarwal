@@ -4,7 +4,7 @@ import { FaPhoneAlt} from "react-icons/fa";
 
 export default function ClinicLocations() {
   return (
-    <section className="md:py-16 p-7 md:px-20 rounded-2xl text-black">
+    <section className="md:py-16 p-7 lg:px-20 rounded-2xl text-black">
       <div className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-2xl p-5 md:p-8">
         <h2
           data-aos="fade-up"

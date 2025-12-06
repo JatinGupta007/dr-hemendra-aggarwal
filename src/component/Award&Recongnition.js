@@ -5,22 +5,22 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
 const images = [
-  "award_img_1.jpg",
-  "award_img_2.jpg",
-  "award_img_3.jpg",
-  "award_img_4.jpg",
-  "award_img_5.jpg",
-  "award_img_6.jpg",
-  "award_img_7.jpg",
-  "award_img_8.jpg",
-  "award_img_9.jpg",
-  "award_img_10.jpg",
-  "award_img_11.jpg",
-  "award_img_12.jpg",
-  "award_img_13.jpg",
-  "award_img_14.jpg",
-  "award_img_15.jpg",
-  "award_img_16.jpg",
+  "1.png",
+  "2.png",
+  "3.png",
+  "4.png",
+  "5.png",
+  "6.png",
+  "7.png",
+  "8.png",
+  "9.png",
+  "10.png",
+  "11.png",
+  "12.png",
+  "13.png",
+  "14.png",
+  "15.png",
+  "16.png",
 ];
 
 const Recognitions = () => {

@@ -12,7 +12,7 @@ export default function SpotlightSection() {
         className="flex-shrink-0 rounded-full overflow-hidden w-[300px] h-[300px] md:w-[460px] md:h-[440px]"
       >
         <img
-          src="/Images/spotlight_img.png"
+          src="/Images/a.png"
           alt="Doctor with patient"
           width={400}
           height={400}
@@ -73,10 +73,10 @@ export default function SpotlightSection() {
           </li>
         </ul>
 
-        <Link href="/expertise/joint-replacement">
+        <Link href="/expertise/Joint-Replacement-Surgery">
           <button
             data-aos="flip-left"
-            className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40  hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105"
+            className="flex items-center gap-2 bg-gradient-to-r from-[#197d85]/40 to-[#97a345]/40  hover:opacity-80 text-black px-6 py-3 rounded-full font-medium shadow-lg transition-transform hover:scale-105 cursor-pointer"
           >
             <FaBookMedical /> Learn More About Knee Replacement
           </button>

@@ -141,7 +141,7 @@ const DoctorLocations = () => {
                 className="relative h-80 w-full overflow-hidden rounded-2xl shadow-xl md:h-[480px]"
               >
                 <img
-                  src="/Images/dr_hemendra-removebg.png"
+                  src="/Images/h.png"
                   alt="Dr. Hemendra Agrawal consulting a patient"
                   className="object-cover"
                 />

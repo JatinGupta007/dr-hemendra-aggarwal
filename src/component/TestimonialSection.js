@@ -15,7 +15,7 @@ const reviews = [
   {
     name: "Manju singh",
     location: "Ajmer, India",
-    image: "/Images/sarojini-singh.webp",
+    image: "/Images/f.png",
     review:
       "70 days since my knee ACL surgery. Now I am walking well and doing all the normal routine work. I am also driving. Dr. Hemender Sir is very good, your nature is very helpful. Thank you!",
     rating: 4.5,
@@ -49,7 +49,10 @@ export default function ReviewsSection() {
 
       <div className="flex flex-col justify-between items-center lg:flex-row gap-8 mt-5 lg:mt-16 pb-10 relative">
         {/* Left Column */}
-        <div data-aos="flip-up" className="w-full lg:w-5/12 flex justify-center lg:flex-col gap-8 lg:gap-12 pt-3 relative z-10">
+        <div
+          data-aos="flip-up"
+          className="w-full lg:w-5/12 flex justify-center lg:flex-col gap-8 lg:gap-12 pt-3 relative z-10"
+        >
           {reviews.map((user, index) => (
             <div
               key={index}
@@ -65,7 +68,7 @@ export default function ReviewsSection() {
               <img
                 src={user.image}
                 alt={user.name}
-                className="w-20 h-20 rounded-full object-cover"
+                className="w-20 h-20 rounded-full object-contain bg-[#197d85]"
               />
               <div className="hidden lg:block">
                 <h3 className="font-bold text-slate-800 uppercase text-2xl">

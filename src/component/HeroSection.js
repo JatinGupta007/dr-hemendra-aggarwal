@@ -50,7 +50,7 @@ export default function HeroSection() {
             className="flex lg:justify-end lg:absolute lg:-right-7 lg:top-10"
           >
             <img
-              src="/Images/dr_hemendra-removebg.png"
+              src="/Images/h.png"
               alt="Doctor"
               width={860}
               height={700}

@@ -1,54 +1,231 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { CheckCircle, Clock, Shield, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
+
+import { GrYoga } from "react-icons/gr";
+import { GiBerriesBowl } from "react-icons/gi";
+import { FaCalendarAlt } from "react-icons/fa";
+
+const  postSurgeryCare = [
+    {
+      icon: <GrYoga size={40} color="#197d85" />,
+      title: "Exercise & Physiotherapy",
+      routine: [
+        "Home exercise guidance",
+        "Regular physiotherapy sessions",
+        "Strengthening programs",
+        "Gait training",
+      ],
+    },
+    {
+      icon: <GiBerriesBowl size={40} color="#197d85" />,
+      title: "Diet & Lifestyle",
+      routine: [
+        "Nutrition counseling",
+        "Weight management guidance",
+        "Activity modifications",
+        "Lifestyle recommendations",
+      ],
+    },
+    {
+      icon: <FaCalendarAlt size={40} color="#197d85" />,
+      title: "Follow-Up & Timeline",
+      routine: [
+        "Regular follow-up schedule",
+        "Return to work: 6-8 weeks",
+        "Driving: 4-6 weeks",
+        "Full recovery: 3-6 months",
+      ],
+    },
+  ];
 
 export default function SpecificExpertise({ data }) {
   const pathname = usePathname();
+
+  const [openFaq, setOpenFaq] = useState(null);
+
+  const toggleFaq = (index) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
+
   console.log(pathname);
   const {
     title,
-    subtitle,
-    description,
+    about,
+    recommended,
+    modernTechniques,
+    keyBenefits,
+    treatmentJourney,
     services,
     benefits,
     highlights,
-    keywords,
+    faqs,
+    testimonials
   } = data;
 
   return (
     <div className="relative overflow-hidden bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 py-20 px-6 md:px-20">
-      <div className="relative max-w-7xl mx-auto">
-        {/* Header Section */}
-        <div className="text-center mb-16">
-          <div
-            data-aos="flip-up"
-            className="inline-flex items-center justify-center w-30 h-30 bg-white rounded-2xl shadow-lg mb-6"
-          >
-            {data.icon}
+      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
+        {/* LEFT CONTENT */}
+        <div className="flex-1 w-full">
+          {/* Doctor info */}
+          <div className="flex items-center gap-4">
+            <div data-aos="fade-up" className="relative h-24 w-24 md:h-28 md:w-28 rounded-full border-4 border-[#197d85] overflow-hidden shadow-md">
+              <Image
+                src="/Images/h.png" // change path if needed
+                alt="Dr. Hemendra Agrawal"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div data-aos="fade-up" className="flex flex-col">
+              <h2 className="text-xl md:text-2xl font-semibold text-gray-900">
+                Dr. Hemendra Agrawal
+              </h2>
+              <p className="text-sm md:text-base font-semibold text-[#97a345]">
+                MS Orthopaedics, Joint Replacement Specialist
+              </p>
+              <p className="text-sm md:text-base text-gray-700 mt-1">
+                Senior Consultant – Orthopaedics & Joint Replacement
+              </p>
+              <p className="text-sm md:text-base text-gray-700">
+                Knee & Hip Replacement Expert
+              </p>
+            </div>
           </div>
 
-          <h1
-            data-aos="flip-up"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4"
-          >
-            {title}
-            <p
-              data-aos="flip-up"
-              className="block text-transparent bg-clip-text bg-gradient-to-r from-[#197d85] to-[#97a345] text-3xl md:text-4xl lg:text-5xl mt-2 leading-16"
-            >
-              {subtitle}
+          {/* Main heading */}
+          <div data-aos="fade-right" className="mt-8">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+              {title} Expertise
+            </h1>
+            <p className="mt-4 text-base md:text-lg text-gray-700 max-w-2xl">
+              Regain pain-free mobility with expert {title} by Dr. Hemendra
+              Agrawal. Experience precision surgery, faster recovery, and
+              personalized orthopedic care.
             </p>
-          </h1>
+          </div>
 
-          <p
-            data-aos="flip-up"
-            className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed"
-          >
-            {description}
-          </p>
+          {/* CTA buttons */}
+          <div data-aos="fade-down" className="mt-8 flex flex-wrap items-center gap-4">
+            {/* Hospital badge */}
+            <button
+              type="button"
+              className="flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm hover:shadow-md transition"
+            >
+              <div className="h-8 w-8 rounded-full bg-red-100 flex items-center justify-center text-sm font-semibold text-red-600">
+                NH
+              </div>
+              <div className="text-left">
+                <p className="text-xs font-semibold text-gray-800">
+                  NARAYANA HOSPITAL
+                </p>
+              </div>
+            </button>
+
+            {/* Book appointment */}
+            <Link href="/contact">
+              <button
+                type="button"
+                className="rounded-xl bg-slate-900 px-6 py-3 text-sm md:text-base font-semibold text-white shadow-md hover:bg-slate-800 hover:shadow-lg transition cursor-pointer"
+              >
+                Book an Appointment
+              </button>
+            </Link>
+          </div>
         </div>
 
+        {/* RIGHT IMAGE CARD */}
+        <div data-aos="fade-left">
+          <div className="rounded-3xl bg-white border border-gray-100 shadow-xl overflow-hidden">
+            <div className="relative h-72 md:h-80 lg:h-96">
+              <Image
+                src={data.icon} // change path if needed
+                alt="Knee joint illustration"
+                fill
+                className=""
+              />
+            </div>
+            <div className="px-6 py-4 border-t border-gray-100">
+              <p className="text-sm md:text-base font-semibold text-gray-900">
+                5K+ Total {title.replace("Surgery", "Surgeries")}
+              </p>
+              <p className="text-xs md:text-sm text-gray-600">
+                Trusted by patients for safe, precise and compassionate joint
+                care.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="relative mx-auto mt-20">
+        {/* Header Section */}
+        <section className="py-10">
+          <div className="mx-auto">
+            <h2 data-aos="zoom-in" className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+              Understanding {title}
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+              <div>
+                <h3 data-aos="fade-left" className="text-2xl font-semibold text-gray-900 mb-4">
+                  What is {title}?
+                </h3>
+                <p data-aos="fade-left" className="text-gray-700 mb-6 leading-relaxed">{about}</p>
+
+                <h3 data-aos="fade-left" className="text-2xl font-semibold text-gray-900 mb-4">
+                  When is it Recommended?
+                </h3>
+                <ul className="space-y-3 text-gray-700 mb-4">
+                  {recommended.map((item, index) => (
+                    <li data-aos="fade-left" data-aos-delay={index * 100} key={index} className="flex items-start gap-3">
+                      <span className="text-[#197d85] font-bold">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <h3 data-aos="fade-left" className="text-2xl font-semibold text-gray-900 mb-4">
+                  Modern Techniques
+                </h3>
+                <ul className="space-y-3 text-gray-700">
+                  {modernTechniques.map((item, index) => (
+                    <li data-aos="fade-left" data-aos-delay={index * 100} key={index} className="flex items-start gap-3">
+                      <span className="text-[#197d85] font-bold">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h3 data-aos="fade-right" className="text-2xl font-semibold text-gray-900 mb-4">
+                  Key Benefits
+                </h3>
+                <div className="space-y-4 mb-8">
+                  {keyBenefits.map((benefit, index) => (
+                    <div data-aos="fade-right" data-aos-delay={index * 100}
+                      key={index}
+                      className="bg-white p-6 rounded-lg shadow-md border border-gray-100"
+                    >
+                      <h4 className="font-semibold text-gray-900 mb-2">
+                        {benefit.title}
+                      </h4>
+                      <p className="text-gray-600">{benefit.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h2 data-aos="fade-up" className="text-3xl md:text-4xl font-bold text-gray-900 my-12 text-center">
+          Types of {title}
+        </h2>
         {/* Services Grid */}
         <div className="flex flex-wrap items-center justify-center gap-7 mb-16">
           {services.map((service, index) => {
@@ -57,7 +234,7 @@ export default function SpecificExpertise({ data }) {
             const cardContent = (
               <div
                 data-aos="zoom-in"
-                className={`group flex flex-col justify-center items-center w-86 h-60 bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-lg transition-all duration-300 border border-white/20 ${
+                className={`group flex flex-col justify-center items-center w-78 h-60 bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-lg transition-all duration-300 border border-white/20 ${
                   isActive
                     ? "hover:shadow-2xl hover:-translate-y-2 cursor-pointer"
                     : "opacity-60 cursor-not-allowed"
@@ -90,9 +267,40 @@ export default function SpecificExpertise({ data }) {
             );
           })}
         </div>
+        {/* treatment journey */}
+        <section className="py-10">
+          <div data-aos="flip-up" className="mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 text-center">
+              Your Treatment Journey
+            </h2>
+            <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+              A comprehensive step-by-step process ensuring the best outcomes
+            </p>
+
+            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {treatmentJourney.map((item) => (
+                <div
+                data-aos="flip-up"
+                  key={item.step}
+                  className="bg-white rounded-3xl p-6 shadow-md border border-gray-100"
+                >
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#197d85] to-[#97a345] text-white rounded-full flex items-center justify-center font-bold text-xl mb-4">
+                    {item.step}
+                  </div>
+                  <h3 className="text-lg font-bold text-black mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Benefits Section */}
-        <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-4 md:p-12 shadow-2xl border border-white/30">
+        <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-4 my-12 md:p-12 shadow-2xl border border-white/30">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2
@@ -148,7 +356,12 @@ export default function SpecificExpertise({ data }) {
                   data-aos="fade-right"
                   className="bg-white rounded-full w-32 h-32 flex items-center justify-center mx-auto mb-6 shadow-lg"
                 >
-                  {data.icon}
+                  <Image
+                    src={data.icon}
+                    alt="Highlight Icon"
+                    width={80}
+                    height={80}
+                  />
                 </div>
                 <h3 className="text-2xl font-bold text-black mb-4">
                   {highlights.title}
@@ -169,19 +382,124 @@ export default function SpecificExpertise({ data }) {
           </div>
         </div>
 
-        {/* Keyword Tags */}
-        <div data-aos="fade-up" className="mt-16 text-center">
-          <div className="inline-flex flex-wrap gap-7 justify-center">
-            {keywords.map((keyword, index) => (
-              <span
-                key={index}
-                className="bg-white/80 backdrop-blur-sm px-4 py-2 rounded-2xl text-sm font-medium text-gray-600 border border-white/40 capitalize"
-              >
-                {keyword}
-              </span>
-            ))}
+        {/* Patient Testimonials */}
+        <section className="py-12">
+          <div data-aos="zoom-out" className="mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+              What Our Patients Say
+            </h2>
+            <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+              Real stories from real patients who found relief and renewed
+              mobility
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {testimonials.map((testimonial, idx) => (
+                <div
+                  data-aos="zoom-out"
+                  key={idx}
+                  className="bg-white rounded-xl p-8 shadow-lg border border-amber-100"
+                >
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <span key={i} className="text-yellow-500 text-xl">
+                        ★
+                      </span>
+                    ))}
+                  </div>
+                  <p className="text-gray-700 italic mb-6 leading-relaxed">
+                    &quot;{testimonial.quote}&quot;
+                  </p>
+                  <div className="border-t border-gray-200 pt-4">
+                    <p className="font-semibold text-gray-900">
+                      {testimonial.name}, {testimonial.age} years
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      {testimonial.surgery}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        </section>
+
+        {/* FAQs Section */}
+        <section className="py-12">
+          <div data-aos="fade-down" className="mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-gray-600 text-center mb-12">
+              Get answers to common questions about joint replacement surgery
+            </p>
+
+            <div className="space-y-4">
+              {faqs.map((faq, idx) => (
+                <div data-aos="fade-down" data-aos-delay={idx * 100}
+                  key={idx}
+                  className="border border-gray-200 rounded-lg overflow-hidden"
+                >
+                  <button
+                    onClick={() => toggleFaq(idx)}
+                    className="w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition-colors flex justify-between items-center"
+                  >
+                    <span className="font-semibold text-gray-900 pr-4">
+                      {faq.question}
+                    </span>
+                    <span className="text-2xl text-blue-600 flex-shrink-0">
+                      {openFaq === idx ? "−" : "+"}
+                    </span>
+                  </button>
+                  {openFaq === idx && (
+                    <div className="p-6 bg-white border-t border-gray-200">
+                      <p className="text-gray-700 leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Post-Surgery Care */}
+        <section className="py-10">
+          <div data-aos="flip-down" className="mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+              Post-Surgery Care & Physiotherapy
+            </h2>
+            <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+              Comprehensive support for a smooth and successful recovery
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {postSurgeryCare.map((care, index) => (
+                <div
+                  data-aos="flip-down" data-aos-delay={index * 100}
+                  className="bg-white rounded-2xl p-8 shadow-md border border-green-100 mb-6"
+                  key={index}
+                >
+                  <div className="text-4xl mb-4 flex justify-center">
+                    {care.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    {care.title}
+                  </h3>
+                  <ul className="space-y-2 text-gray-700">
+                    {care.routine.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-green-600">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

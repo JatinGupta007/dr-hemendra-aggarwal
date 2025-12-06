@@ -1,11 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
-'use client';
+"use client";
 
 import React, { useState, useEffect } from "react";
-import { Phone, Mail, MapPin, ArrowRight, Star, Navigation } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  ArrowRight,
+  Star,
+  Navigation,
+} from "lucide-react";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
-
 
 export default function EnhancedContactPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,12 +45,11 @@ export default function EnhancedContactPage() {
   const handleSubmit = () => {
     // Handle form submission here
     if (formData.name === "" && formData.email === "") {
-      setErrMsg("Please Enter name or Email")
-    } else{
+      setErrMsg("Please Enter name or Email");
+    } else {
       console.log("Form submitted:", formData);
       setOpen(false);
     }
-    
   };
 
   return (
@@ -76,8 +81,6 @@ export default function EnhancedContactPage() {
               }`}
             >
               <div className="relative">
-                
-
                 <p className="text-2xl text-gray-600 mb-8 leading-relaxed max-w-lg">
                   Ready to start your wellness journey? We&apos;re here to guide
                   you every step of the way with personalized care and expert

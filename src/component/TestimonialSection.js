@@ -33,7 +33,7 @@ export default function ReviewsSection() {
   const [current, setCurrent] = useState(1);
 
   return (
-    <div className="mx-auto px-6 md:px-20 py-6">
+    <div className="mx-auto px-6 md:px-10 lg:px-20 py-6">
       <h2
         data-aos="fade-down"
         className="text-center text-4xl md:text-6xl font-bold text-slate-800"

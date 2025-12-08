@@ -99,7 +99,7 @@ const DoctorLocations = () => {
       <Navbar />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20">
-        <div className="mx-auto px-6 py-18 md:px-20">
+        <div className="mx-auto px-6 py-18 md:px-10 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left column */}
             <div className="text-center lg:text-left">
@@ -151,9 +151,9 @@ const DoctorLocations = () => {
         </div>
       </section>
       {/* location Section */}
-      <section id="locations" className="py-7 px-6 md:px-20">
+      <section id="locations" className="py-7 px-6 md:px-10 lg:px-20">
         {/* Header Section */}
-        <div className="mx-auto">
+        <div className="mx-auto mt-10">
           <div className="text-center mb-16 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-[#197d85]/10 to-[#97a345]/10 rounded-full blur-3xl transform -rotate-6"></div>
             <div className="relative">
@@ -326,7 +326,7 @@ const DoctorLocations = () => {
       </section>
       {/* Why Patients Trust Section */}
       <section className="bg-white">
-        <div className="mx-auto px-6 py-16 sm:py-14 md:px-20">
+        <div className="mx-auto px-6 py-16 sm:py-14 md:px-10 lg:px-20">
           <h2
             data-aos="fade-down"
             className="text-3xl font-bold tracking-tight text-slate-900 text-center"

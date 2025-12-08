@@ -12,7 +12,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="py-10 px-6 md:px-16 border-t">
+    <footer className="py-10 px-6 md:px-10 lg:px-20 border-t">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm md:text-base md:place-items-center">
         {/* Left Column - Logo + Description */}
         <div>

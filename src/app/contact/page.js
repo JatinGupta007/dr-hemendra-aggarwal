@@ -55,7 +55,7 @@ export default function EnhancedContactPage() {
   return (
     <main>
       <Navbar />
-      <div className="min-h-screen relative overflow-hidden">
+      <div className="relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-10">
           <div
@@ -70,7 +70,7 @@ export default function EnhancedContactPage() {
         </div>
 
         {/* Hero Section */}
-        <section className="relative z-10 flex items-center justify-center bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 px-6 md:px-20 py-20">
+        <section className="relative z-10 flex items-center justify-center bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 px-6 md:px-10 lg:px-20 py-20">
           <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
             {/* Left Content */}
             <div
@@ -81,7 +81,7 @@ export default function EnhancedContactPage() {
               }`}
             >
               <div className="relative">
-                <p className="text-2xl text-gray-600 mb-8 leading-relaxed max-w-lg">
+                <p className="text-2xl text-gray-600 mb-8 leading-relaxed ">
                   Ready to start your wellness journey? We&apos;re here to guide
                   you every step of the way with personalized care and expert
                   support.
@@ -168,14 +168,14 @@ export default function EnhancedContactPage() {
                 alt="Dr Hemendra"
                 height={500}
                 width={450}
-                className="rounded-4xl"
+                className="rounded-4xl w-full"
               />
             )}
           </div>
         </section>
 
         {/* Contact Info Section */}
-        <section className="relative z-10 py-20 px-6 md:px-20">
+        <section className="relative z-10 py-20 px-6 md:px-10 lg:px-20">
           <div className="mx-auto">
             <h2
               data-aos="flip-up"
@@ -234,7 +234,7 @@ export default function EnhancedContactPage() {
         </section>
 
         {/* Map Section */}
-        <section className="relative px-7 md:px-20 mb-4">
+        <section className="relative px-7 md:px-10 lg:px-20 mb-4">
           <h2
             data-aos="fade-up"
             className="text-4xl font-bold text-center mb-3 md:mb-10"

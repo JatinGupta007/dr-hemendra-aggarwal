@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function SpotlightSection() {
   return (
-    <section className="flex flex-col lg:flex-row items-center gap-5 lg:gap-16 px-6 py-12 md:px-20 bg-gray-50">
+    <section className="flex flex-col lg:flex-row items-center gap-5 lg:gap-16 px-6 py-12 md:px-10 lg:px-20 bg-gray-50">
       {/* Left - Image */}
       <div
         data-aos="flip-right"
@@ -21,7 +21,7 @@ export default function SpotlightSection() {
       </div>
 
       {/* Right - Text Content */}
-      <div className="max-w-xl">
+      <div className="">
         <h3
           data-aos="flip-left"
           className="text-[#197d85] font-semibold text-lg mb-1"

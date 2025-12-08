@@ -40,7 +40,7 @@ const ConferenceAndMedia = () => {
                 alt={img.alt}
                 width={350}
                 height={300}
-                className="w-94 h-full object-fill"
+                className=""
                 style={{ background: "#fff" }}
               />
             </div>

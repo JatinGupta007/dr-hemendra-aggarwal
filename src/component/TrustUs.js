@@ -4,7 +4,7 @@ import { FaCheck, FaBookMedical } from "react-icons/fa";
 
 export default function TrustUsSection() {
   return (
-    <section className="py-12 px-6 md:px-20 mt-64 md:mt-30 lg:mt-40">
+    <section className="py-12 px-6 md:px-10 lg:px-20 mt-64 md:mt-30 lg:mt-40">
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 items-center lg:gap-16">
         {/* Left Image */}
         <div data-aos="fade-right" className="relative rounded-3xl">

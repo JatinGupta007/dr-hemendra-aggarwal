@@ -63,8 +63,8 @@ const Recognitions = () => {
     ]);
 
   return (
-    <section className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 py-16 px-4 my-10">
-      <div className="max-w-6xl mx-auto text-center relative">
+    <section className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 py-16 px-4 md:px-10 lg:px-20 my-10">
+      <div className="mx-auto text-center relative">
         <h3 className="text-lg text-brown-600 font-medium mb-2">
           Honoring Our Commitment to Excellence in Experience, Expertise, and
           Care

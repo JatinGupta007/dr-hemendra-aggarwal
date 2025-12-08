@@ -234,7 +234,7 @@ export default function ExpertisePage() {
       {/*Header*/}
       <Navbar />
       {/*Hero section */}
-      <section className="flex flex-col lg:flex-row items-center gap-10 px-6 md:px-20 py-10 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20">
+      <section className="flex flex-col lg:flex-row items-center gap-10 px-6 md:px-10 lg:px-20 py-10 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20">
         {/* Title Section */}
         <div className="lg:w-3/2 space-y-5 order-2 lg:order-1">
           <h1
@@ -306,7 +306,7 @@ export default function ExpertisePage() {
       {/*Services section */}
       <div className="min-h-scree">
         {/* Header Section */}
-        <section className="px-6 md:px-20 pt-20 pb-12">
+        <section className="px-6 md:px-10 lg:px-20 pt-20 pb-12">
           <div className="max-w-7xl mx-auto text-center">
             <div
               data-aos="fade-up"
@@ -353,7 +353,7 @@ export default function ExpertisePage() {
         </section>
 
         {/* Services Grid */}
-        <section className="px-6 md:px-20 pb-20">
+        <section className="px-6 md:px-10 lg:px-20 pb-20">
           <div className="mx-auto">
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {services.map((service, index) => (
@@ -428,7 +428,7 @@ export default function ExpertisePage() {
         </section>
 
         {/* Call to Action */}
-        <section className="px-4 md:px-20 pb-20">
+        <section className="px-4 md:px-10 lg:px-20 pb-20">
           <div className="mx-auto text-center">
             <div className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 rounded-3xl p-12 text-black shadow-2xl">
               <h3
@@ -464,7 +464,7 @@ export default function ExpertisePage() {
         </section>
       </div>
       {/*Why choose us section */}
-      <section className="py-20 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black mx-7 md:mx-20 mt-24 mb-50 rounded-4xl">
+      <section className="py-20 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 text-black mx-7 md:mx-10 lg:mx-20 mt-24 mb-50 rounded-4xl">
         <div className="mx-auto px-4 md:px-8">
           <h2
             data-aos="fade-down"
@@ -490,7 +490,7 @@ export default function ExpertisePage() {
         </div>
       </section>
       {/* clinic location section */}
-      <section className="relative px-7 md:px-20 mb-4">
+      <section className="relative px-7 md:px-10 lg:px-20 mb-4">
         <h2
           data-aos="fade-up"
           className="text-4xl font-bold text-center mb-3 md:mb-10"
@@ -660,7 +660,7 @@ export default function ExpertisePage() {
       {/*Q&A page */}
       <FaqAccordion faqs={faqs} />
       {/*Book appointment section */}
-      <section className="bg-gradient-to-r gap-7 lg:gap-16 from-[#197d85]/20 to-[#97a345]/20 mt-28 rounded-2xl px-4 md:px-8 flex flex-col lg:flex-row items-center justify-between m-7 md:m-20 py-7">
+      <section className="bg-gradient-to-r gap-7 lg:gap-16 from-[#197d85]/20 to-[#97a345]/20 mt-28 rounded-2xl px-4 md:px-8 lg:px-20 flex flex-col lg:flex-row items-center justify-between m-7 md:m-10 py-7">
         <div data-aos="fade-down" className="relative lg:w-200">
           <img
             src="/Images/dr_hemendra.jpg"

@@ -132,7 +132,7 @@ export default function TreatmentSection() {
   ];
 
   return (
-    <section className="py-3 lg:py-16 px-6 md:px-20 bg-white md:text-center">
+    <section className="py-3 lg:py-16 px-6  bg-white md:text-center">
       <h2
         data-aos="fade-down"
         className="text-4xl font-bold text-gray-800 mb-2"
@@ -149,10 +149,10 @@ export default function TreatmentSection() {
         Whether you are dealing with knee pain, a sports injury, or require
         joint replacement - we’ve got you covered.
       </p>
-      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center mx-auto">
+      <div className="flex flex-wrap justify-center lg:gap-8 gap-5  mx-auto">
         {treatments.map((item, index) => (
           <Link href={item.href} data-aos="zoom-in" key={index}>
-            <div className="bg-white w-80 h-60 p-6 rounded-2xl shadow-md hover:shadow-xl shadow-[#197d85] hover:scale-105 transform transition duration-300 ease-in-out">
+            <div className="bg-white w-82 h-60 p-6 rounded-2xl shadow-md hover:shadow-xl shadow-[#197d85] hover:scale-105 transform transition duration-300 ease-in-out">
               <div className="mb-4">{item.icon}</div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 {item.title}

@@ -67,7 +67,7 @@ export default function SpecificExpertise({ data }) {
   } = data;
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 py-20 px-6 md:px-20">
+    <div className="relative overflow-hidden bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 py-20 px-6 md:px-10 lg:px-20">
       <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
         {/* LEFT CONTENT */}
         <div className="flex-1 w-full">

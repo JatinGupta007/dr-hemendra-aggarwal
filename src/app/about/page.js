@@ -81,7 +81,7 @@ export default function Page() {
       {/*Header*/}
       <Navbar />
       {/*Hero section */}
-      <section className="flex flex-col lg:flex-row items-center gap-16 py-10 px-6 md:px-20 pt-16 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20">
+      <section className="flex flex-col lg:flex-row items-center gap-16 py-10 px-6 md:px-10 lg:px-20 pt-16 bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20">
         <div data-aos="fade-right">
           <img
             src="/Images/dr_hemendra.jpg"
@@ -126,7 +126,7 @@ export default function Page() {
         </div>
       </section>
       {/*Education & Experience  Section */}
-      <section className="w-full px-6 md:px-20 pt-30 lg:pt-50">
+      <section className="w-full px-6 md:px-10 lg:px-20 pt-30 lg:pt-50">
         <div className="flex flex-col lg:flex-row w-full gap-12">
           {/* Navigation Arrows */}
           <div>
@@ -200,15 +200,15 @@ export default function Page() {
         </div>
       </section>
       {/* Service Offered Section */}
-      <section className="w-full px-6 md:px-20 py-10 mt-10">
+      <section className="w-full px-6 md:px-10 lg:px-20 py-10 mt-10">
         <h2
           data-aos="zoom-in"
           className="text-3xl md:text-4xl font-bold text-[#197d85] text-center mb-10"
         >
           Specialized Orthopedic Services Offered
         </h2>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl p-4 md:p-8">
-          <div className="w-full max-w-2xl">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl p-4 md:p-10 lg:p-16">
+          <div className="w-full">
             <ul className="space-y-5 text-lg md:text-xl">
               <li
                 data-aos="flip-up"
@@ -288,9 +288,9 @@ export default function Page() {
         </div>
       </section>
       {/*Affiliation section */}
-      <section className="mx-auto px-6 md:px-20 py-12 flex flex-col justify-between lg:flex-row items-center gap-12">
+      <section className="mx-auto px-6 md:px-10 lg:px-20 py-12 flex flex-col justify-between lg:flex-row items-center gap-12">
         {/* Left Grid of Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-2xl order-2 lg:order-1">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full order-2 max-w-2xl lg:order-1">
           <div
             data-aos="flip-right"
             className="bg-gradient-to-b from-[#197d85]/20 to-[#97a345]/20 text-center p-6 lg:h-[300px] lg:w-[200px] rounded-2xl flex flex-col items-center justify-around shadow-lg hover:shadow-lg transition-all"
@@ -342,7 +342,7 @@ export default function Page() {
         </div>
       </section>
       {/*Patient Approach section */}
-      <section className="mx-auto px-6 md:px-20 py-10">
+      <section className="mx-auto px-6 md:px-10 lg:px-20 py-10">
         <p
           data-aos="zoom-out"
           className="md:text-center text-[#197d85] font-semibold md:text-xl"
@@ -533,7 +533,7 @@ export default function Page() {
         </div>
       </section> */}
       {/*Book Appointment section */}
-      <section className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 mt-20 rounded-2xl px-4 md:px-8 gap-16 flex flex-col lg:flex-row items-center justify-between m-6 md:m-20 py-7">
+      <section className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 mt-20 rounded-2xl px-4 md:px-8 lg:px-16 gap-16 flex flex-col lg:flex-row items-center justify-between m-6 md:m-10 lg:m-20 py-7">
         <div data-aos="fade-down" className="relative lg:w-150">
           <img
             src="/Images/dr_hemendra.jpg"

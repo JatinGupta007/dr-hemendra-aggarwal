@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <main>
-      <section className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 lg:h-[700px] flex items-center p-6 md:p-16 lg:relative lg:overflow-hidden">
+      <section className="bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 lg:h-[700px] flex items-center p-6 md:p-10 lg:p-16 lg:relative lg:overflow-hidden">
         <div className="lg:max-w-7xl lg:w-full flex flex-col lg:flex-row gap-10 items-center">
           {/* Left Content */}
           <div className="space-y-6 lg:absolute lg:left-24 lg:z-11 lg:w-2xl">
@@ -61,7 +61,7 @@ export default function HeroSection() {
       </section>
       <div
         data-aos="fade-up"
-        className="absolute mx-10 lg:w-full left-5 md:left-5 lg:left-1/5 xl:left-2/9 bg-white rounded-2xl shadow-xl shadow-[#197d85] px-10 lg:px-12 py-8 lg:py-16  max-w-[670px] -mt-20 flex flex-col md:flex-row justify-between items-center gap-8 z-12"
+        className="absolute mx-10 lg:w-full left-5 md:left-5 lg:left-1/4 xl:left-2/8 bg-white rounded-2xl shadow-xl shadow-[#197d85] px-10 lg:px-12 py-8 lg:py-16  max-w-[670px] -mt-20 flex flex-col md:flex-row justify-between items-center gap-8 z-12"
       >
         <div className="flex items-center flex-col md:flex-row gap-8">
           <Link href="/contact">

@@ -15,7 +15,7 @@ import Footer from "@/component/Footer";
 
 export default function EnhancedContactPage() {
   const [isVisible, setIsVisible] = useState(false);
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(true);
   const [errMsg, setErrMsg] = useState("");
   const [formData, setFormData] = useState({
     name: "",

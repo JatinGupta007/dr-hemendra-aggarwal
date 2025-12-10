@@ -2,6 +2,11 @@ import SpecificExpertise from "@/component/SpecificExpertise";
 import Navbar from "@/component/Header";
 import Footer from "@/component/Footer";
 import Image from "next/image";
+import { notFound } from "next/navigation";
+
+import { SurgeryData } from "@/component/Data";
+
+
 
 const jointReplacementData = {
   icon: "/Images/treatment_icon_8.png",
@@ -238,11 +243,17 @@ const jointReplacementData = {
   ],
 };
 // Update the path as needed
-export default function JointReplacementPage() {
+export default function SurgeryPage({  params }) {
+  const { surgery } = params;
+  console.log("Surgery Param:", surgery);
+  const normalize = (s) => s.replace(/\s+/g, "-").toLowerCase();
+  const surgeryInfo = SurgeryData.find((item) => normalize(item.title) === surgery.toLowerCase());
+  if (!surgeryInfo) return notFound();
+  console.log("Surgery Info:", surgeryInfo);
   return (
     <>
       <Navbar />
-      <SpecificExpertise data={jointReplacementData} />
+      <SpecificExpertise data={surgeryInfo} />
       <Footer />
     </>
   );

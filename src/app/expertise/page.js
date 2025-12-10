@@ -660,18 +660,18 @@ export default function ExpertisePage() {
       {/*Q&A page */}
       <FaqAccordion faqs={faqs} />
       {/*Book appointment section */}
-      <section className="bg-gradient-to-r gap-7 lg:gap-16 from-[#197d85]/20 to-[#97a345]/20 mt-28 rounded-2xl px-4 md:px-8 lg:px-20 flex flex-col lg:flex-row items-center justify-between m-7 md:m-10 py-7">
-        <div data-aos="fade-down" className="relative lg:w-200">
+      <section className="bg-gradient-to-r gap-7 lg:gap-16 from-[#197d85]/20 to-[#97a345]/20 mt-32 rounded-2xl px-4 md:px-8 lg:px-20 flex flex-col lg:flex-row items-center justify-between m-7 md:m-10 py-7">
+        <div data-aos="fade-down" className="relative lg:w-150">
           <img
             src="/Images/dr_hemendra.jpg"
             alt="Dr. Hemendra Agrawal"
-            width={500}
+            width={400}
             height={400}
-            className="object-top -mt-30 rounded-4xl"
+            className="object-top rounded-4xl"
           />
         </div>
         {/* Left Content */}
-        <div data-aos="fade-left" className="lg:max-w-xl w-full">
+        <div data-aos="fade-left" className="w-full">
           <p className="text-[#197d85] text-lg font-bold">
             Looking for a trusted orthopedic doctor near you in Jaipur?
           </p>

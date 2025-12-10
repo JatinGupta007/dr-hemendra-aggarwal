@@ -91,7 +91,7 @@ export default function Page() {
             className="rounded-2xl"
           />
         </div>
-        <div className="space-y-6 w-full lg:w-2xl">
+        <div className="space-y-6 w-full">
           <h1
             data-aos="fade-left"
             className="text-3xl lg:text-[36px] font-bold mb-8"
@@ -127,7 +127,7 @@ export default function Page() {
       </section>
       {/*Education & Experience  Section */}
       <section className="w-full px-6 md:px-10 lg:px-20 pt-30 lg:pt-50">
-        <div className="flex flex-col lg:flex-row w-full gap-12">
+        <div className="flex flex-col lg:flex-row gap-12">
           {/* Navigation Arrows */}
           <div>
             <h2
@@ -138,16 +138,16 @@ export default function Page() {
             </h2>
           </div>
           {/* Cards Container with background */}
-          <div className="relative flex-1 flex justify-center">
+          <div className="relative flex justify-center w-full  ">
             <div
-              className="absolute -top-28 lg:-left-8 md:left-5 w-screen md:w-full lg:w-[860px] h-full bg-gradient-to-b from-[#97a345]/20 to-[#197d85]/20 rounded-3xl z-0"
+              className="absolute -top-28 lg:-left-8 md:left-5 w-screen md:w-full lg:w-[860px] xl:w-[900px] h-full bg-gradient-to-b from-[#97a345]/20 to-[#197d85]/20 rounded-3xl z-0"
               style={{ filter: "blur(1px)" }}
             ></div>
             <div className="relative z-10 flex flex-col md:flex-row gap-8 w-full justify-center">
               {/* Card 1 */}
               <div
                 data-aos="fade-up"
-                className="bg-white rounded-2xl shadow-xl p-10 flex flex-col items-center w-full md:w-[380px] max-w-full"
+                className="bg-white rounded-2xl shadow-xl p-10 flex flex-col items-center w-full md:w-[330px] xl:w-[400px]"
               >
                 <div className="mb-6">
                   <MdSchool className="text-6xl text-[#197d85] mx-auto" />
@@ -178,7 +178,7 @@ export default function Page() {
               {/* Card 2 */}
               <div
                 data-aos="fade-up"
-                className="bg-white rounded-2xl shadow-xl p-10 flex flex-col items-center w-full md:w-[380px] max-w-full"
+                className="bg-white rounded-2xl shadow-xl p-10 flex flex-col items-center w-full md:w-[330px] xl:w-[400px]"
               >
                 <div className="mb-6">
                   <MdWorkspacePremium className="text-6xl text-[#197d85] mx-auto" />
@@ -538,13 +538,13 @@ export default function Page() {
           <img
             src="/Images/dr_hemendra.jpg"
             alt="Dr. Hemendra Agrawal"
-            width={600}
+            width={400}
             height={400}
-            className="object-top -mt-20 rounded-4xl"
+            className="object-top rounded-4xl"
           />
         </div>
         {/* Left Content */}
-        <div className="lg:max-w-xl w-full">
+        <div className="w-full">
           <h2
             data-aos="flip-up"
             className="text-2xl md:text-4xl font-semibold leading-tight mb-10"

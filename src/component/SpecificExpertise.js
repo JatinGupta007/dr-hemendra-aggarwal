@@ -8,47 +8,116 @@ import Link from "next/link";
 import { GrYoga } from "react-icons/gr";
 import { GiBerriesBowl } from "react-icons/gi";
 import { FaCalendarAlt } from "react-icons/fa";
+import { MdVerified, MdMedicalServices } from "react-icons/md";
 
-const  postSurgeryCare = [
-    {
-      icon: <GrYoga size={40} color="#197d85" />,
-      title: "Exercise & Physiotherapy",
-      routine: [
-        "Home exercise guidance",
-        "Regular physiotherapy sessions",
-        "Strengthening programs",
-        "Gait training",
-      ],
-    },
-    {
-      icon: <GiBerriesBowl size={40} color="#197d85" />,
-      title: "Diet & Lifestyle",
-      routine: [
-        "Nutrition counseling",
-        "Weight management guidance",
-        "Activity modifications",
-        "Lifestyle recommendations",
-      ],
-    },
-    {
-      icon: <FaCalendarAlt size={40} color="#197d85" />,
-      title: "Follow-Up & Timeline",
-      routine: [
-        "Regular follow-up schedule",
-        "Return to work: 6-8 weeks",
-        "Driving: 4-6 weeks",
-        "Full recovery: 3-6 months",
-      ],
-    },
-  ];
+const postSurgeryCare = [
+  {
+    icon: <GrYoga size={40} color="#197d85" />,
+    title: "Exercise & Physiotherapy",
+    routine: [
+      "Home exercise guidance",
+      "Regular physiotherapy sessions",
+      "Strengthening programs",
+      "Gait training",
+    ],
+  },
+  {
+    icon: <GiBerriesBowl size={40} color="#197d85" />,
+    title: "Diet & Lifestyle",
+    routine: [
+      "Nutrition counseling",
+      "Weight management guidance",
+      "Activity modifications",
+      "Lifestyle recommendations",
+    ],
+  },
+  {
+    icon: <FaCalendarAlt size={40} color="#197d85" />,
+    title: "Follow-Up & Timeline",
+    routine: [
+      "Regular follow-up schedule",
+      "Return to work: 6-8 weeks",
+      "Driving: 4-6 weeks",
+      "Full recovery: 3-6 months",
+    ],
+  },
+];
 
 export default function SpecificExpertise({ data }) {
   const pathname = usePathname();
-
+  const [open, setOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
+  };
+
+  const Form = () => {
+    return (
+      <div className="fixed inset-0 z-40 flex items-center justify-center">
+        <div
+          className="absolute inset-0 bg-black/30 backdrop-blur-sm"
+          onClick={() => setOpen(false)}
+        />
+
+        {/* Card */}
+        <div className="relative z-50 max-w-xl rounded-2xl bg-white/95 shadow-2xl p-10 md:p-12">
+          {/* Decorative dots (top-right and bottom-left) */}
+          <div className="pointer-events-none">
+            <div className="absolute -top-6 -right-6 w-16 h-16 rounded-full bg-gradient-to-br from-[#197d85]/50 to-[#97a345]/80 blur-sm opacity-90" />
+            <div className="absolute -bottom-6 -left-6 w-12 h-12 rounded-full bg-gradient-to-tr from-[#197d85]/50 to-[#97a345]/80 blur-sm opacity-90" />
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 text-center mb-8">
+            Send us a message
+          </h2>
+
+          <form className="space-y-6">
+            <div className="grid grid-cols-1 gap-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-700 placeholder-slate-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-200"
+              />
+
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-700 placeholder-slate-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-200"
+              />
+
+              <textarea
+                rows={6}
+                placeholder="Your Message"
+                className="w-full rounded-xl border border-slate-200 px-4 py-4 text-slate-700 placeholder-slate-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-200 resize-none"
+              />
+            </div>
+
+            <div className="pt-2">
+              <button
+                type="button"
+                onClick={() => {
+                  // For demo: just close modal. Replace with submit logic.
+                  setOpen(false);
+                }}
+                className="w-full rounded-2xl py-4 font-semibold bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/80 border border-transparent shadow-inner hover:scale-[.997] transition-all"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+
+          {/* Close button top-right */}
+          <button
+            onClick={() => setOpen(false)}
+            className="absolute top-4 right-4 rounded-md p-2 hover:bg-slate-100"
+            aria-label="close"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+    );
   };
 
   console.log(pathname);
@@ -63,138 +132,191 @@ export default function SpecificExpertise({ data }) {
     benefits,
     highlights,
     faqs,
-    testimonials
+    testimonials,
   } = data;
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 py-20 px-6 md:px-10 lg:px-20">
-      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
-        {/* LEFT CONTENT */}
-        <div className="flex-1 w-full">
-          {/* Doctor info */}
-          <div className="flex items-center gap-4">
-            <div data-aos="fade-up" className="relative h-24 w-24 md:h-28 md:w-28 rounded-full border-4 border-[#197d85] overflow-hidden shadow-md">
-              <Image
-                src="/Images/h.png" // change path if needed
-                alt="Dr. Hemendra Agrawal"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <div data-aos="fade-up" className="flex flex-col">
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-900">
-                Dr. Hemendra Agrawal
+    <div className="relative overflow-hidden bg-gradient-to-r from-[#197d85]/20 to-[#97a345]/20 py-10 px-6 md:px-10 lg:px-16">
+      <div className="w-full flex flex-col lg:flex-row gap-10">
+        {/* Left Section */}
+        <div className="py-10 flex flex-col w-full lg:w-3/4">
+          {/* Doctor Profile */}{/* Main Content */}
+          <div className="space-y-5">
+            <div data-aos="fade-right">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3 leading-tight">
+                {title} in Jaipur
+                <br />
+                By Dr. Hemendra Agrawal
               </h2>
-              <p className="text-sm md:text-base font-semibold text-[#97a345]">
-                MS Orthopaedics, Joint Replacement Specialist
-              </p>
-              <p className="text-sm md:text-base text-gray-700 mt-1">
-                Senior Consultant – Orthopaedics & Joint Replacement
-              </p>
-              <p className="text-sm md:text-base text-gray-700">
-                Knee & Hip Replacement Expert
+
+              <p className="text-gray-700 leading-relaxed text-lg">
+                Restore your active lifestyle with advanced {title} by Dr. Hemendra Agrawal. With modern techniques, careful
+                planning, and dedicated follow-up care, we help you recover
+                faster and move comfortably again.
               </p>
             </div>
-          </div>
 
-          {/* Main heading */}
-          <div data-aos="fade-right" className="mt-8">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
-              {title} Expertise
-            </h1>
-            <p className="mt-4 text-base md:text-lg text-gray-700 max-w-2xl">
-              Regain pain-free mobility with expert {title} by Dr. Hemendra
-              Agrawal. Experience precision surgery, faster recovery, and
-              personalized orthopedic care.
-            </p>
-          </div>
-
-          {/* CTA buttons */}
-          <div data-aos="fade-down" className="mt-8 flex flex-wrap items-center gap-4">
-            {/* Hospital badge */}
+            {/* CTA Button */}
             <button
-              type="button"
-              className="flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm hover:shadow-md transition"
+              onClick={() => setOpen(true)}
+              data-aos="fade-right"
+              className="bg-gray-900 hover:bg-gray-800 text-white font-semibold px-10 py-3 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mb-5"
             >
-              <div className="h-8 w-8 rounded-full bg-red-100 flex items-center justify-center text-sm font-semibold text-red-600">
-                NH
-              </div>
-              <div className="text-left">
-                <p className="text-xs font-semibold text-gray-800">
-                  NARAYANA HOSPITAL
-                </p>
-              </div>
+              Book an Appointment
             </button>
 
-            {/* Book appointment */}
-            <Link href="/contact">
-              <button
-                type="button"
-                className="rounded-xl bg-slate-900 px-6 py-3 text-sm md:text-base font-semibold text-white shadow-md hover:bg-slate-800 hover:shadow-lg transition cursor-pointer"
+            {/* Stats */}
+            <div className="grid grid-cols-2 gap-6 pt-2">
+              <div
+                data-aos="fade-up"
+                className="bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-[#1a7a7a]/20"
               >
-                Book an Appointment
-              </button>
-            </Link>
+                <p className="text-4xl font-bold text-[#1a7a7a] mb-2">20000+</p>
+                <p className="text-gray-600 font-medium">
+                  Successful Surgeries
+                </p>
+              </div>
+
+              <div
+                data-aos="fade-up"
+                className="bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-[#1a7a7a]/20"
+              >
+                <p className="text-4xl font-bold text-[#1a7a7a] mb-2">14+</p>
+                <p className="text-gray-600 font-medium">Years Experience</p>
+              </div>
+            </div>
+            <p data-aos="fade-left" className="text-gray-700 leading-relaxed">
+              Trusted by patients for safe, precise and compassionate joint
+              care.
+            </p>
           </div>
         </div>
 
-        {/* RIGHT IMAGE CARD */}
+        {/* Right Section */}
         <div data-aos="fade-left">
-          <div className="rounded-3xl bg-white border border-gray-100 shadow-xl overflow-hidden">
-            <div className="relative h-72 md:h-80 lg:h-96">
+          <div className="border-gray-100 md:flex lg:flex-col">
+            <div className="relative h-70 lg:h-96 w-full">
               <Image
-                src={data.icon} // change path if needed
+                src={data.icon}
                 alt="Knee joint illustration"
                 fill
-                className=""
+                className="w-full"
               />
             </div>
-            <div className="px-6 py-4 border-t border-gray-100">
-              <p className="text-sm md:text-base font-semibold text-gray-900">
-                5K+ Total {title.replace("Surgery", "Surgeries")}
-              </p>
-              <p className="text-xs md:text-sm text-gray-600">
-                Trusted by patients for safe, precise and compassionate joint
-                care.
-              </p>
+
+            {/* Bottom Card */}
+            <div className="bg-gradient-to-br from-[#dce9e5] to-[#f0f7f5] p-5 rounded-3xl text-center  max-w-md border-2 border-[#1a7a7a]/20 m-5">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                5K+ Total {title.replaceAll("Surgery", "Surgeries")} Performed
+              </h3>
             </div>
           </div>
         </div>
       </div>
+      <section className="flex flex-col lg:flex-row items-center gap-16 py-10 px-4 md:px-10 shadow-2xl rounded-2xl bg-teal-50 mt-10">
+        <div data-aos="fade-right">
+          <Image
+            src="/Images/dr_hemendra.jpg"
+            alt="Doctor"
+            width={500}
+            height={500}
+            className="rounded-2xl"
+          />
+        </div>
+        <div className="space-y-6 w-full">
+          <h1
+            data-aos="fade-left"
+            className="text-3xl lg:text-[36px] font-bold mb-8"
+          >
+            Dr. Hemendra Agrawal Experienced Orthopedic Surgeon in Jaipur
+          </h1>
+          <div
+            data-aos="fade-left"
+            className="flex flex-wrap items-center gap-4 mb-6"
+          >
+            <span className="bg-white px-3 py-2 rounded-xl text-sm font-semibold flex items-center transition duration-200 hover:scale-105 hover:shadow-lg">
+              Google Reviews <span className="ml-2">⭐⭐⭐⭐⭐</span>
+            </span>
+            <span className="flex items-center gap-2 bg-white px-3 py-2 rounded-xl text-sm font-semibold transition duration-200 hover:scale-105 hover:shadow-lg">
+              Practo Verified <MdVerified color="#197d85" size={20} />
+            </span>
+            <span className="flex items-center gap-2 bg-white px-3 py-2 rounded-xl text-sm font-semibold transition duration-200 hover:scale-105 hover:shadow-lg">
+              Narayana Hospital Consultant{" "}
+              <MdMedicalServices color="#197d85" size={20} />
+            </span>
+          </div>
+          <h2 data-aos="fade-left" className="text-2xl font-semibold mb-6">
+            Trusted by Thousands, Guided by Experience - Meet Dr. Hemendra
+            Agrawal
+          </h2>
+          <p data-aos="fade-left" className="text-lg lg:w-xl pb-2">
+            With over 14 years of clinical and surgical excellence, Dr. Hemendra
+            Agrawal is a top-rated orthopedic surgeon in Jaipur, specializing in
+            joint replacement, arthroscopy, ligament reconstruction, and sports
+            injury management.
+          </p>
+        </div>
+      </section>
       <div className="relative mx-auto mt-20">
         {/* Header Section */}
         <section className="py-10">
           <div className="mx-auto">
-            <h2 data-aos="zoom-in" className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+            <h2
+              data-aos="zoom-in"
+              className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center"
+            >
               Understanding {title}
             </h2>
 
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div>
-                <h3 data-aos="fade-left" className="text-2xl font-semibold text-gray-900 mb-4">
+                <h3
+                  data-aos="fade-left"
+                  className="text-2xl font-semibold text-gray-900 mb-4"
+                >
                   What is {title}?
                 </h3>
-                <p data-aos="fade-left" className="text-gray-700 mb-6 leading-relaxed">{about}</p>
+                <p
+                  data-aos="fade-left"
+                  className="text-gray-700 mb-6 leading-relaxed"
+                >
+                  {about}
+                </p>
 
-                <h3 data-aos="fade-left" className="text-2xl font-semibold text-gray-900 mb-4">
+                <h3
+                  data-aos="fade-left"
+                  className="text-2xl font-semibold text-gray-900 mb-4"
+                >
                   When is it Recommended?
                 </h3>
                 <ul className="space-y-3 text-gray-700 mb-4">
                   {recommended.map((item, index) => (
-                    <li data-aos="fade-left" data-aos-delay={index * 100} key={index} className="flex items-start gap-3">
+                    <li
+                      data-aos="fade-left"
+                      data-aos-delay={index * 100}
+                      key={index}
+                      className="flex items-start gap-3"
+                    >
                       <span className="text-[#197d85] font-bold">•</span>
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
 
-                <h3 data-aos="fade-left" className="text-2xl font-semibold text-gray-900 mb-4">
+                <h3
+                  data-aos="fade-left"
+                  className="text-2xl font-semibold text-gray-900 mb-4"
+                >
                   Modern Techniques
                 </h3>
                 <ul className="space-y-3 text-gray-700">
                   {modernTechniques.map((item, index) => (
-                    <li data-aos="fade-left" data-aos-delay={index * 100} key={index} className="flex items-start gap-3">
+                    <li
+                      data-aos="fade-left"
+                      data-aos-delay={index * 100}
+                      key={index}
+                      className="flex items-start gap-3"
+                    >
                       <span className="text-[#197d85] font-bold">•</span>
                       <span>{item}</span>
                     </li>
@@ -203,12 +325,17 @@ export default function SpecificExpertise({ data }) {
               </div>
 
               <div>
-                <h3 data-aos="fade-right" className="text-2xl font-semibold text-gray-900 mb-4">
+                <h3
+                  data-aos="fade-right"
+                  className="text-2xl font-semibold text-gray-900 mb-4"
+                >
                   Key Benefits
                 </h3>
                 <div className="space-y-4 mb-8">
                   {keyBenefits.map((benefit, index) => (
-                    <div data-aos="fade-right" data-aos-delay={index * 100}
+                    <div
+                      data-aos="fade-right"
+                      data-aos-delay={index * 100}
                       key={index}
                       className="bg-white p-6 rounded-lg shadow-md border border-gray-100"
                     >
@@ -223,7 +350,10 @@ export default function SpecificExpertise({ data }) {
             </div>
           </div>
         </section>
-        <h2 data-aos="fade-up" className="text-3xl md:text-4xl font-bold text-gray-900 my-12 text-center">
+        <h2
+          data-aos="fade-up"
+          className="text-3xl md:text-4xl font-bold text-gray-900 my-12 text-center"
+        >
           Types of {title}
         </h2>
         {/* Services Grid */}
@@ -280,7 +410,7 @@ export default function SpecificExpertise({ data }) {
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
               {treatmentJourney.map((item) => (
                 <div
-                data-aos="flip-up"
+                  data-aos="flip-up"
                   key={item.step}
                   className="bg-white rounded-3xl p-6 shadow-md border border-gray-100"
                 >
@@ -293,6 +423,44 @@ export default function SpecificExpertise({ data }) {
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {item.desc}
                   </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Post-Surgery Care */}
+        <section className="py-10">
+          <div data-aos="flip-down" className="mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+              Post-Surgery Care & Physiotherapy
+            </h2>
+            <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+              Comprehensive support for a smooth and successful recovery
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {postSurgeryCare.map((care, index) => (
+                <div
+                  data-aos="flip-down"
+                  data-aos-delay={index * 100}
+                  className="bg-white rounded-2xl p-8 shadow-md border border-green-100 mb-6"
+                  key={index}
+                >
+                  <div className="text-4xl mb-4 flex justify-center">
+                    {care.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    {care.title}
+                  </h3>
+                  <ul className="space-y-2 text-gray-700">
+                    {care.routine.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-green-600">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
@@ -368,12 +536,13 @@ export default function SpecificExpertise({ data }) {
                 </h3>
                 <p className="text-gray-700 mb-6">{highlights.description}</p>
 
-                <Link href="/contact">
-                  <button className="group bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 text-black px-3 md:px-8 py-1 md:py-4 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center mx-auto space-x-1 md:space-x-2">
-                    <span>{highlights.button}</span>
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </button>
-                </Link>
+                <button
+                  onClick={() => setOpen(true)}
+                  className="group bg-gradient-to-r from-[#197d85]/50 to-[#97a345]/50 text-black px-3 md:px-8 py-1 md:py-4 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center mx-auto space-x-1 md:space-x-2"
+                >
+                  <span>{highlights.button}</span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
               </div>
               {/* Decorative circles */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#97a345]/30 rounded-full"></div>
@@ -436,7 +605,9 @@ export default function SpecificExpertise({ data }) {
 
             <div className="space-y-4">
               {faqs.map((faq, idx) => (
-                <div data-aos="fade-down" data-aos-delay={idx * 100}
+                <div
+                  data-aos="fade-down"
+                  data-aos-delay={idx * 100}
                   key={idx}
                   className="border border-gray-200 rounded-lg overflow-hidden"
                 >
@@ -447,7 +618,7 @@ export default function SpecificExpertise({ data }) {
                     <span className="font-semibold text-gray-900 pr-4">
                       {faq.question}
                     </span>
-                    <span className="text-2xl text-blue-600 flex-shrink-0">
+                    <span className="text-2xl text-teal-600 flex-shrink-0">
                       {openFaq === idx ? "−" : "+"}
                     </span>
                   </button>
@@ -463,44 +634,8 @@ export default function SpecificExpertise({ data }) {
             </div>
           </div>
         </section>
-
-        {/* Post-Surgery Care */}
-        <section className="py-10">
-          <div data-aos="flip-down" className="mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
-              Post-Surgery Care & Physiotherapy
-            </h2>
-            <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-              Comprehensive support for a smooth and successful recovery
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {postSurgeryCare.map((care, index) => (
-                <div
-                  data-aos="flip-down" data-aos-delay={index * 100}
-                  className="bg-white rounded-2xl p-8 shadow-md border border-green-100 mb-6"
-                  key={index}
-                >
-                  <div className="text-4xl mb-4 flex justify-center">
-                    {care.icon}
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    {care.title}
-                  </h3>
-                  <ul className="space-y-2 text-gray-700">
-                    {care.routine.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <span className="text-green-600">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
       </div>
+      {open && <Form />}
     </div>
   );
 }
